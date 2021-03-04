@@ -48,3 +48,27 @@ body  {
 #content span.name { 
     color:black;
 }
+
+#links ul{ 
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+}
+#links li { 
+    text-align: center;
+    display:block;
+    padding: 1em;
+}
+#links li a {
+    font-size: 170%;
+    color:whitesmoke;
+    display:block;
+    width: 100%;
+    background-color: black;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+#links a:hover{
+    background-color: gray;
+}
