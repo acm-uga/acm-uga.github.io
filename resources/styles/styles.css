@@ -1,74 +1,101 @@
-html { 
-    background-color: bisque;
-    width:1000px;
-    margin:auto;
-    padding:0em;
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
 }
+/**
+ * Remove the margin in all browsers.
+ */
 
-body  {
-    border-color: maroon;
-    border-style: dashed;
-    border-width: 2px; 
-    background-color: white; 
+ body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+
+#banner { 
+    float:top;
+    margin: auto;
+    width: 80%;
+    /**padding-left:12em;*/
 }
-
-#header { 
-    width:100%;
-    background-color: white;
-    border-bottom-color: red;
-    border-bottom-style: solid;
-    border-width: 2px;
-    padding-bottom:0em;
-    margin:0em;
-    height:20%;
-}
-
-#header img { 
-    padding-top: 1em;
-    padding-left: 1em;
-    width:15%;
+#banner img { 
     float:left;
+    padding:1.5em;
+    max-width: 155px;
+    height: auto;
 }
-#header h1 {
-    text-align:center;
-    padding-top:2.5em;
-    font-family: 'Courier New', Courier, monospace;
+#titleBan {
+    float:left;
+    padding-top:1.9em;
+    padding-left:1em;
 }
 
-#content {
-    height:auto;
+#navBar {
     clear:both;
 }
-#content h1 { 
+#navBar ul {
+    height:4em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 6.5em;
+    padding-right:6.5em;
+  }
+  
+#navBar li {
+    float: left;
+    width:20%;
+  }
+  
+#navBar li a {
+    height:4em;
+    display: block;
+    color: white;
     text-align: center;
-}
-#content h1.detail { 
-    color:red;
-}
-#content span.name { 
-    color:black;
+    padding: 14px 16px;
+    padding-top:1.5em;
+    text-decoration: none;
+  }
+  
+#navBar li a:hover {
+    background-color: #111;
 }
 
-#links ul{ 
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    width: 40%;
-}
-#links li { 
+#img-container { 
+    position: relative;
     text-align: center;
-    display:block;
-    padding: 1em;
 }
-#links li a {
-    font-size: 170%;
-    color:whitesmoke;
-    display:block;
-    width: 100%;
-    background-color: black;
-    padding-top:1em;
-    padding-bottom:1em;
+
+#banner_img { 
+    /**border: 5px solid white;*/
+    width:100%;
+    height:min-content;
 }
-#links a:hover{
-    background-color: gray;
+#img-text{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+#content #column-1{ 
+    padding-left:4em;
+    float:left;
+    width:65%;
+    border-right: 2px solid red;
+}
+#content #column-2{
+    padding-left:2em;
+    float:left;
+    width:20%;
+}
+  
