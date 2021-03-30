@@ -162,8 +162,9 @@ html {
   }
 
 #content { 
-  padding-left:2em;
-  padding-right:2em;
+  margin-top:-1em;
+  padding-left:6em;
+  padding-right:6em;
 }
 
 #content #column-1{ 
@@ -171,10 +172,25 @@ html {
     float:left;
     width:75%;
     border-right: 2px solid red;
+    border-left: 2px solid red;
 }
 #content #column-2{
     padding-left:2em;
     float:left;
     width:15%;
 }
-  
+
+#content #featured { 
+  clear:both;
+  padding-top:2em;
+}
+
+#footer{ 
+  height: 50px;
+  background-color: #333;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
