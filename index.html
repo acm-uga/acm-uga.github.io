@@ -2,8 +2,9 @@
     <head>
         <title>UGA-ACM</title>
         <link rel="stylesheet" href="resources/styles/styles.css">
+        <script src="slides.js"></script>
     </head>
-    <body>
+    <body onload="currentSlide(1)">
         <div id="banner">
             <div id="imgBan">
                 <img src="resources/logo.jpg">
@@ -23,13 +24,37 @@
               </ul>
         </div>
         <div id="main">
-            <div id="img-container">
-                <img id="banner_img" src="resources/banner_img.jpg">
-                <div id="img-text">
-                    <h3>Association for Computing Machinery</h3>
-                    <h1>Advancing Computing as a Science & Profession</h1>
-                    <p>We see a world where computing helps solve tomorrow’s problems – where we use our knowledge and skills to advance the profession and make a positive impact.</p> 
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <img src="resources/slc.jpg" style="width:100%;">
+                <div class="text">
+                    <h2>Connect</h2>
+                    <p>Meet and talk to like minded people.</p>
                 </div>
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="resources/boydgraduate.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="resources/miller.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <div id="content">
                 <div id="column-1">

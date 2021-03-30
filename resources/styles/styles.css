@@ -2,6 +2,7 @@ html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
 }
+
 /**
  * Remove the margin in all browsers.
  */
@@ -41,19 +42,20 @@ html {
     clear:both;
 }
 #navBar ul {
-    height:4em;
+    height:3.5em;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    padding-left: 6.5em;
-    padding-right:6.5em;
+    padding-left: 20em;
+    padding-right:20em;
   }
   
 #navBar li {
     float: left;
     width:20%;
+
   }
   
 #navBar li a {
@@ -62,7 +64,7 @@ html {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    padding-top:1.5em;
+    padding-top:1.25em;
     text-decoration: none;
   }
   
@@ -70,26 +72,98 @@ html {
     background-color: #111;
 }
 
-#img-container { 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
     position: relative;
-    text-align: center;
-}
-
-#banner_img { 
-    /**border: 5px solid white;*/
-    width:100%;
-    height:min-content;
+    margin: auto;
+  }
   
-}
-#img-text{ 
-    color:white;
-    font-size: 125%;
+  /* Hide the images by default */
+  .mySlides {
+      outline: 2px solid white;
+      outline-offset: -1em;
+      display:none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
     position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    position: absolute;
+    bottom: 8px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgb(0,0,0);
+    background: rgba(0,0,0, 0.5);
+    text-align: center;
+    backdrop-filter: blur(4px);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+#content { 
+  padding-left:2em;
+  padding-right:2em;
 }
 
 #content #column-1{ 
