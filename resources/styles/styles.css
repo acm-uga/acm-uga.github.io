@@ -196,18 +196,21 @@ html {
   width:75%;
 }
 
-
-
-.ev-li { 
-  padding-left:0em;
+#event-list{
+  padding-left: 0em;
 }
+
 
 .ev-li { 
   display: inline-block;
   width:30%;
   background-color: gray;
-  margin-left:.5em;
-  margin-right:.5em;
+  margin-right:1em;
+}
+
+.ev-li>a>img {
+  height:30%;
+  width:100%;
 }
 
 

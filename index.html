@@ -2,11 +2,11 @@
     <head>
         <title>UGA-ACM</title>
         <link rel="stylesheet" href="resources/styles/styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="slides.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="event-slide.js"></script>
     </head>
-    <body onload="currentSlide(1)">
+    <body onload="render()">
         <div id="banner">
             <div id="imgBan">
                 <img src="resources/logo.jpg">
@@ -30,7 +30,7 @@
             <div class="slideshow-container">
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                <img src="resources/slc.jpg" style="width:100%;">
+                <img src="resources/banners/slc.jpg" style="width:100%;">
                 <div class="text">
                     <h2>Connect</h2>
                     <p>Meet and talk to like minded people.</p>
@@ -38,12 +38,12 @@
                 </div>
             
                 <div class="mySlides fade">
-                <img src="resources/boydgraduate.jpg" style="width:100%">
+                <img src="resources/banners/boydgraduate.jpg" style="width:100%">
                 <div class="text">Caption Two</div>
                 </div>
             
                 <div class="mySlides fade">
-                <img src="resources/miller.jpg" style="width:100%">
+                <img src="resources/banners/miller.jpg" style="width:100%">
                 <div class="text">Caption Three</div>
                 </div>
             
@@ -68,35 +68,11 @@
                         <h1>Honestly idk yet?</h1>
                     </div>
                 </div>
-                <div id="feature-section">
+                <div id="feature-section" onload="renderEventSlide()">
                     <div id="featured">
                         <h2>Featured Events</h2>
-                        <div class="event-container" onload="renderEventSlide()">
-                            <ul>
-                                <li id="ev-1" class="ev-li">
-                                    <!--
-                                    <a href="#" onclick="renderEventSlide()">
-                                        <div class="eventSlide">
-                                            <p>Slide 1</p>
-                                        </div>
-                                    </a>
-                                -->
-                                </li>
-                                <li id="ev-2" class="ev-li">
-                                    <a href="#">
-                                        <div class="eventSlide">
-                                            <p>Slide 1</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li id="ev-3" class="ev-li">
-                                    <a href="#">
-                                        <div class="eventSlide">
-                                            <p>Slide 1</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div id="event-container">
+                            <ul id="event-list"></ul>
                         </div>
                     </div>
                     <div id="featured-right">
