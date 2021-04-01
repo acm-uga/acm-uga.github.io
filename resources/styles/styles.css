@@ -179,13 +179,40 @@ html {
     float:left;
     width:15%;
 }
-
-#content #featured { 
+#feature-section{
+  padding-top: 2em;
   clear:both;
-  padding-top:2em;
+  float: left;
+  width:100%;
 }
 
+#content #featured { 
+  padding-left: 4em;
+  background-color: inherit;
+  border-left:2px solid red;
+  border-right:2px solid red;
+  clear:both;
+  float:left;
+  width:75%;
+}
+
+
+
+.ev-li { 
+  padding-left:0em;
+}
+
+.ev-li { 
+  display: inline-block;
+  width:30%;
+  background-color: gray;
+  margin-left:.5em;
+  margin-right:.5em;
+}
+
+
 #footer{ 
+  clear:both;
   height: 50px;
   background-color: #333;
   bottom: 0px;
