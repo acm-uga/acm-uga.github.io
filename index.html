@@ -2,7 +2,9 @@
     <head>
         <title>UGA-ACM</title>
         <link rel="stylesheet" href="resources/styles/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="slides.js"></script>
+        <script src="event-slide.js"></script>
     </head>
     <body onload="currentSlide(1)">
         <div id="banner">
@@ -66,10 +68,39 @@
                         <h1>Honestly idk yet?</h1>
                     </div>
                 </div>
-                <div id="featured">
-                    <h2>Featured Events</h2>
-                    <div class="event_stream">
-                        <p>Insert Event Stream</p>
+                <div id="feature-section">
+                    <div id="featured">
+                        <h2>Featured Events</h2>
+                        <div class="event-container" onload="renderEventSlide()">
+                            <ul>
+                                <li id="ev-1" class="ev-li">
+                                    <!--
+                                    <a href="#" onclick="renderEventSlide()">
+                                        <div class="eventSlide">
+                                            <p>Slide 1</p>
+                                        </div>
+                                    </a>
+                                -->
+                                </li>
+                                <li id="ev-2" class="ev-li">
+                                    <a href="#">
+                                        <div class="eventSlide">
+                                            <p>Slide 1</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li id="ev-3" class="ev-li">
+                                    <a href="#">
+                                        <div class="eventSlide">
+                                            <p>Slide 1</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="featured-right">
+
                     </div>
                 </div>
             </div>
