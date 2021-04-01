@@ -1,6 +1,7 @@
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /**
@@ -36,6 +37,19 @@ html {
     float:left;
     padding-top:1.9em;
     padding-left:1em;
+}
+#social-container { 
+  float:left;
+  padding-left: 20em;
+}
+#social-container>ul { 
+  display:inline;
+  list-style-type: none;
+}
+#social-container>ul>li>a>img { 
+  padding-top:0em;
+  padding-bottom:0em;
+  clear:both;
 }
 
 #navBar {
