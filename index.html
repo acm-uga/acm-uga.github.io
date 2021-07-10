@@ -1,99 +1,104 @@
 <html>
-    <head>
-        <title>UGA-ACM</title>
-        <link rel="stylesheet" href="resources/styles/styles.css">
-        <script src="slides.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="event-slide.js"></script>
-    </head>
-    <body onload="render()">
-        <div id="banner">
-            <div id="imgBan">
-                <img src="resources/logo.jpg">
-            </div>
-            <div id="titleBan">
-                <h1 style="margin-top: .5em;font-size: 250%; margin-bottom: -.5em;">Association of Computing Machinery</h1>
-                <h2 style="color: #ba1b11; font-size: 200%;">University of Georgia</h2>
-            </div>
-            <div id="social-container">
-                <ul>
-                    <li><a  href="https://discord.gg/AcPYBCDWeA"><img class="help" src="resources/social_img/discord.png"></a></li>
-                    <li><a  href="https://www.instagram.com/ugaacm"><img class="help" src="resources/social_img/insta.png"></a></li>
-                    <li><a  href="https://github.com/uga-acm"><img class="help" src="resources/social_img/github.png"></a></li>
-                    <li><a  href="https://csip-uga.github.io"><img class="help" src="resources/social_img/csip.png"></a></li>
-                </ul>
-            </div>
+
+<head>
+    <title>UGA-ACM</title>
+    <link rel="stylesheet" href="resources/styles/styles.css">
+    <script src="slides.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="event-slide.js"></script>
+</head>
+
+<body onload="render()">
+    <div id="banner">
+        <div id="imgBan">
+            <img src="resources/logo.jpg">
         </div>
-        <div id="navBar">
+        <div id="titleBan">
+            <h1 style="margin-top: .5em;font-size: 250%; margin-bottom: -.5em;">Association of Computing Machinery</h1>
+            <h2 style="color: #ba1b11; font-size: 200%;">University of Georgia</h2>
+        </div>
+        <div id="social-container">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.asp">Events</a></li>
-                <li><a href="contact.asp">Resources</a></li>
-                <li><a href="about.asp">Workshops</a></li>
-                <li><a href="about.asp">About Us</a></li>
-              </ul>
+                <li><a href="https://discord.gg/AcPYBCDWeA"><img class="help"
+                            src="resources/social_img/discord.png"></a></li>
+                <li><a href="https://www.instagram.com/ugaacm"><img class="help"
+                            src="resources/social_img/insta.png"></a></li>
+                <li><a href="https://github.com/uga-acm"><img class="help" src="resources/social_img/github.png"></a>
+                </li>
+                <li><a href="https://csip-uga.github.io"><img class="help" src="resources/social_img/csip.png"></a></li>
+            </ul>
         </div>
-        <div id="main">
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
+    </div>
+    <div id="navBar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.asp">Events</a></li>
+            <li><a href="contact.asp">Resources</a></li>
+            <li><a href="about.asp">Workshops</a></li>
+            <li><a href="about.asp">About Us</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
                 <img src="resources/banners/slc.jpg" style="width:100%;">
                 <div class="text">
                     <h2>Connect</h2>
-                    <p>Meet and talk to like minded people.</p>
+                    <p>Meet and talk to like-minded people.</p>
                 </div>
-                </div>
-            
-                <div class="mySlides fade">
+            </div>
+
+            <div class="mySlides fade">
                 <img src="resources/banners/boydgraduate.jpg" style="width:100%">
                 <div class="text">Caption Two</div>
-                </div>
-            
-                <div class="mySlides fade">
+            </div>
+
+            <div class="mySlides fade">
                 <img src="resources/banners/miller.jpg" style="width:100%">
                 <div class="text">Caption Three</div>
-                </div>
-            
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <br>
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div id="content">
+            <div id="columns">
+                <div id="column-1">
+                    <h1>Welcome to UGA's ACM Chapter</h1>
+                    <p>Insert stuff about ACM and what we are about here!</p>
+                </div>
+                <div id="column-2">
+                    <h1>Contact Us</h1>
+                </div>
             </div>
-            <div id="content">
-                <div id="columns">
-                    <div id="column-1">
-                        <h1>Welcome to UGA's ACM Chapter</h1>
-                        <p>Insert stuff about ACM and what we are about here!</p>
-                    </div>
-                    <div id="column-2">
-                        <h1>Contact Us</h1>
+            <div id="feature-section" onload="renderEventSlide()">
+                <div id="featured">
+                    <h2 style="color: #383838;">Featured Events</h2>
+                    <div id="event-container">
+                        <ul id="event-list"></ul>
                     </div>
                 </div>
-                <div id="feature-section" onload="renderEventSlide()">
-                    <div id="featured">
-                        <h2 style="color: #383838;">Featured Events</h2>
-                        <div id="event-container">
-                            <ul id="event-list"></ul>
-                        </div>
-                    </div>
-                    <div id="featured-right">
-                        <h2>Subscribe to our list-serv!</h2>
-                        <p> Get notified whenever we have a new event!</p>
-                        <form>
-                            <p>insert form :/</p>
-                        </form>
-                    </div>
+                <div id="featured-right">
+                    <h2>Join our community!</h2>
+                    <iframe src="https://discord.com/widget?id=804221036278972416&theme=dark" width="350" height="500"
+                        allowtransparency="true" frameborder="0"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </div>
             </div>
         </div>
-        <div id="footer">
-        </div>
-    </body>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
 </html>
