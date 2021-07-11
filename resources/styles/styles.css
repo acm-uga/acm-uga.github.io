@@ -203,7 +203,7 @@ html {
   width:75%;
 }
 #discord {
-  position:absolute;
+  position:fixed;
   padding-top:1em;
 }
 #event-list{
@@ -215,12 +215,13 @@ html {
   display: inline-block;
   width:30%;
   background-color: gray;
-  margin:1em;
+  margin-right:1em;
+  margin-top:1em;
 }
 
 .ev-li>a>img {
-  height:40%;
-  width:80%;
+  height:30%;
+  width:100%;
 }
 
 
