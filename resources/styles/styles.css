@@ -226,8 +226,6 @@ html {
 #content #featured { 
   padding-left: 4em;
   background-color: inherit;
-  border-left:2px solid red;
-  border-right:2px solid red;
   clear:both;
   float:left;
   width:75%;
