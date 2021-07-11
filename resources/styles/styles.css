@@ -46,6 +46,7 @@ html {
 }
 .help:hover { 
   width:22%;
+  position: absolute
 }
 
 #navBar {
