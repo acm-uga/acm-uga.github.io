@@ -39,19 +39,14 @@ html {
     padding-left:1em;
 }
 .help { 
-  width:30%;
+  width:20%;
   margin:1em;
   padding: 1em
 
 }
 .help:hover { 
   z-index:1;
-  width:70%;
-  padding-top:0em;
-  padding-bottom:0em;
-  clear:both;
-  margin-top: 0;
-  margin-bottom: 0;
+  width:50%;
 }
 
 #navBar {
