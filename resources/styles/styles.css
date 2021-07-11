@@ -46,7 +46,6 @@ html {
 }
 .help:hover { 
   width:22%;
-  position: absolute
 }
 
 #navBar {
@@ -204,7 +203,7 @@ html {
   width:75%;
 }
 #discord {
-  position:static;
+  position:absolute;
   padding-top:1em;
 }
 #event-list{
