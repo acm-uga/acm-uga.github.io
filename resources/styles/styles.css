@@ -203,7 +203,9 @@ html {
   float:left;
   width:75%;
 }
-
+#discord {
+  position:absolute;
+}
 #event-list{
   padding-left: 0em;
 }
