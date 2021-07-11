@@ -38,12 +38,6 @@ html {
     padding-top:1.9em;
     padding-left:1em;
 }
-#social-container { 
-  position:absolute;
-  right:0;
-  top:7em;
-  padding-left: 20em;
-}
 #social-container>ul { 
   list-style-type: none;
 }
