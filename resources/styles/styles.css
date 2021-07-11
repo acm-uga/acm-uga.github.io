@@ -39,11 +39,7 @@ html {
     padding-left:1em;
 }
 .help { 
-  margin-left:-3em;
-  margin-right:-3em;
-  margin-top: 5%;
-  width:60%;
-  margin-bottom:5%;
+  width:40%;
 }
 .help:hover { 
   z-index:1;
