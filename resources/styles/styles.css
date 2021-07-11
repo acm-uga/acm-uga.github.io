@@ -45,8 +45,7 @@ html {
 
 }
 .help:hover { 
-  z-index:1;
-  width:23%;
+  width:22%;
 }
 
 #navBar {
