@@ -204,7 +204,8 @@ html {
   width:75%;
 }
 #discord {
-  position:absolute;
+  position:static;
+  padding-top:1em;
 }
 #event-list{
   padding-left: 0em;
