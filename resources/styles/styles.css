@@ -10,6 +10,7 @@ html {
 
  body {
     margin: 0;
+    background-color: #fffafa;
   }
   
   /**
@@ -38,14 +39,42 @@ html {
     padding-top:1.9em;
     padding-left:1em;
 }
+
+#intro-par { 
+  margin-right:1em;
+  padding-bottom:1.5em;
+  border-bottom: dotted 1px red;
+  border-top: dotted 1px red;
+  padding-top:1em;
+}
+
 .help { 
   width:20%;
-  margin:1em;
-  padding: 1em
-
+  margin:.5em;
+  padding: .5em
 }
 .help:hover { 
   width:22%;
+}
+@media screen and (min-width:1440px) { 
+  .help {
+    width:20%;
+    margin:1em;
+    padding:1em;
+  }
+  .help:hover { 
+    width:22%;
+  }
+}
+@media screen and (max-width:1440px) {
+.help { 
+  width:20%;
+  margin:.75em;
+  padding: .75em
+}
+.help:hover { 
+  width:22%;
+}
 }
 
 #navBar {
@@ -137,6 +166,7 @@ html {
     background: rgba(0,0,0, 0.5);
     text-align: center;
     backdrop-filter: blur(4px);
+    max-width: 400px;
   }
   
   /* The dots/bullets/indicators */
@@ -185,28 +215,40 @@ html {
     width:75%;
     border-right: 2px solid red;
     border-left: 2px solid red;
+    padding-bottom:3em;
 }
 #content #column-2{
     padding-left:2em;
     float:left;
     width:15%;
 }
+
+
 #feature-section{
-  padding-top: 2em;
+  padding-top: .5em;
   clear:both;
   float: left;
   width:100%;
 }
 
 #content #featured { 
-  padding-left: 4em;
   clear:both;
   float:left;
-  width:75%;
+  width:100%;
+}
+#featured h2 { 
+  background-color: maroon;
+  padding-left:1em;
+  padding-top:.25em;
+  color:white;
+  border-bottom: 1px dotted red; 
+  width:20%;
+  padding-bottom:.25em;
 }
 #discord {
   position:absolute;
   padding-top:1em;
+  margin-left:-1em;
 }
 #event-list{
   padding-left: 0em;
@@ -214,11 +256,33 @@ html {
 
 
 .ev-li { 
-  display: inline-block;
+  float:left;
   width:30%;
-  background-color: gray;
+  background-color: #333;
   margin-right:1em;
   margin-top:1em;
+  padding:.25em;  
+  color:white;
+  min-height: 500px;
+}
+
+.ev-li h3 { 
+  font-size:100%;
+  padding-left:.5em;
+  color:white;
+  background-color:maroon;
+  width:40%;
+  padding-right:.5em;
+}
+
+.eventDate { 
+  font-style: italic;
+  border-top: dotted 2px white;
+}
+
+.ev-li p { 
+  padding-top: .5em;
+  padding-left:1em;
 }
 
 .ev-li>a>img {
@@ -229,7 +293,7 @@ html {
 
 #footer{ 
   clear:both;
-  height: 50px;
+  height: 125px;
   background-color: #333;
   bottom: 0px;
   left: 0px;

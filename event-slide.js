@@ -28,6 +28,7 @@ function renderEventSlide() {
         title.appendChild(document.createTextNode(event_info[count]["title"]));
         short.appendChild(document.createTextNode(event_info[count]["short"]));
         date.appendChild(document.createTextNode(event_info[count]["date"]));
+        short.className = "eventDate"
 
         elem.appendChild(listItem);
         count = count + 1;
