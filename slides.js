@@ -1,3 +1,4 @@
+setInterval(render,5000);
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -29,7 +30,13 @@ function showSlides(n) {
 }
 
 function render() { 
-  currentSlide(1);
+  currentSlide(slideIndex);
   renderEventSlide();
+  if(slideIndex<3){
+    slideIndex++;
+  }else{
+    slideIndex=1;
+  }
 }
+
 
