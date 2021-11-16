@@ -8,9 +8,9 @@ var event_info = [
 ];
 
 function renderEventSlide() { 
-    var elem = document.getElementById("event-list"); //The container for the inserted links
+    var elem = document.getElementById("upcomingEvents"); //The container for the inserted links
     var count = 0;
-    while (count < event_info.length || count < 3) { 
+    while (count < event_info.length && count < 4) { 
         var listItem = document.createElement("li");
         var link = document.createElement("a");
         var title = document.createElement("h3");
@@ -18,7 +18,7 @@ function renderEventSlide() {
         var date = document.createElement("p");
         var img = document.createElement("img");
 
-        listItem.className = "ev-li";
+        listItem.className = "upcoming-li"
 
         listItem.append(link);
         link.append(img,title,date, short);
