@@ -1,7 +1,7 @@
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Merriweather Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
 /**
@@ -11,6 +11,8 @@ html {
  body {
     margin: 0;
     background-color: #fffafa;
+      font-family: 'Merriweather Sans';
+  
   }
   
   /**
@@ -55,6 +57,8 @@ html {
 }
 .help:hover { 
   width:22%;
+  transition: 0.15s;
+
 }
 @media screen and (min-width:1440px) { 
   .help {
@@ -213,8 +217,7 @@ html {
     padding-left:4em;
     float:left;
     width:75%;
-    border-right: 2px solid red;
-    border-left: 2px solid red;
+
     padding-bottom:3em;
 }
 #content #column-2{
@@ -237,13 +240,8 @@ html {
   width:100%;
 }
 #featured h2 { 
-  background-color: maroon;
-  padding-left:1em;
-  padding-top:.25em;
-  color:white;
-  border-bottom: 1px dotted red; 
-  width:20%;
-  padding-bottom:.25em;
+  border-bottom: 0.2em solid #BA0C2F;
+  width: fit-content;
 }
 #discord {
   position:absolute;
@@ -301,3 +299,13 @@ html {
   margin-bottom: 0px;
 }
 
+#uga {
+  color: #BA0C2F;
+  font-family: 'Georgia';
+  font-weight: bold;
+}
+
+#acm {
+  font-family: 'Georgia Pro Cond Italic', 'Georgia';
+  font-size: 250%;
+}
