@@ -1,4 +1,3 @@
-setInterval(render,5000);
 
 var slideIndex = 1;
 showSlides(slideIndex);
