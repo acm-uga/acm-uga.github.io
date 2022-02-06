@@ -60,7 +60,9 @@ html {
 .help:hover { 
   width:22%;
   transition: 0.25s;
-
+}
+.help:not(:hover) {
+  transition: 0.25s;
 }
 @media screen and (min-width:1440px) { 
   .help {
@@ -117,6 +119,11 @@ html {
   
 #navBar li a:hover {
     background-color: #111;
+    transition: 0.5s;
+}
+
+#navBar li a:not(:hover) {
+  transition: 0.1s;
 }
 
 /* Slideshow container */
@@ -250,6 +257,8 @@ html {
   position:absolute;
   padding-top:1em;
   margin-left:-1em;
+}
+#social-container {
 }
 #event-list{
   padding-left: 0em;

@@ -26,16 +26,18 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+
 }
 
 function render() { 
   currentSlide(slideIndex);
-  renderEventSlide();
   if(slideIndex<3){
     slideIndex++;
   }else{
     slideIndex=1;
   }
+  setTimeout(render, 7000);
+
 }
 
 
