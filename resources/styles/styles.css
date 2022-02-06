@@ -306,10 +306,11 @@ html {
 }
 
 
-#footer{ 
+footer{ 
   clear:both;
   height: 125px;
   background-color: #333;
+  color: white;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -336,4 +337,14 @@ html {
 .slide-desc {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.red-underline {
+  width: fit-content;
+  padding-bottom: 0.5em;
+  border-bottom: 0.10em solid #BA0C2F;
+}
+
+#copyright {
+  text-align: center;
 }
