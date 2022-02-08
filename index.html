@@ -8,22 +8,29 @@
     <script src="event-slide.js"></script>
     <link rel="shortcut icon" type="image/png" href="resources\favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
 
-<body onload="render()">
+<body onload="render(); renderEventSlide()">
 
     <div id="banner">
         <div id="imgBan">
             <img src="resources/logo.png">
-        </div>
-        <div id="titleBan">
-            <h1 id="acm">Association for Computing Machinery</h1>
-
-            <h2 id="uga">UNIVERSITY OF GEORGIA</h2>
+            <div class="topnav-right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.asp">EVENTS</a></li>
+                    <li><a href="contact.asp">RESOURCES</a></li>
+                    <li><a href="about.asp">WORKSHOPS</a></li>
+                    <li><a href="about.asp">ABOUT US</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    <!--
     <div id="navBar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -33,6 +40,8 @@
             <li><a href="about.asp">About Us</a></li>
         </ul>
     </div>
+    -->
+
     <div id="main">
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -75,12 +84,14 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
-        <!-- The dots/circles -->
+        <!-- The dots/circles
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+        </div>        
+        -->
+
         <div id="content">
             <div id="columns">
                 <div id="column-1">
@@ -96,8 +107,8 @@
                         careers.
                     </div>
                     <div id="feature-section" onload="renderEventSlide()">
+                        <h1 class="red-underline">Featured Events</h1>
                         <div id="featured">
-                            <h2>Featured Events</h2>
                             <div id="event-container">
                                 <ul id="event-list"></ul>
                             </div>
@@ -130,6 +141,10 @@
 
         </div>
     </div>
+    <footer>
+        <p id="copyright">© ACM at UGA 2022</p>
+
+    </footer>
     <div id="footer">
     </div>
 </body>
