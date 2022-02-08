@@ -105,13 +105,17 @@ html {
   text-decoration: none;
   font-size: 17px;
   list-style-type: none;
-  background-color: orange;
 }
 
 .topnav-right a {
   color: black;
   text-decoration: none;
 }
+
+.topnav-right a:hover {
+  border-bottom: 0.1em solid #BA0C2F;
+}
+
 #navBar {
     clear:both;
     position:sticky
@@ -310,13 +314,14 @@ html {
 
 footer{ 
   clear:both;
-  height: 125px;
+  height: 18em;
   background-color: #333;
   color: white;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
+
 }
 
 
@@ -338,4 +343,18 @@ footer{
 
 #copyright {
   text-align: center;
+}
+
+.footer-column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+#footer-columns {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+#copyright {
 }
