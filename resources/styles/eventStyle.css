@@ -1,0 +1,56 @@
+.body{
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.leftNavigation {
+    width: 25%;
+    background-color: gainsboro;
+    border-right:#ba1b11 solid 2px ;
+}
+.rightNavigation {
+    width:75%;
+    padding: 24px 24px  100px 48px
+}
+
+#upcomingEvents {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+
+.upcoming-li { 
+    width:30%;
+    background-color: #333;
+    margin-right:1em;
+    padding:.25em;  
+    color:white;
+    max-height: 400px;
+    max-width: 225px;
+  }
+  
+  .upcoming-li h3 { 
+    font-size:100%;
+    padding-left:.5em;
+    color:white;
+    background-color:maroon;
+    width:40%;
+    padding-right:.5em;
+  }
+  
+  .eventDate { 
+    font-style: italic;
+    border-top: dotted 2px white;
+  }
+  
+  .upcoming-li p { 
+    padding-top: .25em;
+    padding-left:1em;
+  }
+  
+  .upcoming-li>a>img {
+    height: 50%;
+    width: 100%;
+  }
