@@ -8,31 +8,71 @@
     <script src="event-slide.js"></script>
     <link rel="shortcut icon" type="image/png" href="resources\favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body onload="render()">
     <div id="banner">
         <div id="imgBan">
             <img src="resources/logo.png">
+            <div class="topnav-right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                    <li><a href="workshops.html">WORKSHOPS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="titleBan">
-            <h1 style="margin-top: .5em;font-size: 250%; margin-bottom: -.5em;">Association of Computing Machinery</h1>
-            <h2 style="color: #ba1b11; font-size: 200%;">University of Georgia</h2>
-        </div>
-    </div>
-    <div id="navBar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="workshops.html">Workshops</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
     </div>
     <div>placeholder
     </div>
-    <div id="footer">
-    </div>
+    <footer>
+        <div id="footer-columns">
+            <div class="footer-column left-footer-column">
+                <h2>ACM at UGA</h2>
+                <p>ACM at UGA is the University of Georgia chapter of the Association for Computing Machinery. Our goal
+                    is to represent
+                    computing majors and promote computing-related causes on campus and beyond.
+                </p>
+                <p>Email: ugaacm@uga.edu</p>
+
+            </div>
+            <div class="footer-column middle-footer-column">
+                <h2>Partners</h2>
+                <p>ACM-W</p>
+                <p>girls.code()</p>
+                <p>CSIP</p>
+                <p>UGAHacks</p>
+                <p id="copyright">© ACM at UGA 2022</p>
+
+            </div>
+            <div class="footer-column right-footer-column">
+                <h2>Join Us</h2>
+                <div id="social-media">
+                    <a href="https://discord.gg/AcPYBCDWeA">
+                        <img class="help" src="resources/social_img/discord.png">
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/ugaacm">
+                        <img class="help" src="resources/social_img/insta.png">
+                    </a>
+                    <br>
+                    <a href="https://github.com/uga-acm">
+                        <img class="help" src="resources/social_img/github.png">
+                    </a>
+                    <br>
+                    <a href="https://csip-uga.github.io">
+                        <img class="help" src="resources/social_img/csip.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
