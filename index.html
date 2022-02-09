@@ -4,6 +4,22 @@
     <title>UGA-ACM</title>
     <link rel="stylesheet" href="resources/styles/styles.css">
     <script src="slides.js"></script>
+    <script>
+        // The function actually applying the offset
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 110);
+            }
+        }
+
+        // This will capture hash changes while on the page
+        window.addEventListener("hashchange", offsetAnchor);
+
+        // This is here so that when you enter the page with a hash,
+        // it can provide the offset in that case too. Having a timeout
+        // seems necessary to allow the browser to jump to the anchor first.
+        window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="event-slide.js"></script>
     <link rel="shortcut icon" type="image/png" href="resources\favicon.png" />
@@ -14,18 +30,18 @@
 
 </head>
 
-<body onload="render(); renderEventSlide()">
+<body onload="render(); renderEventSlide();">
 
     <div id="banner">
         <div id="imgBan">
             <img src="resources/logo.png">
             <div class="topnav-right">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
-                    <li><a href="resources.html">RESOURCES</a></li>
-                    <li><a href="workshops.html">WORKSHOPS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#calendar">CALENDAR</a></li>
+                    <li><a href="#featured">FEATURED EVENTS</a></li>
+                    <li><a href="#resc">RESOURCES</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +60,7 @@
 
     <div id="main">
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="home">
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <img src="resources/banners/slc.jpg" style="width:100%;">
@@ -95,7 +111,7 @@
         -->
 
         <div id="content">
-            <div id="columns">
+            <div id="main">
                 <!--<div id="column-1">-->
                 <div>
                     <h1 id="welcome-acm">Welcome to the Association for Computing Machinery</h1>
@@ -107,48 +123,221 @@
                         and community through local events and meetings. Our events and meetings are open to all 
                         students regardless of area of study or experience.
                     </div>
-                    <h1 class="red-underline center-header">Join Us</h1>
-
-                    <h1 class="red-underline center-header">Featured Events</h1>
-                    <div id="feature-section" onload="renderEventSlide()">
-                        <div id="featured">
-                            <div id="event-container">
-                                <ul id="event-list"></ul>
+                    <div style="display: flex;
+                                flex-direction: row;">
+                                        <div id="social-container">
+                                            <h1 class="red-underline center-header">Social Network</h1>
+                                            <div class="row-img-1">
+                                                <a href="https://discord.gg/AcPYBCDWeA"><img class="help"
+                                                        src="resources/social_img/discord.png"></a>
+                                                <a href="https://www.instagram.com/ugaacm"><img class="help"
+                                                        src="resources/social_img/insta.png"></a>
+                                            </div>
+                                            <div class="row-img-2">
+                                                <a href="https://github.com/uga-acm"><img class="help"
+                                                        src="resources/social_img/github.png"></a>
+                                                <a href="https://csip-uga.github.io"><img class="help"
+                                                        src="resources/social_img/csip.png"></a>
+                                            </div>
+                                        </div>  
+                                        <div id="dues">
+                                            <h1 class="red-underline center-header">ACM Membership</h1>
+                                                <a href="https://ugapac.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3AUGAARTS%3ATATE2122%3AMEM.ACM%3A&linkID=ta-ugaarts&shopperContext=&pc=&caller=&appCode=&groupCode=PAY&cgc=&dataAccId=157&locale=en_US&siteId=ev_ta-ugaarts">
+                                                    Pay ACM Membership Dues
+                                                </a>
+                                         </div> 
+                        </div>            
+                </div>
+            </div>
+            <div id="calendar">
+                <h1 class="red-underline center-header">Calendar</h1>
+                <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FNew_York&showTabs=0&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NnNTd0OGhmYWM3aWcxajRmZ3Btcm1kMThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60"
+                style="border:solid 1px #777" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="featured" style="min-height: 500px;">
+                <h1 class="red-underline center-header">Featured Events</h1>
+                        <div id="event-container" style="margin-left:3.5em">
+                            <ul id="event-list"></ul>
+                        </div>
+            </div>
+            <div id="resc" style="clear:both; padding-top: 2em;">
+                <h1 class="red-underline center-header">Resources</h1>
+                <img src="resources/underConstruction.png" width="600px" height="300px"/>
+            </div>
+            <div id="about">
+                <h1 class="red-underline center-header">About Us</h1>
+                <div style="margin-top: 30px;">
+                    <div style="
+                        text-align: center;
+                        margin-bottom:75px;
+                        ">
+                        <h2>President</h2>
+                        <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                        <div style="text-align: center;">
+                            <p>Role: President of ACM</p>
+                            <p>Name: Jeffery John</p>
+                            <p>Year: Senior</p>
+                            <p>Major: Computer Science</p>
+                        </div>
+                    </div>
+                        <div style="text-align: center;">
+                            <h2>ACM Officers</h2>
+                            <div style="
+                                display:flex;
+                                flex-direction: row;
+                                margin-bottom:75px;
+                                flex-wrap: wrap;
+                                row-gap: 20px;
+                            ">
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: Vice President of ACM</p>
+                                        <p>Name: Saba Merchant</p>
+                                        <p>Year: Junior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: PR & Graphics</p>
+                                        <p>Name: Matthew Tzou</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: Competition Chair</p>
+                                        <p>Name: Brandon Yau</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: Treasury</p>
+                                        <p>Name: Ivan Mo</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: Community Outreach</p>
+                                        <p>Name: Manmeet Gill</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: PR</p>
+                                        <p>Name: Helium Yang</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: PR</p>
+                                        <p>Name: Banibe</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+            
                             </div>
                         </div>
+                    <div style="text-align: center;">
+                        <h2>CSSIP Officers</h2>
+                        <div style="
+                                display:flex;
+                                flex-direction: row;
+                                margin-bottom:100px;
+                                flex-wrap: wrap;
+                                row-gap: 20px;
+                            ">
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: Officer</p>
+                                        <p>Name: David Gonzales</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: Officer</p>
+                                        <p>Name: Genki Genki</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                                <div style="
+                                text-align: center;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                ">
+                                <img src="resources/officers/default_photo.jpeg" width="125px" height="125px">
+                                    <div style="text-align: center;">
+                                        <p>Role: Officer</p>
+                                        <p>Name: Jeffery John</p>
+                                        <p>Year: Senior</p>
+                                        <p>Major: Computer Science</p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
+            
                 </div>
-
-                <!--
-                <div id="column-2">
-                    <h1>Join us!</h1>
-                    <div id="social-container">
-                        <div class="row-img-1">
-                            <a href="https://discord.gg/AcPYBCDWeA"><img class="help"
-                                    src="resources/social_img/discord.png"></a>
-                            <a href="https://www.instagram.com/ugaacm"><img class="help"
-                                    src="resources/social_img/insta.png"></a>
-                        </div>
-                        <div class="row-img-2">
-                            <a href="https://github.com/uga-acm"><img class="help"
-                                    src="resources/social_img/github.png"></a>
-                            <a href="https://csip-uga.github.io"><img class="help"
-                                    src="resources/social_img/csip.png"></a>
-                        </div>
-                    </div>
-                -->
-
-                <!--
-                    <div id='discord'>
-                        <iframe src="https://discord.com/widget?id=804221036278972416&theme=dark" width="100%"
-                            padding-right="2em" height="400" allowtransparency="true" frameborder="0"
-                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-                    </div>
-                    -->
-
             </div>
         </div>
-
     </div>
     </div>
     <footer>
@@ -170,26 +359,6 @@
                 <p>UGAHacks</p>
                 <p id="copyright">© ACM at UGA 2022</p>
 
-            </div>
-            <div class="footer-column right-footer-column">
-                <h2>Join Us</h2>
-                <div id="social-media">
-                    <a href="https://discord.gg/AcPYBCDWeA">
-                        <img class="help" src="resources/social_img/discord.png">
-                    </a>
-                    <br>
-                    <a href="https://www.instagram.com/ugaacm">
-                        <img class="help" src="resources/social_img/insta.png">
-                    </a>
-                    <br>
-                    <a href="https://github.com/uga-acm">
-                        <img class="help" src="resources/social_img/github.png">
-                    </a>
-                    <br>
-                    <a href="https://csip-uga.github.io">
-                        <img class="help" src="resources/social_img/csip.png">
-                    </a>
-                </div>
             </div>
         </div>
 
