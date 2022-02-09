@@ -8,18 +8,29 @@
     <script src="event-slide.js"></script>
     <link rel="shortcut icon" type="image/png" href="resources\favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 
-<body onload="render()">
+<body onload="render(); renderEventSlide()">
+
     <div id="banner">
         <div id="imgBan">
             <img src="resources/logo.png">
-        </div>
-        <div id="titleBan">
-            <h1 style="margin-top: .5em;font-size: 250%; margin-bottom: -.5em;">Association of Computing Machinery</h1>
-            <h2 style="color: #ba1b11; font-size: 200%;">University of Georgia</h2>
+            <div class="topnav-right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.asp">EVENTS</a></li>
+                    <li><a href="contact.asp">RESOURCES</a></li>
+                    <li><a href="about.asp">WORKSHOPS</a></li>
+                    <li><a href="about.asp">ABOUT US</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    <!--
     <div id="navBar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,6 +40,8 @@
             <li><a href="about.html">About Us</a></li>
         </ul>
     </div>
+    -->
+
     <div id="main">
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -37,9 +50,10 @@
                 <img src="resources/banners/slc.jpg" style="width:100%;">
                 <div class="text">
                     <h2>Connect</h2>
-                    <p>Come visit our club socials to meet people and connect with other like-minded peers.
-                        ACM meetings are great places to foster friendships as well as enjoy yourself after a long day of class,
-                        each meeting is provided with food and beverages.
+                    <p class="slide-desc">Come visit our club socials to meet people and connect with other like-minded
+                        peers.
+                        ACM meetings are great places to foster friendships and unwind after class.
+                        We also provide food and beverage at each meeting.
                     </p>
                 </div>
             </div>
@@ -48,9 +62,10 @@
                 <img src="resources/banners/boydgraduate.jpg" style="width:100%">
                 <div class="text">
                     <h2>Prepare</h2>
-                    <p>Attend our workshops to launch and propel your professional career.
-                        Our workshops cover interview basics, technical interviews, resume guides, data structures, git, and more topics
-                   </p>
+                    <p class="slide-desc">Attend our workshops to launch and prepare for your professional career.
+                        Our workshops cover interview tips, resumes, data structures, software engineering
+                        technologies, and other topics.
+                    </p>
                 </div>
             </div>
 
@@ -58,9 +73,10 @@
                 <img src="resources/banners/miller.jpg" style="width:100%">
                 <div class="text">
                     <h2>Learn</h2>
-                    <p>Come out to our meetings and learn something new everytime. With rapidly changing technologies especially 
-                        in the tech sector it is our job to familiarize you with all the emerging stacks, idealogies, and practices 
-                        in the industry.
+                    <p class="slide-desc">Come out to our meetings and learn something new everytime. With the
+                        technology sector
+                        becoming increasingly larger and competitive, it is our goal to familiarize you with
+                        emerging ideas and practices in technology and beyond.
                     </p>
                 </div>
             </div>
@@ -70,32 +86,40 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
-        <!-- The dots/circles -->
+        <!-- The dots/circles
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+        </div>        
+        -->
+
         <div id="content">
             <div id="columns">
-                <div id="column-1">
-                    <h1>Welcome to UGA's ACM Chapter</h1>
+                <!--<div id="column-1">-->
+                <div>
+                    <h1 id="welcome-acm">Welcome to the Association for Computing Machinery</h1>
+                    <h2>University of Georgia Chapter</h2>
                     <div id="intro-par">
-                        The ACM Chapter at UGA is a student run organization dedicated to fostering the growth of the 
-                        technology community at UGA. We host events that give students the chance to socialize and connect with other
-                        like-minded students in the community. These events will often include food, beverages, and some sort of gift bag to spur
-                        group morale. At ACM, we also host workshops and research panels that help students jumpstart and prepare for their professional
-                        careers.
+                        The ACM Chapter at UGA is a student-run organization dedicated to fostering the growth of the
+                        technology community at UGA. Our mission is to help advance computing as a profession,
+                        major,
+                        and community through local events and meetings. Our events and meetings are open to all 
+                        students regardless of area of study or experience.
                     </div>
+                    <h1 class="red-underline center-header">Join Us</h1>
+
+                    <h1 class="red-underline center-header">Featured Events</h1>
                     <div id="feature-section" onload="renderEventSlide()">
                         <div id="featured">
-                            <h2>Featured Events</h2>
                             <div id="event-container">
                                 <ul id="event-list"></ul>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!--
                 <div id="column-2">
                     <h1>Join us!</h1>
                     <div id="social-container">
@@ -112,17 +136,65 @@
                                     src="resources/social_img/csip.png"></a>
                         </div>
                     </div>
+                -->
+
+                <!--
                     <div id='discord'>
                         <iframe src="https://discord.com/widget?id=804221036278972416&theme=dark" width="100%"
-                            padding-right="2em"
-                            height="400" allowtransparency="true" frameborder="0"
+                            padding-right="2em" height="400" allowtransparency="true" frameborder="0"
                             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
+                    -->
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <div id="footer-columns">
+            <div class="footer-column left-footer-column">
+                <h2>ACM at UGA</h2>
+                <p>ACM at UGA is the University of Georgia chapter of the Association for Computing Machinery. Our goal
+                    is to represent
+                    computing majors and promote computing-related causes on campus and beyond.
+                </p>
+                <p>Email: ugaacm@uga.edu</p>
+
+            </div>
+            <div class="footer-column middle-footer-column">
+                <h2>Partners</h2>
+                <p>ACM-W</p>
+                <p>girls.code()</p>
+                <p>CSIP</p>
+                <p>UGAHacks</p>
+                <p id="copyright">© ACM at UGA 2022</p>
+
+            </div>
+            <div class="footer-column right-footer-column">
+                <h2>Join Us</h2>
+                <div id="social-media">
+                    <a href="https://discord.gg/AcPYBCDWeA">
+                        <img class="help" src="resources/social_img/discord.png">
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/ugaacm">
+                        <img class="help" src="resources/social_img/insta.png">
+                    </a>
+                    <br>
+                    <a href="https://github.com/uga-acm">
+                        <img class="help" src="resources/social_img/github.png">
+                    </a>
+                    <br>
+                    <a href="https://csip-uga.github.io">
+                        <img class="help" src="resources/social_img/csip.png">
+                    </a>
                 </div>
             </div>
-
         </div>
-    </div>
+
+    </footer>
+
     <div id="footer">
     </div>
 </body>
