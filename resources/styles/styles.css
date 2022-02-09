@@ -29,7 +29,7 @@ html {
   background-color: white;
   float:top;
   margin: auto;
-  padding-left: 4em;
+  padding-left: 5em;
   /* background-image: linear-gradient(135deg, white 0 70%, #ba0c2f 70% 75%, white 75% 80%, #BA0c2F 80% 95%); */
       /**padding-left:12em;*/
   position: sticky;
@@ -42,7 +42,6 @@ html {
     max-height: 4em;
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: blue;
 }
 #titleBan {
     float:left;
@@ -58,37 +57,27 @@ html {
 }
 
 .help { 
-  width:20%;
   margin:.5em;
-  padding: .5em;
+  width: 10%;
 }
 .help:hover { 
-  width:22%;
   transition: 0.25s;
+}
+.social-media {
+  display: block;
+  float: left;
 }
 .help:not(:hover) {
   transition: 0.25s;
 }
 @media screen and (min-width:1440px) { 
   .help {
-    width:20%;
     margin:1em;
-    padding:1em;
   }
   .help:hover { 
-    width:22%;
   }
 }
-@media screen and (max-width:1440px) {
-.help { 
-  width:20%;
-  margin:.75em;
-  padding: .75em
-}
-.help:hover { 
-  width:22%;
-}
-}
+
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
@@ -225,8 +214,9 @@ html {
 
 #content { 
   margin-top:-1em;
-  padding-left:6em;
-  padding-right:6em;
+  padding-left:18%;
+  padding-right:18%;
+  text-align: center;
 }
 
 #content #column-1{ 
@@ -242,12 +232,17 @@ html {
     width:15%;
 }
 
+.center-header {
+  text-align: center;
+}
 
 #feature-section{
   padding-top: .5em;
   clear:both;
   float: left;
   width:100%;
+  text-align: left;
+
 }
 
 #content #featured { 
@@ -293,7 +288,6 @@ html {
 }
 
 .eventDate { 
-  font-style: italic;
   border-top: solid 0.15em #BA0C2F;
   color: #797979;
 }
@@ -312,21 +306,20 @@ html {
 }
 
 
-footer{ 
+footer { 
   clear:both;
-  height: 18em;
-  background-color: #333;
+  height: 27em;
+  background-color: #000000;
   color: white;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
-
 }
 
 
 #welcome-acm {
-  font-size: 275%;
+  font-size: 200%;
 
 }
 
@@ -337,18 +330,35 @@ footer{
 
 .red-underline {
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 0.5em;
-  border-bottom: 0.25em solid #BA0C2F;
+  border-bottom: 0.075em solid #BA0C2F;
 }
 
 #copyright {
+  padding-top: 7em;
   text-align: center;
 }
 
 .footer-column {
+  margin-top: 1em;
   float: left;
-  width: 33.33%;
-  text-align: center;
+  width: 27%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.footer-column > h1,
+.footer-column > h2,
+.footer-column > h3 {
+  padding-bottom: 0.75em;
+  border-bottom: 0.1em solid #E4002B;
+  width: fit-content;
+}
+
+.footer-column p {
+  text-align: left;
 }
 
 #footer-columns {
@@ -357,4 +367,9 @@ footer{
 }
 
 #copyright {
+  margin-top: 3em;
+}
+
+.left-footer-column {
+  padding-right: 1%;
 }
