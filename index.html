@@ -19,13 +19,12 @@
     <div id="banner">
         <div id="imgBan">
             <img src="resources/logo.png">
-            <div class="topnav-right">
+            <div class="topnav-right" id="navigate">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="#anchor1">ABOUT US</a></li>
+                    <li><a href="#anchor2">EVENTS</a></li>
                     <li><a href="resources.html">RESOURCES</a></li>
                     <li><a href="workshops.html">WORKSHOPS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
                 </ul>
             </div>
         </div>
@@ -98,25 +97,36 @@
             <div id="columns">
                 <!--<div id="column-1">-->
                 <div>
-                    <h1 id="welcome-acm">Welcome to the Association for Computing Machinery</h1>
+                    <h1 id="welcome-acm"><span id="anchor1"></span>Welcome to the Association for Computing Machinery</h1>
                     <h2>University of Georgia Chapter</h2>
-                    <div id="intro-par">
-                        The ACM Chapter at UGA is a student-run organization dedicated to fostering the growth of the
-                        technology community at UGA. Our mission is to help advance computing as a profession,
-                        major,
-                        and community through local events and meetings. Our events and meetings are open to all 
-                        students regardless of area of study or experience.
-                    </div>
-                    <h1 class="red-underline center-header">Join Us</h1>
+                    <div id="about-section">
+                        <h1 class="red-underline center-header" id="about">About Us</h1>
 
-                    <h1 class="red-underline center-header">Featured Events</h1>
-                    <div id="feature-section" onload="renderEventSlide()">
-                        <div id="featured">
-                            <div id="event-container">
-                                <ul id="event-list"></ul>
+                        <div id="intro-par">
+                            <span id="anchor2"></span>
+
+                            The ACM Chapter at UGA is a student-run organization dedicated to fostering the growth of
+                            the
+                            technology community at UGA. Our mission is to help advance computing as a profession,
+                            major,
+                            and community through local events and meetings. Our events and meetings are open to all
+                            students regardless of area of study or experience.
+                        </div>
+                    </div>
+
+
+                    <h1 class="red-underline center-header" id="events">Events</h1>
+                    <div id="feature-div">
+                        <p>dafdfada</p>
+                        <div id="feature-section" onload="renderEventSlide()">
+                            <div id="featured">
+                                <div id="event-container">
+                                    <ul id="event-list"></ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!--

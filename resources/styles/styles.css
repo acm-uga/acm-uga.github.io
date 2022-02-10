@@ -2,7 +2,8 @@ html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     font-family: 'Open Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-}
+    scroll-behavior: smooth;
+  }
 
 /**
  * Remove the margin in all browsers.
@@ -236,6 +237,11 @@ html {
   text-align: center;
 }
 
+#feature-div {
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+}
 #feature-section{
   padding-top: .5em;
   clear:both;
@@ -268,7 +274,7 @@ html {
 
 .ev-li { 
   float:left;
-  width:30%;
+  width:31.55%;
   /* background-color: #000000;   for black tiles */
   margin-right:1em;
   margin-top:1em;
