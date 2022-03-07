@@ -2,6 +2,8 @@ html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     font-family: 'Open Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    scroll-behavior: smooth;
+
 }
 
 /**
@@ -372,4 +374,21 @@ footer {
 
 .left-footer-column {
   padding-right: 1%;
+}
+
+/* For Scroll Effect*/
+#calendar {
+  margin-top: 19%;
+}
+#featured {
+  margin-bottom: 13%;
+  margin-top: -4%;
+}
+#resc {
+  margin-top: 50px;
+}
+
+.member-photo {
+  border-radius: 50%;
+  width: 10em;
 }
