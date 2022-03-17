@@ -69,6 +69,11 @@ html {
 }
 .help:not(:hover) {
   transition: 0.25s;
+  filter: grayscale(1) contrast(0); /* grayscale is the default (will not work in internet explorer, but who cares)*/
+}
+.help:not(:hover)#csip {
+  transition: 0.25s;
+  filter: grayscale(1); /* grayscale is the default (will not work in internet explorer, but who cares)*/
 }
 @media screen and (min-width:1440px) { 
   .help {
@@ -372,4 +377,20 @@ footer {
 
 .left-footer-column {
   padding-right: 1%;
+}
+
+/* for contact info */
+address {
+  display: inline;
+}
+footer a:not(:hover) {
+  transition: 0.25s;
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  transition: 0.25s;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #BA0C2F;
 }
