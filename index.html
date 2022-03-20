@@ -33,8 +33,7 @@
 
 </head>
 
-<body onload="render(); renderEventSlide();">
-    <span id="home"></span>
+<body onload="render(); renderEventSlide();" id="home">
 
     <div id="banner">
         <div id="imgBan">
@@ -154,7 +153,6 @@
                             </a>
 
                         </div>
-                        <span id="calendar"></span>
 
                     </div>
 
@@ -163,36 +161,28 @@
             </div>
             <div>
 
-                <h1 class="red-underline center-header">Calendar</h1>
+                <h1 class="red-underline center-header" id="calendar">Calendar</h1>
 
                 <iframe
                     src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FNew_York&showTabs=0&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NnNTd0OGhmYWM3aWcxajRmZ3Btcm1kMThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60"
                     style="border:solid 1px #777" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
-                <span id="featured"></span>
 
             </div>
 
-            <div style="min-height: 500px;">
-                <h1 class="red-underline center-header">Featured Events</h1>
+            <div style="min-height: 500px;" id="featured-section">
+                <h1 class="red-underline center-header" id="featured">Featured Events</h1>
                 <div id="event-container" style="margin-left:3.5em">
                     <ul id="event-list"></ul>
                 </div>
 
             </div>
-            <div style="clear:both; padding-top: 2em;" id="resc">
-                <br>
-                <br>
-                <br>
-                <h1 class="red-underline center-header">Resources</h1>
+            <div style="clear:both; padding-top: 2em;">
+                <h1 class="red-underline center-header" id="resc">Resources</h1>
                 <img src="resources/underConstruction.png" width="600px" height="300px" />
             </div>
-            <div id="about">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1 class="red-underline center-header">About Us</h1>
+
+            <div>
+                <h1 class="red-underline center-header" id="about">About Us</h1>
                 <div id="about-text">
                     <h2>What is ACM?</h2>
                     <p>
@@ -218,86 +208,68 @@
                         necessary to attend!
                     </p>
                 </div>
-
-
-                <div id="acm-officers">
-                    <h2>Meet Our Team</h2>
-                    <div class="acm-officers-row">
-                        <div>
-                            <img src="resources/member_img/jeffery-john.png" class="member-photo">
-                            <p>Jeffery John</p>
-                            <p>President of ACM</p>
-                            <p>Senior</p>
-                        </div>
-                    </div>
-                    <div class="acm-officers-row">
-                        <div>
-                            <img src="resources/member_img/saba-merchant.PNG" class="member-photo">
-                            <p>Saba Merchant</p>
-                            <p>Vice President</p>
-                            <p>Junior</p>
-                        </div>
-                        <div>
-                            <img src="resources/member_img/default_photo.jpeg" class="member-photo">
-                            <p>Manmeet Gill</p>
-                            <p>Community Outreach</p>
-                            <p>Junior</p>
-                        </div>
-                        <div>
-                            <img src="resources/member_img/default_photo.jpeg" class="member-photo">
-                            <p>Ivan Mo</p>
-                            <p>Treasury</p>
-                            <p>Junior</p>
-                        </div>
-                    </div>
-                    <div class="acm-officers-row">
-                        <div>
-                            <img src="resources/member_img/brandon-yau.png" class="member-photo">
-                            <p>Brandon Yau</p>
-                            <p>Competition Chair</p>
-                            <p>Junior</p>
-                        </div>
-                        <div>
-                            <img src="resources/member_img/matthew-tzou.png" class="member-photo">
-                            <p>Matthew Tzou</p>
-                            <p>PR & Graphics</p>
-                            <p>Junior</p>
-                        </div>
-                        <div>
-                            <img src="resources/member_img/bani-ebegbodi.png" class="member-photo">
-                            <p>Bani Ebegbodi</p>
-                            <p>PR & Graphics</p>
-                            <p>Freshman</p>
-                        </div>
-                    </div>
-                    <div class="acm-officers-row">
-                        <div>
-                            <img src="resources/member_img/david-gonzalez.png" class="member-photo">
-                            <p>David Gonzalez</p>
-                            <p>CSIP</p>
-                            <p>Sophomore</p>
-                        </div>
-                        <div>
-                            <img src="resources/member_img/genki-aikawa.jpg" class="member-photo">
-                            <p>Genki Aikawa</p>
-                            <p>CSIP</p>
-                            <p>Junior</p>
-                        </div>
-                        <div>
-                            <img src="resources/member_img/helium-yang.png" class="member-photo">
-                            <p>Helium Yang</p>
-                            <p>Membership</p>
-                            <p>Sophomore</p>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
     </div>
     </div>
+    <div id="acm-officers">
+        <h2>Meet Our Team</h2>
+        <div class="acm-officers-row">
+            <div class="member-div">
+                <img src="resources/member_img/jeffery-john.png" class="member-photo">
+                <p class="officer-name">Jeffery John</p>
+                <p class="officer-role">President of ACM</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/saba-merchant.PNG" class="member-photo">
+                <p class="officer-name">Saba Merchant</p>
+                <p class="officer-role">Vice President</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/default_photo.jpeg" class="member-photo">
+                <p class="officer-name">Manmeet Gill</p>
+                <p class="officer-role">Outreach</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/default_photo.jpeg" class="member-photo">
+                <p class="officer-name">Ivan Mo</p>
+                <p class="officer-role">Treasury</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/brandon-yau.png" class="member-photo">
+                <p class="officer-name">Brandon Yau</p>
+                <p class="officer-role">Competition Chair</p>
+            </div>
+        </div>
+        <div class="acm-officers-row">
 
+            <div class="member-div">
+                <img src="resources/member_img/matthew-tzou.png" class="member-photo">
+                <p class="officer-name">Matthew Tzou</p>
+                <p class="officer-role">PR & Graphics</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/bani-ebegbodi.png" class="member-photo">
+                <p class="officer-name">Bani Ebegbodi</p>
+                <p class="officer-role">PR & Graphics</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/david-gonzalez.png" class="member-photo">
+                <p class="officer-name">David Gonzalez</p>
+                <p class="officer-role">CSIP</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/genki-aikawa.jpg" class="member-photo">
+                <p class="officer-name">Genki Aikawa</p>
+                <p class="officer-role">CSIP</p>
+            </div>
+            <div class="member-div">
+                <img src="resources/member_img/helium-yang.png" class="member-photo">
+                <p class="officer-name">Helium Yang</p>
+                <p class="officer-role">Membership</p>
+            </div>
+        </div>
+    </div>
     <footer>
         <div id="footer-columns">
             <div class="footer-column left-footer-column">
