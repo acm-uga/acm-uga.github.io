@@ -317,6 +317,7 @@ footer {
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
+  margin-top: 5em;
 }
 
 
@@ -390,5 +391,26 @@ footer {
 
 .member-photo {
   border-radius: 50%;
-  width: 10em;
+  width: 9em;
+}
+
+#acm-officers {
+  text-align: center;
+}
+.acm-officers-row {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+.acm-officers-row div {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#about-text {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#about-text p {
+  text-align: left;
 }
