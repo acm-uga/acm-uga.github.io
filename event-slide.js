@@ -1,4 +1,5 @@
 var event_info = [ 
+    {"title":"Game Night", "short": "Relax and unwind during midterms with games including Smash, Mario Kart, and more!", "long": "long", "img":"resources/event_imgs/question_11_17_21.png", "date":"11/17/2021"},
     {"title":"Question Heir", "short": "Join us in this collab meet with Girls.Code() for pizza, games, and a place to ask your questions!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/question_11_17_21.png", "date":"11/17/2021"},
     {"title":"Climate and CS", "short": "In this meeting we took a look at UGA Climateology's WeatherSTEM API as well as the power of a Jupyter Notebook.", "long": "This is event 2's super long description!", "img":"resources/event_imgs/climate_cs_04-18-21.png", "date":"03/18/21"},
     {"title":"Blackrock @ ACM", "short": "Come meet BlackRock to see learn about their company, what they do, and their innovative technologies. This is A UGAHacks pre-event featuring BlackRock!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/blackrock_02_04_21.png", "date":"02/04/21"},
