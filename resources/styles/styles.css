@@ -279,10 +279,14 @@ html {
   color:black;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0.4em;
-  min-height: 500px;
+  min-height: 30em;
   list-style-type: none;
-  
 }
+.ev-li:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 #ba0c2f;
+  transition: 0.25s;
+}
+
 
 .ev-li h3 { 
   font-size:100%;
