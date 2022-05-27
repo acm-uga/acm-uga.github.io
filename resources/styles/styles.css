@@ -91,10 +91,10 @@ html {
 
 /* Style the links inside the navigation bar */
 .topnav-right li {
-  float: left;
   text-align: center;
   /* padding: vertical horizontal */
   padding: 1.3em 1.5em;
+  display: inline-block;
   vertical-align: middle;
   text-decoration: none;
   font-size: 17px;
@@ -436,4 +436,8 @@ footer a:hover {
 }
 .officer-name + .officer-row {
   padding-left: 5em;
+}
+
+#acm-logo {
+  width: 13%;
 }
