@@ -17,6 +17,9 @@ To make changes to this code, it is recommended that you fork the repo. A fork i
 git --version
 ```
 ![Git Install Success](./resources/tutorial/gitinstallsuccess.png)
-2. To fork the repo, go to the main page for the repo at <https://github.com/acm-uga/acm-uga.github.io/tree/master>. Hit the fork
+2. To fork the repo, go to the main page for the repo at <https://github.com/acm-uga/acm-uga.github.io/tree/master>. Hit the fork button at the top of the page.
+![Fork Button](./resources/tutorial/forkbutton.png)
+3. You may be taken to a page similar to the following. Renaming your fork and description to something else is optional. You can also see that there is a checkbox selected for copying the master branch only. This option is recommended to be checked and would represent copying only the official changes to your fork and not any other branches created by other members. Click the Create fork button when you are done.
+![Fork Confirmation](./resources/tutorial/forkconfirmation.png)
 
 
