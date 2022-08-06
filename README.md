@@ -13,6 +13,10 @@ GitHub is a service for developing software using Git for version control. It al
 ## Getting Started
 To make changes to this code, it is recommended that you fork the repo. A fork is a copy of the original repository that is unique to your account. Any changes you make to the fork will not be reflected in the main repo unless you merge the changes on your fork to the original repository (next section).
 1. Ensure that you have Git installed on your device. Instructions on installing Git for your device (Linux, Mac, Windows) can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Git is installed if you are able to open a terminal (ex: Bash or ZSH) and see output similar to the following when you type:
-    git --version
+```
+git --version
+```
+![Git Install Success](./resources/tutorial/gitinstallsuccess.png)
+2. To fork the repo, go to the main page for the repo at <https://github.com/acm-uga/acm-uga.github.io/tree/master>. Hit the fork
 
 
