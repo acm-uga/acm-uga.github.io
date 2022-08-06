@@ -17,6 +17,6 @@ To make changes to this code, it is recommended that you fork the repo. A fork i
 git --version
 ```
 ![Git Install Success](./resources/tutorial/gitinstallsuccess.png)
-
+2. To fork the repo, go to the main page for the repo at <https://github.com/acm-uga/acm-uga.github.io/tree/master>. Hit the fork
 
 
