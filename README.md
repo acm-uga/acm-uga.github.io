@@ -4,12 +4,13 @@ The repo behind ACM at UGA's website. If you are a current UGA student and an AC
 # Table of Contents
 1. [What is GitHub?](#example)
 2. [Example2](#example2)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+3. [How to Make Your Own Changes](#third-example)
 
 
 ## What is GitHub?
 GitHub is a service for developing software using Git for version control. It allows you to manage code and keep track of changes made to a code repo. 
 ## Example2
-## Third Example
-## [Fourth Example](http://www.fourthexample.com)
+## How to Make Your Own Changes
+To have a copy of this repo on your device and to be able to make changes to the code, it is recommended that you fork the repo. A fork is a copy of the original repository that is unique to your account. Any changes you make to the fork will not be reflected in the main repo unless you merge the changes on your fork to the original repository (next section).
+
+
