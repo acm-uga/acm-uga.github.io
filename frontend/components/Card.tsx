@@ -1,6 +1,6 @@
 import React from 'react'; // we need this to make JSX compile
 
-type Props = {
+interface Props {
   title: string,
   date: string,
   description: string
