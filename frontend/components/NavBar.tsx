@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+
 
 interface Props {}
 
 export const NavBar: React.FC<Props> = () => {
   return (
     <div>
-      <nav className="flex items-center justify-between p-6 bg-white">
+      <nav className="flex items-center justify-between p-6 bg-white shadow-md">
         <div>
           <h1 className="text-black">ACM</h1>
         </div>
@@ -39,19 +41,8 @@ export const NavBar: React.FC<Props> = () => {
           </ul>
         </div>
         <div className="md:hidden flex items-center">
-          <button className="outline-none mobile-menu-button">
-            <svg
-              className="w-6 h-6 text-black"
-              x-show="!showMenu"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
+          <button className="outline-none mobile-menu-button" onClick={() => alert("foobardsdsdsdsdsadsa")}>
+            <MenuIcon className="block h-6 w-6" aria-hidden="true" />
           </button>
         </div>
         <div className="hidden mobile-menu">
@@ -90,6 +81,7 @@ export const NavBar: React.FC<Props> = () => {
             </li>
           </ul>
         </div>
+        
       </nav>
       <style jsx>
         {`
