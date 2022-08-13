@@ -12,11 +12,18 @@ interface Props {
 
 export const Card: React.FC<Props> = ({ title, date, description, imageSrc }) => {
   return (
-    <div className="max-w-sm shadow-lg text-center">
-      <Image src={imageSrc} height={300} width={300} />
+    <div className="max-w-xs shadow-lg text-center">
+      <Image src={imageSrc} className="event-card-img" height={800} width={800} />
       <h1 className="font-medium">{title}</h1>
       <h1 className="border-b-4 border-bulldog-red">{date}</h1>
       <p>{description}</p>
+      <style jsx>
+        {`
+          .event-card-img {
+            position: relative;
+          }
+        `}
+      </style>
     </div>
   )
 }

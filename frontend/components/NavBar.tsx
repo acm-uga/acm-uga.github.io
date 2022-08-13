@@ -1,16 +1,14 @@
 import React from 'react';
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
-
+import Image from 'next/image';
 
 interface Props {}
 
 export const NavBar: React.FC<Props> = () => {
   return (
-    <div>
+    <div className="nav-bar">
       <nav className="flex items-center justify-between p-6 bg-white shadow-md">
-        <div>
-          <h1 className="text-black">ACM</h1>
-        </div>
+        <Image src="/logo.png" width={110} height={40}/>
         <div className="hidden md:flex">
           <ul className="flex align-middle">
             <li className="ml-12">
@@ -89,6 +87,11 @@ export const NavBar: React.FC<Props> = () => {
             position: fixed;
             width: 100%;
             height: 4em;
+          }
+
+          .nav-bar {
+            z-index: 99;
+            position: relative;
           }
         `}
       </style>
