@@ -9,3 +9,10 @@
     margin: auto;
     margin-bottom: 1em;
 }
+
+.footer-header {
+    font-size: 150%;
+    border-bottom: 0.1em solid #BA0C2F;
+    width: fit-content;
+    margin: auto;
+}
