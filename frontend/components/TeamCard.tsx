@@ -9,17 +9,17 @@ interface Props {
 
 export const TeamCard: React.FC<Props> = ({ name, position, imageSrc }) => {
   return (
-    <div className="text-left rounded-lg bg-glory-glory">
-      <div className="mx-12 rounded-full overflow-hidden bg-green-500">
+    <div className="text-center mb-10">
+      <div className="mx-16 lg:mx-12">
         <Image
           src={imageSrc}
-          className="team-card-img"
           height={600}
           width={600}
+          className="rounded-full"
         />
       </div>
-
-      <h1 className="font-medium text-lg px-5 pt-3">{name}</h1>
+      <h1 className="font-medium text-lg px-5">{name}</h1>
+      <h1 className="text-lg px-5">{position}</h1>
 
       <style jsx>
         {`

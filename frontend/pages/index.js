@@ -83,7 +83,7 @@ const execMembers = [
     imageSrc: '/member_img/matthew-tzou.png',
   },  {
     name: 'Matthew Tzou',
-    position: 'Web Dev / Graphics Chair',
+    position: 'MR.Evilthathasasuperlongpositionn',
     imageSrc: '/member_img/matthew-tzou.png',
   },  {
     name: 'Matthew Tzou',
@@ -213,7 +213,7 @@ export default function Home() {
           <h1 className="page-header text-center">Resources</h1>
         </div>
         <div>
-          <div className="mx-48">
+          <div className="mx-20 lg:mx-48">
             <h1 className="page-header text-center">About Us</h1>
 
             <h1 className="text-center font-semibold">What is ACM?</h1>
@@ -236,7 +236,7 @@ export default function Home() {
             <h1 className="text-center font-semibold">Meet the Team</h1>
           </div>
 
-          <div class="mx-24 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-6">
+          <div class="mx-12 my-6 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
             {execMembers.map((member) => (
               <div>
                 <TeamCard
