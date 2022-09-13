@@ -10,7 +10,7 @@ interface Props {
 export const TeamCard: React.FC<Props> = ({ name, position, imageSrc }) => {
   return (
     <div className="text-center mb-10">
-      <div className="mx-16 lg:mx-12">
+      <div className="mx-24 lg:mx-12 md:mx-12">
         <Image
           src={imageSrc}
           height={600}
