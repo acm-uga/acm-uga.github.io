@@ -1,14 +1,12 @@
-var event_info = [ 
-    {"title":"Question Heirrrr", "short": "Join us in this collab meet with Girls.Code() for pizza, games, and a place to ask your questions!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/question_11_17_21.png", "date":"11/17/2021"},
+npm var event_info = [ 
     {"title":"CSSIP", "short": "Come join us to prepare for your interviews in all things related from technical to behavioral.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/csip.png", "date":"Every Tuesday at 6:00"},
-    {"title":"CSSIP", "short": "Come join us to prepare for your interviews in all things related from technical to behavioral.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/csip.png", "date":"Every Tuesday at 6:00"},
-    {"title":"Study Hall", "short": "Ease your stress, find motivation, and get help by joining us in a study room at the MLC. (Food and Drinks provided :))", "long": "This is event 1's super long description!", "img":"resources/event_imgs/studyhall.png", "date":"TBD"},    
-    {"title":"Space Night", "short": "A meeting w/ the Small Satellite Research Laboratory and Big Satellite Club!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/space_04_01_21.PNG", "date":"04/01/21"},
-    {"title":"Climate and CS", "short": "A look at UGA Climateology's WeatherSTEM API!", "long": "This is event 2's super long description!", "img":"resources/event_imgs/climate_cs_04-18-21.png", "date":"03/18/21"},
-    {"title":"Blackrock @ ACM", "short": "A UGAHacks pre-event featuring BlackRock!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/blackrock_02_04_21.png", "date":"02/04/21"},
-    {"title":"Research Panel", "short": "A research panel with professors and labs!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_research.png", "date":"04/15/21"},
-    {"title":"UGAHacks @ ACM", "short": "A UGAHacks team-building event!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_ugahacks.png", "date":"01/21/21"},
-    {"title":"New Student Orientations", "short": "Come find us at orientations!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_tabling.png", "date":"05/15/21"}
+    {"title":"Compose Camp", "short": "ACM and GDG Athens teach you to create android UIs with Jetpack Compose!)", "long": "This is event 1's super long description!", "img":"resources/event_imgs/studyhall.png", "date":"10/20/22"},    
+    {"title":"Hacktober", "short": "Learn to build Discord bots with APIs! ", "long": "This is event 1's super long description!", "img":"resources/event_imgs/space_04_01_21.PNG", "date":"10/06/22"},
+    {"title":"Google @UGA", "short": "Uga Alumni from Google give vital tips to help you build your technical career!", "long": "This is event 2's super long description!", "img":"resources/event_imgs/climate_cs_04-18-21.png", "date":"09/28/22"},
+    {"title":"Technical Interview Prep", "short": "CSIP and Google help prepare you for interviewing!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/blackrock_02_04_21.png", "date":"09/27/22"},
+    {"title":"Hackathon Team-Building", "short": "UGAHacks and ACM help you prepare for the hackathon!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_research.png", "date":"09/22/22"},
+    {"title":"Google Cloud Workshop", "short": "ACM and GDG Athens give Google Cloud tips and tricks!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_ugahacks.png", "date":"09/15/22"},
+    {"title":"Tech Organizations Showcase", "short": "Learn about different tech organizations at UGA!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_tabling.png", "date":"08/25/22"}
 ];
 
 function renderEventSlide() { 
