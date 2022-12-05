@@ -10,7 +10,6 @@ var event_info = [
     {"title":"CSIP", "short": "Join us in Boyd 328 to learn more about how to ace your technical and behavioral interviews.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/csip.png", "date":"Every Tuesday at 6:00"},
     */
     {"title":"CSSIP", "short": "Come join us to prepare for your interviews in all things related from technical to behavioral.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/csip.png", "date":"Every Tuesday at 6:00"},
-    {"title":"Hacktober", "short": "Learn to build Discord bots with APIs! ", "long": "This is event 1's super long description!", "img":"resources/event_imgs/space_04_01_21.PNG", "date":"10/06/22"},
     {"title":"Google @UGA", "short": "Uga Alumni from Google give vital tips to help you build your technical career!", "long": "This is event 2's super long description!", "img":"resources/event_imgs/climate_cs_04-18-21.png", "date":"09/28/22"},
     {"title":"Technical Interview Prep", "short": "CSIP and Google help prepare you for interviewing!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/blackrock_02_04_21.png", "date":"09/27/22"},
     {"title":"Hackathon Team-Building", "short": "UGAHacks and ACM help you prepare for the hackathon!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_research.png", "date":"09/22/22"},
