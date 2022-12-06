@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.port": 4768
+    "liveServer.settings.port": 4768,
+    "github.gitAuthentication": true
 }
