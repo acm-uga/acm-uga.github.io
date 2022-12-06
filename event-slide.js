@@ -14,9 +14,8 @@ var event_info = [
     {"title":"Figma Workshop", "short": "Learn to create stunning graphics and prototypes with Figma!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/Figma_Workshop_22.png", "date":"11/10/22"},
     {"title":"Makerspace Workshop", "short": "Learn how Makerspaces can bring your designs into reality!", "long":"This is event 1's super long description!", "img": "resources/event_imgs/makerspace22.png", "date":"11/03/22"},
     {"title":"Compose Camp", "short": "ACM and GDG Athens teach you to create android UIs with Jetpack Compose!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/Compose_Camp_2022.png", "date":"10/20/22"},    
-    {"title":"Google @UGA", "short": "Uga Alumni from Google give vital tips to help you build your technical career!", "long": "This is event 2's super long description!", "img":"resources/event_imgs/climate_cs_04-18-21.png", "date":"09/28/22"},
-    {"title":"Technical Interview Prep", "short": "CSIP and Google help prepare you for interviewing!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/blackrock_02_04_21.png", "date":"09/27/22"},
-    {"title":"Hackathon Team-Building", "short": "UGAHacks and ACM help you prepare for the hackathon!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_research.png", "date":"09/22/22"},
+    {"title":"Game Night Social", "short": "Meet up with fellow ACM members for a night of videogames, card games, and board games! (+free food)", "long": "This is event 2's super long description!", "img":"resources/event_imgs/Game_night_social_7.png", "date":"09/29/22"},
+    {"title":"Hackathon Team-Building", "short": "UGAHacks and ACM help you prepare for the hackathon!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/TeamBuildingwksh22.png", "date":"09/22/22"},
     {"title":"Tech Organizations Showcase", "short": "Learn about different tech organizations at UGA!", "long": "This is event 3's super long description!", "img":"resources/event_imgs/acm_tabling.png", "date":"08/25/22"}
 ];
 
