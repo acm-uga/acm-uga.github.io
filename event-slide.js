@@ -9,7 +9,6 @@ var event_info = [
     {"title":"AT&T + ACM", "short": "Representatives from AT&T come to speak with us about life at AT&T and in their Technology Development Program!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/att.png", "date":"OCT 16, 2021"},
     {"title":"CSIP", "short": "Join us in Boyd 328 to learn more about how to ace your technical and behavioral interviews.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/csip.png", "date":"Every Tuesday at 6:00"},
     */
-    {"title":"CSSIP", "short": "Come join us to prepare for your interviews in all things related from technical to behavioral.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/csip.png", "date":"Every Tuesday at 6:00"},
     {"title":"Machine Learning Tensorflow", "short": "ACM and GDG Athens present a workshop on Machine Learning and Tensorflow.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/Machine_Learning_and_Tensorflow_1 (1).png", "date":"11/17/22"},
     {"title":"Figma Workshop", "short": "Learn to create stunning graphics and prototypes with Figma!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/Figma_Workshop_22.png", "date":"11/10/22"},
     {"title":"Makerspace Workshop", "short": "Learn how Makerspaces can bring your designs into reality!", "long":"This is event 1's super long description!", "img": "resources/event_imgs/makerspace22.png", "date":"11/03/22"},
