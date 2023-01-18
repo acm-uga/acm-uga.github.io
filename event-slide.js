@@ -22,7 +22,7 @@ var event_info = [
 function renderEventSlide() { 
     var elem = document.getElementById("event-list"); //The container for the inserted links
     var count = 0;
-    while (count < event_info.length || count < 3) { 
+    while (count < event_info.length) { 
         var listItem = document.createElement("li");
         var link = document.createElement("a");
         var title = document.createElement("h3");
