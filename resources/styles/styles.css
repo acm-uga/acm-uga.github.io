@@ -292,13 +292,22 @@ html {
 }
 
 #event-list{
+  /* Event list will fit all items in a grid-like format, allowing
+  * adding/removing cards without breaking formatting.
+  * Also is better for smaller screens because it pops
+  * overflowed cards to the next row
+  */
   padding-left: 0em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px ,30%));
+  gap: 10px;
+
 }
 
 
 .ev-li { 
   float:left;
-  width:30%;
+  width:100%;
   /* background-color: #000000;   for black tiles */
   margin-right:1em;
   margin-top:1em;
