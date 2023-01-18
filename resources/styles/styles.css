@@ -64,6 +64,12 @@ html {
   transition: 0.25s;
 }
 
+.social-media-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .social-icons-container {
   /* Flex container row for social icons
   */
