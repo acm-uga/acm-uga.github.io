@@ -67,7 +67,8 @@ html {
 .social-media-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icons-container {
@@ -77,6 +78,8 @@ html {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 120px;
+  height: 120px;
 }
 
 .social-icon {
