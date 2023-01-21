@@ -1,4 +1,4 @@
-npm var event_info = [ 
+var event_info = [ 
     {"title":"CSSIP", "short": "Come join us to prepare for your interviews in all things related from technical to behavioral.", "long": "This is event 1's super long description!", "img":"resources/event_imgs/csip.png", "date":"Every Tuesday at 6:00"},
     {"title":"Compose Camp", "short": "ACM and GDG Athens teach you to create android UIs with Jetpack Compose!", "long": "This is event 1's super long description!", "img":"resources/event_imgs/studyhall.png", "date":"10/20/22"},    
     {"title":"Hacktober", "short": "Learn to build Discord bots with APIs! ", "long": "This is event 1's super long description!", "img":"resources/event_imgs/space_04_01_21.PNG", "date":"10/06/22"},
