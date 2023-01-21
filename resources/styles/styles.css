@@ -111,8 +111,16 @@ html {
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
+  gap: min(5%, 15px);
   float: right;
   margin-right: 3em;
+}
+
+/* Style the list of links in the nav bar */ 
+.topnav-right ul {
+  /* adaptive gap to account for different screens */
+  display: flex;
+  gap: min(10%, 15px);
 }
 
 /* Style the links inside the navigation bar */
@@ -120,8 +128,6 @@ html {
   text-align: center;
   /* padding: vertical horizontal */
   padding: 1.3em 1.5em;
-  display: inline-block;
-  vertical-align: middle;
   text-decoration: none;
   font-size: 17px;
   list-style-type: none;
