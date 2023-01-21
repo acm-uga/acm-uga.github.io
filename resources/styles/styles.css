@@ -36,13 +36,18 @@ html {
   top: 0;
   z-index:1;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+  /* display content centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#banner img { 
-    float:left;
-    max-height: 4em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+
+#acm-logo {
+  width: 10%;
+  height: 4%;
 }
+
 #titleBan {
     float:left;
     padding-top:1em;
@@ -479,6 +484,4 @@ footer a:hover {
   padding-left: 5em;
 }
 
-#acm-logo {
-  width: 13%;
-}
+
