@@ -25,7 +25,6 @@ html {
   
 
 #banner { 
-  overflow: hidden;
   background-color: white;
   float:top;
   margin: auto;
@@ -44,8 +43,8 @@ html {
 }
 
 #acm-logo {
-  width: 10%;
-  height: 4%;
+  width: 110px;
+  height: 44px;
 }
 
 #titleBan {
@@ -125,7 +124,7 @@ html {
 .topnav-right ul {
   /* adaptive gap to account for different screens */
   display: flex;
-  gap: min(10%, 15px);
+  flex-wrap: wrap;
 }
 
 /* Style the links inside the navigation bar */
