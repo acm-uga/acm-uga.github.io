@@ -165,9 +165,10 @@ html {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100%;
+    max-width: 100vw;
     position: relative;
     margin: auto;
+    overflow: hidden;
   }
   
   /* Hide the images by default */
@@ -217,6 +218,7 @@ html {
     text-align: center;
     backdrop-filter: blur(4px);
     max-width: 400px;
+    min-height: 180px;
   }
   
   /* The dots/bullets/indicators */
