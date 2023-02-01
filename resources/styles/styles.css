@@ -420,8 +420,9 @@ footer {
 }
 
 #footer-columns {
-  margin-left: 10em;
-  margin-right: 10em;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
 }
 
 #copyright {
