@@ -6,6 +6,10 @@ html {
     scroll-padding-top: 7.5em;
 }
 
+:root {
+  --navbar-color: #C7C7C7;
+}
+
 /**
  * Remove the margin in all browsers.
  */
@@ -25,26 +29,31 @@ html {
   
 
 #banner { 
-  background-color: white;
+  background-color: var(--navbar-color);
+  height: 96px;
   float:top;
-  margin: auto;
-  padding-left: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
   /* background-image: linear-gradient(135deg, white 0 70%, #ba0c2f 70% 75%, white 75% 80%, #BA0c2F 80% 95%); */
       /**padding-left:12em;*/
   position: sticky;
   top: 0;
   z-index:1;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
   /* display content centered */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: end;
 }
 
 #acm-logo {
-  width: 110px;
-  height: 44px;
+  height: 81px;
+  width: 233px;
+}
+
+#hamburger-menu {
+  width: 40px;
+  align-self: center;
 }
 
 #titleBan {
