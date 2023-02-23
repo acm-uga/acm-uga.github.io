@@ -3,7 +3,7 @@
   src: url('../fonts/Oswald-VariableFont_wght.ttf');
 }
 html {
-    line-height: 1.15; /* 1 */
+    line-height: 1.4; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     font-family: 'Oswald', 'Open Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     scroll-behavior: smooth;
@@ -79,7 +79,8 @@ html {
 }
 
 .welcome-logo {
-  width: 400px;
+  width: 487px;
+  height: 504px;
   margin: 15px;
   margin-left: 60px;
 }
@@ -105,11 +106,37 @@ html {
 #dues {
   margin-left: 120px;
   display: flex;
+  align-items: center;
+  gap: 56px;
 }
 
 .membership-heading {
   text-align: left;
   font-size: 40px;
+  font-weight: normal;
+}
+
+.pay-button {
+  width: 189px;
+  height: 53px;
+  border: none;
+
+  background: #BA0C2F;
+  border-radius: 17px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 32;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-bottom: 5px;
 }
 
 
