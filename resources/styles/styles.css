@@ -1,7 +1,11 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-family: 'Open Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Oswald', 'Open Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     scroll-behavior: smooth;
     scroll-padding-top: 7.5em;
 }
@@ -34,8 +38,6 @@ html {
   float:top;
   padding-left: 2em;
   padding-right: 2em;
-  /* background-image: linear-gradient(135deg, white 0 70%, #ba0c2f 70% 75%, white 75% 80%, #BA0c2F 80% 95%); */
-      /**padding-left:12em;*/
   position: sticky;
   top: 0;
   z-index:1;
@@ -62,12 +64,43 @@ html {
     padding-left:1em;
 }
 
-#intro-par { 
-  margin-right:1em;
-  padding-bottom:1.5em;
-
-  padding-top:1em;
+.welcome-section {
+  display: flex;
 }
+
+.welcome-left {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.welcome-logo {
+  width: 300px;
+  margin: 15px;
+}
+
+#welcome-acm {
+  text-align: left;
+  font-size: 94px;
+  margin-bottom: 30px;
+}
+
+.intro-p { 
+  text-align: left;
+  width: 980px;
+  font-size: 32px;
+}
+
+#dues {
+  display: flex;
+}
+
+.membership-heading {
+  text-align: left;
+  font-size: 40px;
+}
+
+
 
 .help { 
   margin:.5em;
@@ -388,10 +421,6 @@ footer {
 }
 
 
-#welcome-acm {
-  font-size: 200%;
-
-}
 
 .slide-desc {
   margin-left: 1em;
