@@ -8,7 +8,7 @@ html {
     font-family: 'Oswald', 'Open Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     scroll-behavior: smooth;
     scroll-padding-top: 7.5em;
-    overflow-x: hidden;
+    overflow-x:auto;
 }
 
 /**
@@ -72,17 +72,32 @@ html {
 }
 
 .top-links {
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: start;
   margin-left: 5px;
   margin-right: 5px;
 }
 
+/**
+ * Mobile top-links
+*/
+@media only screen and (max-width: 768px) {
+  .top-links {
+    flex-direction: column;
+  }
+  .top-links-heading {
+    display: none;
+  }
+}
+
 .welcome-section {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 100px;
 }
 
 .welcome-left {
@@ -90,19 +105,16 @@ html {
   align-items: center;
   justify-content: left;
   padding: 10px;
-  padding-right: 160px;
 }
 
 .welcome-logo {
   width: 487px;
   height: 504px;
   margin: 15px;
-  margin-left: 60px;
 }
 
 
 #welcome-acm {
-  margin-left: 30px;
   text-align: center;
   font-size: 94px;
   margin-bottom: 30px;
@@ -114,14 +126,14 @@ html {
 
 .intro-p { 
   text-align: center;
-  width: 850px;
+  max-width: 850px;
   font-size: 32px;
 }
 
 #dues {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: max(5%, 56px);
 }
 
 .top-links-heading {
@@ -155,12 +167,14 @@ html {
 
 #social-container {
   display: flex;
+  gap: 40px;
 }
 
 
 .social-icons-container {
   /* Flex container row for social icons
   */
+  gap: 15px;
   display: flex;
   align-items: center;
 }
@@ -186,7 +200,7 @@ html {
 }
 @media screen and (min-width:1440px) { 
   .help {
-    margin:1em;
+    margin:0em;
   }
   .help:hover { 
   }
