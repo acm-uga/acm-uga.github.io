@@ -8,11 +8,15 @@ html {
     font-family: 'Oswald', 'Open Sans', 'Georgia', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     scroll-behavior: smooth;
     scroll-padding-top: 7.5em;
+    overflow-x: hidden;
 }
 
+/**
+ * Important colors
+*/
 :root {
-  --navbar-color: #C7C7C7;
-  --header-red-color: #BA0C2F
+  --navbar-color: #BA0C2F;
+  --header-red-color: #BA0C2F;
 }
 
 /**
@@ -34,6 +38,8 @@ html {
   
 
 #banner { 
+  margin-left: 0;
+  margin-right: 0;
   background-color: var(--navbar-color);
   height: 96px;
   float:top;
@@ -51,7 +57,7 @@ html {
 
 #acm-logo {
   height: 81px;
-  width: 233px;
+  margin-bottom: 5px;
 }
 
 #hamburger-menu {
@@ -63,6 +69,15 @@ html {
     float:left;
     padding-top:1em;
     padding-left:1em;
+}
+
+.top-links {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .welcome-section {
@@ -88,7 +103,7 @@ html {
 
 #welcome-acm {
   margin-left: 30px;
-  text-align: left;
+  text-align: center;
   font-size: 94px;
   margin-bottom: 30px;
 }
@@ -98,19 +113,18 @@ html {
 }
 
 .intro-p { 
-  text-align: left;
-  width: 980px;
+  text-align: center;
+  width: 850px;
   font-size: 32px;
 }
 
 #dues {
-  margin-left: 120px;
   display: flex;
   align-items: center;
   gap: 56px;
 }
 
-.membership-heading {
+.top-links-heading {
   text-align: left;
   font-size: 40px;
   font-weight: normal;
@@ -130,7 +144,7 @@ html {
   text-align: center;
 }
 
-a {
+.pay-button>a {
   font-family: 'Oswald';
   font-weight: bold;
   font-size: 32;
@@ -139,39 +153,23 @@ a {
   margin-bottom: 5px;
 }
 
-
-
-.help { 
-  margin:.5em;
-  width: 10%;
-}
-.help:hover { 
-  transition: 0.25s;
-}
-
-.social-media-section {
+#social-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 
 .social-icons-container {
   /* Flex container row for social icons
   */
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 120px;
-  height: 120px;
 }
 
 .social-icon {
   /* Consistent size for each social icon
   */
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 .social-media {
