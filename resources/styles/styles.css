@@ -206,60 +206,18 @@ html {
   }
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  gap: min(5%, 15px);
-  float: right;
-  margin-right: 3em;
+  
+.active, .dot:hover {
+   background-color: #717171;
 }
-
-/* Style the list of links in the nav bar */ 
-.topnav-right ul {
-  /* adaptive gap to account for different screens */
+  
+.calendar-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Style the links inside the navigation bar */
-.topnav-right li {
-  text-align: center;
-  /* padding: vertical horizontal */
-  padding: 1.3em 1.5em;
-  text-decoration: none;
-  font-size: 17px;
-  list-style-type: none;
-}
 
-.topnav-right a {
-  color: black;
-  text-decoration: none;
-}
-
-.topnav-right a:hover {
-  border-bottom: 0.1em solid #BA0C2F;
-}
-
-#navBar {
-    clear:both;
-    position:sticky
-}
-#navBar ul {
-    height:3.5em;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    padding-left: 20em;
-    padding-right:20em;
-    position: sticky;
-  }
-
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
 
 
 
