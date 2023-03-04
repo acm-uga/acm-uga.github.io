@@ -2,6 +2,10 @@
   font-family: 'Oswald';
   src: url('../fonts/Oswald-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url('../fonts/MerriweatherSans-VariableFont_wght.ttf');
+}
 html {
     line-height: 1.4; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -16,7 +20,9 @@ html {
 */
 :root {
   --navbar-color: #BA0C2F;
-  --header-red-color: #BA0C2F;
+  --header-color: #BA0C2F;
+  --event-carousel-background-color: #9EA2A2;
+  --events-section-heading-color: #FFFFFF;
 }
 
 /**
@@ -36,15 +42,15 @@ html {
     display: block;
   }
   
-
-#banner { 
+/** Navbar
+*/
+#navbar { 
   margin-left: 0;
   margin-right: 0;
   background-color: var(--navbar-color);
-  height: 96px;
+  height: 110px;
   float:top;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-right: 10px;
   position: sticky;
   top: 0;
   z-index:1;
@@ -52,12 +58,13 @@ html {
   /* display content centered */
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 #acm-logo {
-  height: 81px;
-  margin-bottom: 5px;
+  margin-left: -10px;
+  margin-bottom: 15px;
+  height: 140px;
 }
 
 #hamburger-menu {
@@ -65,34 +72,9 @@ html {
   align-self: center;
 }
 
-#titleBan {
-    float:left;
-    padding-top:1em;
-    padding-left:1em;
-}
 
-.top-links {
-  max-width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: start;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-/**
- * Mobile top-links
-*/
-@media only screen and (max-width: 768px) {
-  .top-links {
-    flex-direction: column;
-  }
-  .top-links-heading {
-    display: none;
-  }
-}
-
-.welcome-section {
+/** Landing Page */
+.landing-page {
   display: flex;
   justify-content: center;
   margin-left: 10px;
@@ -100,7 +82,7 @@ html {
   gap: 100px;
 }
 
-.welcome-left {
+.landing-page-left {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -114,37 +96,51 @@ html {
 }
 
 
-#welcome-acm {
+#welcome-text {
   text-align: center;
   font-size: 94px;
   margin-bottom: 30px;
 }
 
 .red-text {
-  color: var(--header-red-color);
+  color: var(--header-color);
 }
 
 .intro-p { 
+  font-family: 'Merriweather Sans';
   text-align: center;
   max-width: 850px;
-  font-size: 32px;
+  font-size: 34px;
+}
+
+
+/** Buttons **/
+.buttons {
+  max-width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-left: 40px;
+  gap: 80px;
+
 }
 
 #dues {
   display: flex;
   align-items: center;
-  gap: max(5%, 56px);
+  gap: 80px;
 }
 
-.top-links-heading {
+.buttons-heading {
+  font-family: 'Merriweather Sans';
   text-align: left;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: normal;
 }
 
-.pay-button {
-  width: 189px;
-  height: 53px;
+.pay-dues-button {
+  width: 180px;
+  height: 50px;
   border: none;
 
   background: #BA0C2F;
@@ -156,25 +152,33 @@ html {
   text-align: center;
 }
 
-.pay-button>a {
+.pay-dues-button>a {
   font-family: 'Oswald';
   font-weight: bold;
-  font-size: 32;
+  font-size: 28px;
   text-decoration: none;
   color: #FFFFFF;
   margin-bottom: 5px;
 }
 
+.pipe-divide {
+  margin-left: 0;
+  margin-right: 0;
+  height: 120px;
+  width: 1px;
+  background: #000000;
+}
+
 #social-container {
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 
 
 .social-icons-container {
   /* Flex container row for social icons
   */
-  gap: 15px;
+  gap: 20px;
   display: flex;
   align-items: center;
 }
@@ -190,21 +194,26 @@ html {
   display: block;
   float: left;
 }
-.help:not(:hover) {
-  transition: 0.25s;
-  filter: grayscale(1) contrast(0); /* grayscale is the default (will not work in internet explorer, but who cares)*/
+
+/** Event Carousel */
+#event-carousel-container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 31.24%, rgba(0, 0, 0, 0.191918) 31.25%, rgba(0, 0, 0, 0.0125) 47.92%, rgba(0, 0, 0, 0.00833333) 95.83%, rgba(0, 0, 0, 0) 100%), var(--event-carousel-background-color);
+  background-blend-mode: hard-light, normal;
+  text-align: center;
+
+  border-top: 4px solid #cbcbcb;
 }
-.help:not(:hover)#csip {
-  transition: 0.25s;
-  filter: grayscale(1); /* grayscale is the default (will not work in internet explorer, but who cares)*/
+
+#event-carousel-heading {
+  font-size: 74px;
+  font-weight: 500;
+  color: var(--events-section-heading-color);
 }
-@media screen and (min-width:1440px) { 
-  .help {
-    margin:0em;
-  }
-  .help:hover { 
-  }
+
+#event-carousel {
+  display: flex;
 }
+
 
   
 .active, .dot:hover {
