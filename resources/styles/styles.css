@@ -205,6 +205,7 @@ html {
 
   border-top: 4px solid #cbcbcb;
   padding-top: 50px;
+  padding-bottom: 50px;
   z-index: -3;
 }
 
@@ -234,7 +235,7 @@ html {
   background: var(--event-background-color);
   position: absolute;
 
-  transition: all 0.3s;
+  
 
 }
 .event-item:hover {
@@ -247,32 +248,29 @@ html {
   font-size:25px;
   font-weight: 600;
   text-align: center;
-  margin-top: 0.5em;
-  margin-bottom: -1em;
+  margin: 0;
 }
 
 .event-date {
   font-size: 14px;
   font-weight: 600;
+  margin: 0;
 }
 
 .event-short { 
+  margin-top: 0;
   font-family: 'Merriweather Sans';
   font-size: 14px;
   font-weight: 200;
-  border-top: solid 0.15em #BA0C2F;
+  padding: 0px 5px;
   color: var(--event-text-color);
   text-align: center;
-}
-
-.event-item p { 
-  padding-top: .5em;
 }
 
 .event-item>a>img {
   object-fit: cover;
   width: 100%;
-  height: 250px;
+  height: 70%;
   border-radius: 0.4em 0.4em 0 0;
 }
 
@@ -309,7 +307,7 @@ html {
 }
 
 .outer-left {
-  left: 10%;
+  left: 7%;
 }
 
 .inner-right {
@@ -317,7 +315,7 @@ html {
 }
 
 .outer-right {
-  right: 10%;
+  right: 7%;
 }
 
 

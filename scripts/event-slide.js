@@ -13,6 +13,8 @@ var event_info = [
     
 ];
 
+let eventNodes = null;
+
 /** Render event slides from event_info */
 function renderEventSlide() { 
     var elem = document.getElementById("event-carousel"); //The container for the inserted links
@@ -39,19 +41,67 @@ function renderEventSlide() {
         elem.appendChild(listItem);
         count = count + 1;
     }
+    eventNodes = document.querySelectorAll('.event-item');
     initializeCarousel();
 }
 
+let currentCenter = 2;
+
 /**Initialize carousel on events, place each element on the carousel
- * according to its index in eventNodes.
+ * according to its index in eventNodes, centering on currentCenter.
 */
 const initializeCarousel = function() {
-    //Get nodes
-    const eventNodes = document.querySelectorAll('.event-item');
-    console.log(eventNodes);
-    eventNodes.item(0).classList.add('outer', 'outer-left');
-    eventNodes.item(1).classList.add('inner', 'inner-left');
-    eventNodes.item(2).classList.add('center');
-    eventNodes.item(3).classList.add('inner', 'inner-right');
-    eventNodes.item(4).classList.add('outer', 'outer-right');
+    // Initialize with center index
+    carouselFromCenter(currentCenter);
+}
+
+/** Remove the inner/outer right/left classes from each
+ * event node.
+ */
+const removeClass = function() {
+    eventNodes.forEach(node => {
+        node.classList.remove('outer', 'inner', 'inner-right', 'outer-right', 'center', 'inner-left', 'outer-left'); 
+    })
+}
+
+/** Takes the given index and gives the proper
+ * classes to each event card to generate a
+ * carousel with the n-th index as the center
+ */
+const carouselFromCenter = function(n) {
+    // Set classes to default values
+    removeClass();
+    // Add classes to appropriate index
+    eventNodes.item(circularIndex(n - 2)).classList.add('outer', 'outer-left');
+    eventNodes.item(circularIndex(n - 1)).classList.add('inner', 'inner-left');
+    eventNodes.item(circularIndex(n)).classList.add('center');
+    eventNodes.item(circularIndex(n + 1)).classList.add('inner', 'inner-right');
+    eventNodes.item(circularIndex(n + 2)).classList.add('outer', 'outer-right');
+
+}
+
+/** Take the given number, checks if
+ * it is in range of the index, and returns it, or reduces
+ * it to an indexable value
+ */
+const circularIndex = function (index) {
+    if (index >= 0 && index < eventNodes.length) {
+        index = index;
+    } else if (index < 0) {
+        index = circularIndex(index + eventNodes.length);
+    } else {
+        index = circularIndex(index % eventNodes.length);
+    }
+    console.log(index);
+    return index;
+}
+
+const incrementCarousel = function () {
+    currentCenter++;
+    initializeCarousel();
+}
+
+const decrementCarousel = function () {
+    currentCenter--;
+    initializeCarousel();
 }
