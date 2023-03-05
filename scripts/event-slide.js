@@ -38,11 +38,17 @@ function renderEventSlide() {
         short.className = "event-short";
         date.className = "event-date";
 
+        // Save index of event
+        listItem.dataset.index = count;
+
         elem.appendChild(listItem);
         count = count + 1;
     }
     eventNodes = document.querySelectorAll('.event-item');
+
+    // Carousel setup
     initializeCarousel();
+    setJumpToListeners();
 }
 
 let currentCenter = 2;
@@ -77,7 +83,6 @@ const carouselFromCenter = function(n) {
     eventNodes.item(circularIndex(n)).classList.add('center');
     eventNodes.item(circularIndex(n + 1)).classList.add('inner', 'inner-right');
     eventNodes.item(circularIndex(n + 2)).classList.add('outer', 'outer-right');
-
 }
 
 /** Take the given number, checks if
@@ -92,7 +97,6 @@ const circularIndex = function (index) {
     } else {
         index = circularIndex(index % eventNodes.length);
     }
-    console.log(index);
     return index;
 }
 
@@ -104,4 +108,14 @@ const incrementCarousel = function () {
 const decrementCarousel = function () {
     currentCenter--;
     initializeCarousel();
+}
+
+/** Set event listeners to jump to each event */
+const setJumpToListeners = function () {
+    eventNodes.forEach( node => {
+        node.addEventListener('click', (e) => {
+            currentCenter = parseInt(node.dataset.index);
+            initializeCarousel();
+        })
+    })
 }
