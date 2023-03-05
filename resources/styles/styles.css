@@ -218,10 +218,10 @@ html {
 #event-carousel {
   display: flex;
   align-items: center;
-  margin: 0 80px;
   padding: 80px 0;
   position: relative;
   min-height: 500px;
+  min-width: 1500px;
 }
 
 /** Event items **/
@@ -316,6 +316,65 @@ html {
 
 .outer-right {
   right: 7%;
+}
+
+/** Event arrows **/
+
+.carousel-controls {
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.decrement-carousel {
+  width: 95px;
+  height: 95px;
+  border-radius: 70px;
+  background-color: var(--event-carousel-background-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.left-arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 6px solid white;
+  border-bottom: 6px solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 40%;
+}
+
+.increment-carousel {
+  width: 95px;
+  height: 95px;
+  border-radius: 70px;
+  background-color: var(--event-carousel-background-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.right-arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 6px solid white;
+  border-bottom: 6px solid white;
+  transform: rotate(225deg);
+  position: absolute;
+  right: 40%;
+}
+
+button:hover .arrow {
+  border-left: 6px solid #BA0C2F;
+  border-bottom: 6px solid #BA0C2F;
 }
 
 

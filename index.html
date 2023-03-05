@@ -77,9 +77,11 @@
             <!-- Event Carousel -->
             <div id="event-carousel-container">
                 <div id="event-carousel-heading">Come To Our Events!</div>
-                <button class="decrement-carousel" onclick="decrementCarousel();">back</button>
-                <div id="event-carousel"></div>
-                <button class="increment-carousel" onclick="incrementCarousel();">forward</button>
+                <div class="carousel-controls">
+                    <button class="decrement-carousel" onclick="decrementCarousel();"><div class="left-arrow arrow"></div></button>
+                    <div id="event-carousel"></div>
+                    <button class="increment-carousel" onclick="incrementCarousel();"><div class="right-arrow arrow"></div></button>
+                </div>
             </div>
 
 
