@@ -79,7 +79,7 @@ html {
 /** Landing Page */
 .landing-page {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 100vw;
 }
 
@@ -88,18 +88,19 @@ html {
   align-items: center;
   justify-content: left;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 .welcome-logo {
-  width: 487px;
-  height: 504px;
+  width: 370px;
   margin: 15px;
 }
 
 
 #welcome-text {
+  margin-top: 0;
   text-align: center;
-  font-size: 94px;
+  font-size: 75px;
   margin-bottom: 30px;
 }
 
@@ -111,7 +112,7 @@ html {
   font-family: 'Merriweather Sans';
   text-align: center;
   max-width: 850px;
-  font-size: 34px;
+  font-size: 24px;
 }
 
 
@@ -119,7 +120,7 @@ html {
 .buttons {
   max-width: 100vw;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
   margin-left: 40px;
   gap: 80px;
@@ -135,7 +136,7 @@ html {
 .buttons-heading {
   font-family: 'Merriweather Sans';
   text-align: left;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: normal;
 }
 
@@ -165,7 +166,7 @@ html {
 .pipe-divide {
   margin-left: 0;
   margin-right: 0;
-  height: 120px;
+  height: 80px;
   width: 1px;
   background: #000000;
 }
@@ -209,7 +210,7 @@ html {
 }
 
 #event-carousel-heading {
-  font-size: 74px;
+  font-size: 75px;
   font-weight: 500;
   color: var(--section-heading-color);
 }
@@ -220,7 +221,7 @@ html {
   padding: 80px 0;
   position: relative;
   min-height: 500px;
-  min-width: 1500px;
+  min-width: 80vw;
 }
 
 /** Event items **/
@@ -274,8 +275,8 @@ html {
 
 /** Event carousel card placement */
 .outer {
-  height: 315px;
-  width: 264.38px;
+  height: 320px;
+  width: 256px;
 }
 
 .outer .event-short {
@@ -284,8 +285,8 @@ html {
 }
 
 .inner {
-  height: 420px;
-  width: 352.5px;
+  height: 400px;
+  width: 320px;
   z-index: 1;
 }
 
@@ -294,10 +295,10 @@ html {
 }
 
 .center {
-  height: 560px;
-  width: 470px;
+  height: 500px;
+  width: 400px;
   z-index: 2;
-  left: calc(50% - 235px);
+  left: calc(50% - 200px);
 }
 
 .inner-left {
@@ -321,14 +322,14 @@ html {
 .carousel-controls {
   z-index: -1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: -100px;
   align-items: center;
-  margin: 0px 10px;
 }
 
 .decrement-carousel {
   width: 95px;
-  height: 95px;
+  aspect-ratio: 1/1;
   border-radius: 70px;
   background-color: var(--event-carousel-background-color);
   border: none;
@@ -350,7 +351,7 @@ html {
 
 .increment-carousel {
   width: 95px;
-  height: 95px;
+  aspect-ratio: 1/1;
   border-radius: 70px;
   background-color: var(--event-carousel-background-color);
   border: none;
