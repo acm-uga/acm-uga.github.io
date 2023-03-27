@@ -202,10 +202,8 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 31.24%, rgba(0, 0, 0, 0.191918) 31.25%, rgba(0, 0, 0, 0.0125) 47.92%, rgba(0, 0, 0, 0.00833333) 95.83%, rgba(0, 0, 0, 0) 100%), var(--event-carousel-background-color);
   background-blend-mode: hard-light, normal;
   text-align: center;
-
-  border-top: 4px solid #cbcbcb;
   padding-top: 50px;
-  padding-bottom: 50px;
+  border-top: 4px solid #cbcbcb;
   z-index: -3;
 }
 
@@ -218,7 +216,8 @@ html {
 #event-carousel {
   display: flex;
   align-items: center;
-  padding: 80px 0;
+  padding-top: 30px;
+  padding-bottom: 80px;
   position: relative;
   min-height: 500px;
   min-width: 80vw;
