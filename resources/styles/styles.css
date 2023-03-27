@@ -398,9 +398,10 @@ button:hover .arrow {
   margin: 0;
 }
 
-.calendar {
+#calendar {
   margin-top: 100px;
-  max-width: 80%;
+  width: 80%;
+  max-height: 600px
 }
 
 /** About us */

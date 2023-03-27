@@ -2,10 +2,21 @@
 
 <head>
     <title>ACM-UGA</title>
-    <link rel="stylesheet" href="resources/styles/styles.css">
+    <link rel="stylesheet" href="../resources/styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/event-slide.js"></script>
-    <link rel="shortcut icon" type="image/png" href="resources\favicon.ico" />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+    <script src="main.js" defer></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        let calendar = new FullCalendar.Calendar(calendarEl);
+        calendar.render();
+
+      });
+
+    </script>
+    <link rel="shortcut icon" type="image/png" href="../resources/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +24,12 @@
 
 </head>
 
-<body onload="renderEventSlide();" id="home">
+<body id="home">
 
     <div id="navbar">
         <!-- Navbar -->
-        <img id="acm-logo" src="resources/acmlogowhitefinal.png" alt="acm-logo">
-        <img id="hamburger-menu" src="resources/Hamburger_icon.svg.png" alt="hamburger-menu">
+        <img id="acm-logo" src="../resources/acmlogowhitefinal.png" alt="acm-logo">
+        <img id="hamburger-menu" src="../resources/Hamburger_icon.svg.png" alt="hamburger-menu">
     </div>
 
     <div id="main">
@@ -30,7 +41,7 @@
             <div class="landing-page">
                 <!-- Big logo -->
                     <div class="landing-page-left">
-                        <img src="resources/social_img/csip.png" alt="acm-logo" class="welcome-logo">
+                        <img src="../resources/social_img/csip.png" alt="acm-logo" class="welcome-logo">
                     </div>
                     <!-- Welcome text -->
                     <div class="landing-page-right">
@@ -63,13 +74,13 @@
                     <h2 class="buttons-heading">Stay Up To Date: </h2>
                     <div class="social-icons-container">
                         <a href="https://www.instagram.com/acmuga" target="_blank"><img class="help social-icon"
-                                src="resources/social_img/insta.png" title="Our instagram"></a>
+                                src="../resources/social_img/insta.png" title="Our instagram"></a>
                         <a href="https://discord.gg/AcPYBCDWeA" target="_blank"><img class="help social-icon"
-                                src="resources/social_img/discord.png" title="Our discord"></a>
+                                src="../resources/social_img/discord.png" title="Our discord"></a>
                         <a href="https://github.com/acm-uga" target="_blank"><img class="help social-icon"
-                                src="resources/social_img/github.png" title="Our github"></a>
+                                src="../resources/social_img/github.png" title="Our github"></a>
                         <a href="https://linktr.ee/acmuga" target="_blank"><img class="help social-icon"
-                                src="resources/social_img/csip.png" title="Computer Science Interview Prep"></a>
+                                src="../resources/social_img/csip.png" title="Computer Science Interview Prep"></a>
                     </div>
                 </div>
             </div>
@@ -90,10 +101,7 @@
                 <div class="heading-container">
                     <h1 id="section-heading" id="calendar">Calendar</h1>
                 </div>
-                <iframe class="calendar"
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FNew_York&showTabs=0&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NnNTd0OGhmYWM3aWcxajRmZ3Btcm1kMThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60"
-                    style="border:solid 1px #777" width="90%" height="500" frameborder="0" scrolling="no">
-                </iframe>
+                <div id="calendar"></div>
             </div>
             <div class="about-us-section">
                 <div class="heading-container">
@@ -155,7 +163,7 @@ Web Design/Graphics - Vansh Arora & Lauren Bobo-->
             <div class="member-div">
                 <p class="officer-role">President of ACM</p>
                 <p class="officer-name">Helium Yang</p>
-                <img src="resources/member_img/helium-yang.png" class="member-photo">
+                <img src="../resources/member_img/helium-yang.png" class="member-photo">
                 
             </div>
 
@@ -163,7 +171,7 @@ Web Design/Graphics - Vansh Arora & Lauren Bobo-->
             <div class="member-div">
                 <p class="officer-role">Vice President</p>
                 <p class="officer-name">Banibe Ebegbodi</p>
-                <img src="resources/member_img/bani-ebegbodi.png" class="member-photo">
+                <img src="../resources/member_img/bani-ebegbodi.png" class="member-photo">
                 
             </div>
 
@@ -171,13 +179,13 @@ Web Design/Graphics - Vansh Arora & Lauren Bobo-->
             <div class="member-div">
                 <p class="officer-role">Community Engagement</p>
                 <p class="officer-name">Raymond Feckoury</p>
-                <img src="resources/member_img/raymond-feckoury.png" class="member-photo">
+                <img src="../resources/member_img/raymond-feckoury.png" class="member-photo">
                 
             </div>
             <div class="member-div">
                 <p class="officer-role">Competition Chair</p>
                 <p class="officer-name">Codey Borrelli</p>
-                <img src="resources/member_img/codey_borrelli.jpg" class="member-photo">
+                <img src="../resources/member_img/codey_borrelli.jpg" class="member-photo">
                 
             </div>
  
@@ -187,22 +195,22 @@ Web Design/Graphics - Vansh Arora & Lauren Bobo-->
             <div class="member-div">
                 <p class="officer-role">CSIP</p>
                 <p class="officer-name">Ethan Ogle</p>
-                <img src="resources/member_img/ethan-ogle.png" class="member-photo">
+                <img src="../resources/member_img/ethan-ogle.png" class="member-photo">
             </div>
             <div class="member-div">
                 <p class="officer-role">CSIP</p>
                 <p class="officer-name">Genki Aikawa</p>
-                <img src="resources/member_img/genki-aikawa.jpg" class="member-photo">
+                <img src="../resources/member_img/genki-aikawa.jpg" class="member-photo">
             </div>
             <div class="member-div">
                 <p class="officer-role">Membership</p>
                 <p class="officer-name">William Sirotkin</p>
-                <img src="resources/member_img/william-sirotkin.png" class="member-photo">
+                <img src="../resources/member_img/william-sirotkin.png" class="member-photo">
             </div>
             <div class="member-div">
                 <p class="officer-role">Outreach</p>
                 <p class="officer-name">Manmeet Gill</p>
-                <img src="resources/member_img/manmeet_gill.png" class="member-photo">
+                <img src="../resources/member_img/manmeet_gill.png" class="member-photo">
             </div>
             
      </div>
@@ -211,22 +219,22 @@ Web Design/Graphics - Vansh Arora & Lauren Bobo-->
             <div class="member-div">
                 <p class="officer-role">Technical</p>
                 <p class="officer-name">Shawn Pradeep</p>
-                <img src="resources/member_img/shawn_pradeep.jpeg" class="member-photo">
+                <img src="../resources/member_img/shawn_pradeep.jpeg" class="member-photo">
             </div>
             <div class="member-div">
                 <p class="officer-role">PR & Graphics</p>
                 <p class="officer-name">Mia Truesdell</p>
-                <img src="resources/member_img/mia_truesdel.jpg" class="member-photo">
+                <img src="../resources/member_img/mia_truesdel.jpg" class="member-photo">
             </div>
             <div class="member-div">
                 <p class="officer-role">Treasury</p>
                 <p class="officer-name">Will Arnow</p>
-                <img src="resources/member_img/will-arnow.png" class="member-photo">
+                <img src="../resources/member_img/will-arnow.png" class="member-photo">
             </div>
             <div class="member-div">
                 <p class="officer-role">Website & Graphics</p>
                 <p class="officer-name">Lauren Bobo</p>
-                <img src="resources/member_img/lauren-bobo.png" class="member-photo">
+                <img src="../resources/member_img/lauren-bobo.png" class="member-photo">
             </div>
            
         </div>
@@ -234,7 +242,7 @@ Web Design/Graphics - Vansh Arora & Lauren Bobo-->
             <div class="member-div">
                 <p class="officer-role">Website</p>
                 <p class="officer-name">Vansh Arora</p>
-                <img src="resources/member_img/vansh-arora.png" class="member-photo">
+                <img src="../resources/member_img/vansh-arora.png" class="member-photo">
             </div>
         </div>
         <div class="divider-2 divider">
