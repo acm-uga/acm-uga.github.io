@@ -98,7 +98,7 @@ html {
 
 
 #welcome-text {
-  margin-top: 0;
+  margin-top: 50px;
   text-align: center;
   font-size: 75px;
   margin-bottom: 30px;
@@ -111,7 +111,7 @@ html {
 .intro-p { 
   font-family: 'Merriweather Sans';
   text-align: center;
-  max-width: 850px;
+  max-width: 600px;
   font-size: 24px;
 }
 
@@ -588,8 +588,9 @@ footer a:hover {
 .acm-officers-row {
   display: flex;
   justify-content: space-around;
-  gap: 50px;
+  gap: 30px;
   margin: 1.5% 100px;
+  max-width: 100vw;
 }
 .acm-officers-row div {
   display: inline-block;
