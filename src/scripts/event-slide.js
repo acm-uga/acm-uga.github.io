@@ -49,6 +49,9 @@ export function renderEventSlide() {
     // Carousel setup
     initializeCarousel();
     setJumpToListeners();
+    // Set up button events
+    document.querySelector('.increment-carousel').addEventListener('click', incrementCarousel)
+    document.querySelector('.decrement-carousel').addEventListener('click', decrementCarousel)
 }
 
 let currentCenter = 2;
