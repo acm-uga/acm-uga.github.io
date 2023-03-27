@@ -31,20 +31,19 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-
- body {
-    margin: 0;
-    background-color: #fffafa;
-    overflow-x: hidden;
-  }
+body {
+  margin: 0;
+  background-color: #fffafa;
+  overflow-x: hidden;
+}
   
-  /**
-   * Render the `main` element consistently in IE.
-   */
+/**
+  * Render the `main` element consistently in IE.
+ */
   
-  main {
-    display: block;
-  }
+main {
+  display: block;
+}
   
 /** Navbar
 */
@@ -621,4 +620,18 @@ footer a:hover {
   padding-left: 5em;
 }
 
+/** Mobile sizing */
+@media only screen and (max-width: 600px) {
+  #welcome-text {
+    font-size: 40px;
+  }
+  .intro-p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .buttons-heading {
+    font-size: 20px;
+  }
+}
 
