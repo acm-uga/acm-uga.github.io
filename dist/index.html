@@ -14,12 +14,21 @@
 
 </head>
 
-<body id="home">
+<body>
 
     <div id="navbar">
         <!-- Navbar -->
         <img id="acm-logo" src="../resources/acmlogowhitefinal.png" alt="acm-logo">
-        <img id="hamburger-menu" src="../resources/Hamburger_icon.svg.png" alt="hamburger-menu">
+        <div id="hamburger">
+            <img id="hamburger-menu" src="../resources/Hamburger_icon.svg.png" alt="hamburger-menu">
+            <div id="expanded-menu">
+                <div id="home-button"><a href="#home-link">Home</a></div>
+                <div id="events-button"><a href="#events-link">Events</a></div>
+                <div id="calendar-button"><a href="#calendar-link">Calendar</a></div>
+                <div id="resources-button">Resources</div>
+                <div id="about-button"><a href="#about-link">About</a></div>
+            </div>
+        </div>
     </div>
 
     <div id="main">
@@ -28,6 +37,7 @@
         <div id="content">
 
             <!-- Landing Page -->
+            <div id="home-link"></div>
             <div class="landing-page">
                 <!-- Big logo -->
                     <div class="landing-page-left">
@@ -76,6 +86,7 @@
             </div>
 
             <!-- Event Carousel -->
+            <div id="events-link"></div>
             <div id="event-carousel-container">
                 <div id="event-carousel-heading">Come To Our Events!</div>
                 <div class="carousel-controls">
@@ -87,12 +98,14 @@
 
 
             <!-- Calendar -->
+            <div id="calendar-link"></div>
             <div class="calendar-section">
                 <div class="heading-container">
                     <h1 id="section-heading" id="calendar">Calendar</h1>
                 </div>
                 <iframe src="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America/New_York&showTabs=0&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NnNTd0OGhmYWM3aWcxajRmZ3Btcm1kMThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60" frameborder="0" id="calendar"></iframe>
             </div>
+            <div id="about-link"></div>
             <div class="about-us-section">
                 <div class="heading-container">
                     <h1 id="section-heading" id="about-us">About Us</h1>

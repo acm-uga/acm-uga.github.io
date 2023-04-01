@@ -35,6 +35,10 @@ body {
   margin: 0;
   background-color: #fffafa;
   overflow-x: hidden;
+  /** Stop user select */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
   
 /**
@@ -45,6 +49,13 @@ main {
   display: block;
 }
   
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: initial;
+}
 /** Navbar
 */
 #navbar { 
@@ -69,11 +80,36 @@ main {
   height: 140px;
 }
 
+
+
+/** Hamburger Menu **/
+#hamburger {
+  position: relative;
+  padding-right: 30px;
+}
 #hamburger-menu {
   width: 40px;
   align-self: center;
+  cursor: pointer;
 }
 
+#expanded-menu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  background: var(--navbar-color);
+  padding: 10px;
+}
+
+#hamburger:hover>#expanded-menu {
+  display: block;
+}
+
+#expanded-menu>div>a:hover {
+  cursor: pointer;
+  color: white;
+}
 
 /** Landing Page */
 .landing-page {
