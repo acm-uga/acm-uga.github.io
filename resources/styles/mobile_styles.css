@@ -53,4 +53,80 @@
     #event-carousel-heading {
       font-size: 40px;
     }
+
+    #event-carousel-container {
+      padding: 10px 0;
+    }
+
+    .event-item {
+      display: none;
+    }
+    
+    #event-carousel {
+      min-height: 300px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .center {
+      position: static;
+      display: block;
+      width: 250px;
+      height: 400px;
+    }
+
+    .center>a>img {
+      height: 175px;
+    }
+
+    .decrement-carousel {
+      background: none;
+    }
+
+    .increment-carousel {
+      background: none;
+    }
+
+    #section-heading {
+      font-size: 40px;
+    }
+
+    .calendar-section {
+      padding-bottom: 50px;
+    }
+
+    #calendar {
+      margin-top: 50px;
+      width: 90%;
+      height: 400px
+    }
+
+    .about-text {
+      margin: 0 20px;
+    }
+
+    .about-text>h2 {
+      font-size: 24px;
+    }
+
+    .about-text>p {
+      font-size: 20px;
+    }
+
+    #footer-columns {
+      justify-content: space-around;
+    }
+
+    .footer-column {
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+
+    #copyright {
+      padding-top: 50px;
+    }
+
   }

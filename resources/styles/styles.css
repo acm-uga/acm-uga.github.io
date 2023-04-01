@@ -470,20 +470,6 @@ button:hover .arrow {
   margin-left:-1em;
 }
 
-#event-list{
-  /* Event list will fit all items in a grid-like format, allowing
-  * adding/removing cards without breaking formatting.
-  * Also is better for smaller screens because it pops
-  * overflowed cards to the next row
-  */
-  padding: 0;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px ,30%));
-  gap: 10px;
-
-}
 
 
 
