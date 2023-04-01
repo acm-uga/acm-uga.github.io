@@ -52,7 +52,6 @@ main {
   margin-right: 0;
   background-color: var(--navbar-color);
   height: 110px;
-  float:top;
   padding-right: 10px;
   position: sticky;
   top: 0;
@@ -618,20 +617,5 @@ footer a:hover {
 }
 .officer-name + .officer-row {
   padding-left: 5em;
-}
-
-/** Mobile sizing */
-@media only screen and (max-width: 600px) {
-  #welcome-text {
-    font-size: 40px;
-  }
-  .intro-p {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 20px;
-  }
-  .buttons-heading {
-    font-size: 20px;
-  }
 }
 

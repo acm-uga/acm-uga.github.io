@@ -1,0 +1,56 @@
+/** Mobile sizing */
+@media only screen and (max-width: 600px) {
+
+    #acm-logo {
+      height: 100px;
+    }
+  
+    #welcome-text {
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    .intro-p {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 20px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  
+    .pipe-divide {
+      display: none;
+    }
+  
+    .buttons-heading {
+      font-size: 20px;
+    }
+  
+    .welcome-logo {
+      width: 300px;
+    }
+  
+    .landing-page-left {
+      margin: 0;
+    }
+  
+    #dues {
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+    }
+  
+    #social-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  
+    #event-carousel-heading {
+      font-size: 40px;
+    }
+  }
