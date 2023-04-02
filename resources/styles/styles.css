@@ -34,7 +34,6 @@ html {
 body {
   margin: 0;
   background-color: #fffafa;
-  overflow-x: hidden;
   /** Stop user select */
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -94,16 +93,21 @@ a:link, a:visited {
 }
 
 #expanded-menu {
-  display: none;
+  z-index: 0;
   position: absolute;
   right: 10px;
-  font-size: 20px;
+  font-size: 25px;
   background: var(--navbar-color);
   padding: 10px;
+  transition: all 0.5s;
 }
 
-#hamburger:hover>#expanded-menu {
-  display: block;
+.closed {
+  bottom: 200px;
+}
+
+.opened {
+  bottom: -130px;
 }
 
 #expanded-menu>div>a:hover {
