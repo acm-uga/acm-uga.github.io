@@ -650,21 +650,16 @@ footer a:hover {
 }
 
 #acm-officers {
+  justify-content: center;
+  margin: 40px 100px;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 192px);
+  column-gap: 100px;
+  row-gap:50px;
 }
-.acm-officers-row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin: 1.5% 100px;
-  max-width: 100vw;
-}
-.acm-officers-row div {
-  display: inline-block;
-  margin-left: 4%;
-  margin-right: 4%;
-}
+
+
 
 /** Divider 2 */
 .divider-2 {

@@ -9,6 +9,9 @@
   #expanded-menu {
     display: block;
   }
+  #acm-officers {
+    grid-template-columns: 192px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
