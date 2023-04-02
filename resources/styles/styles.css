@@ -63,7 +63,7 @@ a:link, a:visited {
   background-color: var(--navbar-color);
   height: 110px;
   padding-right: 10px;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index:4;
 
@@ -80,10 +80,15 @@ a:link, a:visited {
 }
 
 
+.sticky-element {
+  z-index: 3;
+  position: sticky;
+  top:0;
+}
+
 
 /** Hamburger Menu **/
 #hamburger {
-  position: relative;
   padding-right: 30px;
 }
 #hamburger-menu {
@@ -93,9 +98,9 @@ a:link, a:visited {
 }
 
 #expanded-menu {
-  z-index: 0;
+  z-index: -1;
   position: absolute;
-  right: 10px;
+  right: 0px;
   font-size: 25px;
   background: var(--navbar-color);
   padding: 10px;
@@ -103,11 +108,11 @@ a:link, a:visited {
 }
 
 .closed {
-  bottom: 200px;
+  top: -50px;
 }
 
 .opened {
-  bottom: -130px;
+  top: 100px;
 }
 
 #expanded-menu>div>a:hover {
