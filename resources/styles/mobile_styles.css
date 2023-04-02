@@ -1,5 +1,18 @@
 /** Mobile sizing */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  #hamburger {
+    display: block;
+  }
+  #navlinks {
+    display: none;
+  }
+  #expanded-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+ 
 
     #acm-logo {
       height: 100px;
