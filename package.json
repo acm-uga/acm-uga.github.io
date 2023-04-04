@@ -1,0 +1,28 @@
+{
+  "name": "acm-uga.github.io",
+  "version": "1.0.0",
+  "description": "The repo behind ACM at UGA's website. If you are a current UGA student and an ACM attendee, do not hesitate to fork a copy of this repo and make changes of your own!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acm-uga/acm-uga.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acm-uga/acm-uga.github.io/issues"
+  },
+  "homepage": "https://github.com/acm-uga/acm-uga.github.io#readme",
+  "dependencies": {
+    "webpack": "^5.77.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
