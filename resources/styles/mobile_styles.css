@@ -10,7 +10,7 @@
     display: block;
   }
   #acm-officers {
-    grid-template-columns: 192px;
+    gap: 20px;
   }
 }
 
