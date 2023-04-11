@@ -653,10 +653,9 @@ footer a:hover {
   justify-content: center;
   margin: 40px 100px;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 192px);
-  column-gap: 100px;
-  row-gap:50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
 
