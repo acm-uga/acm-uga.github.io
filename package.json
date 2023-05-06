@@ -23,6 +23,8 @@
     "webpack": "^5.77.0"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4"
   }
 }

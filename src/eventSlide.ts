@@ -1,13 +1,18 @@
+import eventInfo from './info/eventInfo.json';
 
-import eventInfo from '../info/eventInfo.json';
-
-let eventNodes = null;
+let eventNodes: NodeListOf<HTMLDivElement>;
 
 /** Render event slides from event_info */
-export function renderEventSlide() { 
-    var elem = document.getElementById("event-carousel"); //The container for the inserted links
+export function renderEventSlide() {
+    var elem = document.getElementById("event-carousel"); // The container for the inserted links
+
+    // Null check elem
+    if (!elem) {
+        throw new Error("No .event-carousel element");
+    }
+
     var count = 0;
-    while (count < eventInfo.length) { 
+    while (count < eventInfo.length) {
         var listItem = document.createElement("li");
         var link = document.createElement("a");
         var title = document.createElement("h3");
@@ -18,8 +23,8 @@ export function renderEventSlide() {
         listItem.className = "event-item";
 
         listItem.append(link);
-        link.append(img,title,date, short);
-        img.src=eventInfo[count]['img'];
+        link.append(img, title, date, short);
+        img.src = eventInfo[count]['img'];
         title.appendChild(document.createTextNode(eventInfo[count]["title"]));
         short.appendChild(document.createTextNode(eventInfo[count]["short"]));
         date.appendChild(document.createTextNode(eventInfo[count]["date"]));
@@ -27,7 +32,7 @@ export function renderEventSlide() {
         date.className = "event-date";
 
         // Save index of event
-        listItem.dataset.index = count;
+        listItem.dataset.index = count + "";
 
         elem.appendChild(listItem);
         count = count + 1;
@@ -38,8 +43,16 @@ export function renderEventSlide() {
     initializeCarousel();
     setJumpToListeners();
     // Set up button events
-    document.querySelector('.increment-carousel').addEventListener('click', incrementCarousel)
-    document.querySelector('.decrement-carousel').addEventListener('click', decrementCarousel)
+    const incrementButton = document.querySelector('.increment-carousel');
+    const decrementButton = document.querySelector('.decrement-carousel');
+    // Null check buttons
+    if (!(incrementButton && decrementButton)) {
+        throw new Error("Increment or decrement buttons are null.");
+    }
+
+    incrementButton.addEventListener('click', incrementCarousel);
+    decrementButton.addEventListener('click', decrementCarousel);
+
 }
 
 let currentCenter = 2;
@@ -47,7 +60,7 @@ let currentCenter = 2;
 /**Initialize carousel on events, place each element on the carousel
  * according to its index in eventNodes, centering on currentCenter.
 */
-const initializeCarousel = function() {
+const initializeCarousel = function () {
     // Initialize with center index
     carouselFromCenter(currentCenter);
 }
@@ -55,9 +68,9 @@ const initializeCarousel = function() {
 /** Remove the inner/outer right/left classes from each
  * event node.
  */
-const removeClass = function() {
+const removeClass = function () {
     eventNodes.forEach(node => {
-        node.classList.remove('outer', 'inner', 'inner-right', 'outer-right', 'center', 'inner-left', 'outer-left'); 
+        node.classList.remove('outer', 'inner', 'inner-right', 'outer-right', 'center', 'inner-left', 'outer-left');
     })
 }
 
@@ -65,7 +78,7 @@ const removeClass = function() {
  * classes to each event card to generate a
  * carousel with the n-th index as the center
  */
-const carouselFromCenter = function(n) {
+const carouselFromCenter = function (n: number) {
     // Set classes to default values
     removeClass();
     // Add classes to appropriate index
@@ -80,7 +93,7 @@ const carouselFromCenter = function(n) {
  * it is in range of the index, and returns it, or reduces
  * it to an indexable value
  */
-const circularIndex = function (index) {
+const circularIndex = function (index: number) {
     if (index >= 0 && index < eventNodes.length) {
         index = index;
     } else if (index < 0) {
@@ -103,9 +116,13 @@ const decrementCarousel = function () {
 
 /** Set event listeners to jump to each event */
 const setJumpToListeners = function () {
-    eventNodes.forEach( node => {
+    eventNodes.forEach(node => {
         node.addEventListener('click', (e) => {
-            currentCenter = parseInt(node.dataset.index);
+            const index = node.dataset.index;
+            if (index == undefined) {
+                throw new Error("Event node has undefined index.");
+            }
+            currentCenter = parseInt(index);
             initializeCarousel();
         })
     })
