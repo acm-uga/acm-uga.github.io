@@ -1,5 +1,10 @@
-import eventInfo from './info/eventInfo.json';
+import ACMEvent from './types/ACMEvent'
+import events from './info/eventInfo.json';
 
+/** Stores the ACM Events */
+const eventInfo: ACMEvent[] = events;
+
+/** Initialize the eventNodes (Cards) */
 let eventNodes: NodeListOf<HTMLDivElement>;
 
 /** Render event slides from event_info */
