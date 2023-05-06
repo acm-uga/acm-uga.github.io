@@ -8,8 +8,8 @@ const eventInfo: ACMEvent[] = events;
 let eventNodes: NodeListOf<HTMLDivElement>;
 
 /** Render event slides from event_info */
-export function renderEventSlide() {
-    var elem = document.getElementById("event-carousel"); // The container for the inserted links
+export function renderEventSlide() : void {
+    const elem  = document.getElementById("event-carousel"); // The container for the inserted links
 
     // Null check elem
     if (!elem) {
@@ -18,12 +18,12 @@ export function renderEventSlide() {
 
     var count = 0;
     while (count < eventInfo.length) {
-        var listItem = document.createElement("li");
-        var link = document.createElement("a");
-        var title = document.createElement("h3");
-        var short = document.createElement("p");
-        var date = document.createElement("p");
-        var img = document.createElement("img");
+        const listItem = document.createElement("li");
+        const link = document.createElement("a");
+        const title = document.createElement("h3");
+        const short = document.createElement("p");
+        const date = document.createElement("p");
+        const img = document.createElement("img");
 
         listItem.className = "event-item";
 
@@ -65,7 +65,7 @@ let currentCenter = 2;
 /**Initialize carousel on events, place each element on the carousel
  * according to its index in eventNodes, centering on currentCenter.
 */
-const initializeCarousel = function () {
+const initializeCarousel = function () : void {
     // Initialize with center index
     carouselFromCenter(currentCenter);
 }
@@ -98,7 +98,7 @@ const carouselFromCenter = function (n: number) {
  * it is in range of the index, and returns it, or reduces
  * it to an indexable value
  */
-const circularIndex = function (index: number) {
+const circularIndex = function (index: number) : number {
     if (index >= 0 && index < eventNodes.length) {
         index = index;
     } else if (index < 0) {
@@ -120,7 +120,7 @@ const decrementCarousel = function () {
 }
 
 /** Set event listeners to jump to each event */
-const setJumpToListeners = function () {
+const setJumpToListeners = function () : void {
     eventNodes.forEach(node => {
         node.addEventListener('click', (e) => {
             const index = node.dataset.index;
