@@ -1,7 +1,9 @@
 import { renderEventSlide } from "./eventSlide";
+import renderMemberDivs from "./members";
 
 // Render slide
 renderEventSlide();
+renderMemberDivs();
 
 // Hamburger menu
 const expandedMenu = document.querySelector('#expanded-menu');
