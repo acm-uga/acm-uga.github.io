@@ -3,7 +3,6 @@ import { renderEventSlide } from "./eventSlide";
 // Render slide
 renderEventSlide();
 
-console.log("Working...")
 // Hamburger menu
 const expandedMenu = document.querySelector('#expanded-menu');
 let opening = false;
