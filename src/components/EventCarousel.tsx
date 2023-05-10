@@ -14,8 +14,13 @@ const EventCarousel = function ({ events }: EventCarouselProps) {
         return <EventSlide pos={`${positions[count - 1]}`} event={event} />
     })
     return (
-        <div id="event-carousel">
-            {renderedEvents}
+        <div id="event-carousel-container">
+            <div id="event-carousel-heading">Come to Our Events!</div>
+            <div className="carousel-controls">
+                <div className="decrement-carousel"><div className="left-arrow arrow"></div></div>
+                <div id="event-carousel">{renderedEvents}</div>
+                <div className="increment-carousel"><div className="right-arrow arrow"></div></div>
+            </div>
         </div>
     )
 }

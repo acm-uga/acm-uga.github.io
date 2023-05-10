@@ -9,15 +9,10 @@ import EventCarousel from "./components/EventCarousel"
 // Render slide
 renderMemberDivs();
 
-const events: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("event-carousel-container") as HTMLElement);
+const events: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("event-carousel-root") as HTMLElement);
 events.render(
     <React.StrictMode>
-        <div id="event-carousel-heading">Come to Our Events!</div>
-        <div className="carousel-controls">
-            <div className="decrement-carousel"><div className="left-arrow arrow"></div></div>
-            <EventCarousel events={eventInfo} />
-            <div className="increment-carousel"><div className="right-arrow arrow"></div></div>
-        </div>
+       <EventCarousel events={eventInfo}/>
     </React.StrictMode>
 )
 
