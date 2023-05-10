@@ -1,4 +1,3 @@
-import ReactDOM  from "react-dom/client";
 import React from "react";
 import ACMEvent from "../types/ACMEvent";
 

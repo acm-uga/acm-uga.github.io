@@ -1,21 +1,26 @@
-import { renderEventSlide } from "./eventSlide";
-import eventInfo from "./info/eventInfo.json"
-import renderMemberDivs from "./members";
+import eventInfo from "./info/eventInfo.json";
+import memberInfo from "./info/memberInfo.json"
 import ReactDOM from "react-dom/client";
 import React from "react";
-import EventSlide from "./components/EventSlide"
-import EventCarousel from "./components/EventCarousel"
+import EventCarousel from "./components/EventCarousel";
+import MemberCard from "./components/MemberCard";
 
-// Render slide
-renderMemberDivs();
 
 const events: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("event-carousel-root") as HTMLElement);
-
 events.render(
     <React.StrictMode>
        <EventCarousel events={eventInfo}/>
     </React.StrictMode>
 )
+
+const acmOfficers: ReactDOM.Root = ReactDOM.createRoot(document.querySelector('#acm-officers') as HTMLElement);
+acmOfficers.render(
+    <React.StrictMode>
+        {memberInfo.map(member => <MemberCard member={member}/>)}
+    </React.StrictMode>
+)
+
+
 
 // Hamburger menu
 const expandedMenu = document.querySelector('#expanded-menu');
