@@ -40,12 +40,12 @@ const EventCarousel = function ({ events }: EventCarouselProps) {
         <div id="event-carousel-container">
             <div id="event-carousel-heading">Come to Our Events!</div>
             <div className="carousel-controls">
-                <div onClick={(e) => changeShift(1)} className="decrement-carousel"><div className="left-arrow arrow"></div></div>
+                <button onClick={(e) => changeShift(1)} className="decrement-carousel"><div className="left-arrow arrow"></div></button>
                 <div id="event-carousel">{events.map((event, index) => {
                     let shiftedIndex = shiftIndex(index + shift, positions.length);
                     return <EventSlide pos={`${positions[shiftedIndex]}`} event={event} onClick={() => setShift(2 - index)} />
                 })}</div>
-                <div onClick={(e) => changeShift(-1)} className="increment-carousel"><div className="right-arrow arrow"></div></div>
+                <button onClick={(e) => changeShift(-1)} className="increment-carousel"><div className="right-arrow arrow"></div></button>
             </div>
         </div>
     )
