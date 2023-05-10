@@ -11,7 +11,7 @@ const MemberCard = function({member}: MemberCardProps) {
         <div className="member-div">
             <div className="officer-role">{member.role}</div>
             <div className="officer-name">{member.name}</div>
-            <div className="member-photo">{member.img}</div>
+            <img className="member-photo" src={member.img}></img>
         </div>
     )
 }
