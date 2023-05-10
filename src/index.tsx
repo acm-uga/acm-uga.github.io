@@ -10,6 +10,7 @@ import EventCarousel from "./components/EventCarousel"
 renderMemberDivs();
 
 const events: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("event-carousel-root") as HTMLElement);
+
 events.render(
     <React.StrictMode>
        <EventCarousel events={eventInfo}/>
