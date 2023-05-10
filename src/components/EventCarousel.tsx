@@ -18,18 +18,21 @@ const shiftIndex = function (index: number, length: number) {
     return index
 }
 
+/** Renders ACMEvent items in a carousel. */
 const EventCarousel = function ({ events }: EventCarouselProps) {
+    /** Stores the position classes on the carousel. */
     const positions = ['outer outer-left', 'inner inner-left', 'center', 'inner inner-right', 'outer outer-right'];
 
+    /** Store the shift from default the current carousel items are at. */
     const [shift, setShift] = useState(0);
 
     /** Change shift by @param change. */
     const changeShift = function (change: number) {
         if (Math.abs(shift + change) >= positions.length) {
-            setShift((shift + change) % positions.length);
+            setShift(() => (shift + change) % positions.length);
         }
         else {
-            setShift(shift + change);
+            setShift(() => shift + change);
         }
     }
 

@@ -5,6 +5,7 @@ type MemberCardProps = {
     member: ACMExecutive
 }
 
+/** Renders an ACMExecutive member. */
 const MemberCard = function({member}: MemberCardProps) {
     return (
         <div className="member-div">

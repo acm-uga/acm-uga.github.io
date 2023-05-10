@@ -6,6 +6,7 @@ import EventCarousel from "./components/EventCarousel";
 import MemberCard from "./components/MemberCard";
 
 
+// Load events into react EventCarousel
 const events: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("event-carousel-root") as HTMLElement);
 events.render(
     <React.StrictMode>
@@ -13,6 +14,7 @@ events.render(
     </React.StrictMode>
 )
 
+// Load officers into react MemberCard
 const acmOfficers: ReactDOM.Root = ReactDOM.createRoot(document.querySelector('#acm-officers') as HTMLElement);
 acmOfficers.render(
     <React.StrictMode>
