@@ -77,6 +77,9 @@
     .event-item {
       display: none;
     }
+    .event-short {
+      visibility: hidden;
+    }
     
     #event-carousel {
       min-height: 300px;
