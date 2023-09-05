@@ -11,13 +11,19 @@
     },
     {
       "role": "Community Engagement",
-      "name": "Raymond Feckoury",
-      "img": "./resources/member_img/raymond-feckoury.png"
+      "name": "Cason Pittman",
+      "img": "./resources/member_img/cason_pittman.jpg"
     },
     {
       "role": "Competition Chair",
       "name": "Codey Borrelli",
       "img": "./resources/member_img/codey_borrelli.jpg"
+    },
+
+    {
+      "role": "CSIP",
+      "name": "Shawn Pradeep",
+      "img": "./resources/member_img/shawn_pradeep.jpg"
     },
     {
       "role": "CSIP",
@@ -25,39 +31,29 @@
       "img": "./resources/member_img/ethan-ogle.jpg"
     },
     {
-      "role": "CSIP",
-      "name": "Genki Aikawa",
-      "img": "./resources/member_img/genki-aikawa.jpg"
+      "role": "Technical",
+      "name": "Nikita Jha",
+      "img": "./resources/member_img/niki_jha.png"
     },
     {
       "role": "Membership",
-      "name": "William Sirotkin",
-      "img": "./resources/member_img/william-sirotkin.png"
-    },
-    {
-      "role": "Outreach",
-      "name": "Manmeet Gill",
-      "img": "./resources/member_img/manmeet_gill.png"
-    },
-    {
-      "role": "Technical",
-      "name": "Shawn Pradeep",
-      "img": "./resources/member_img/shawn_pradeep.jpeg"
+      "name": "Yushus Komarlu",
+      "img": "./resources/member_img/default_photo.jpeg"
     },
     {
       "role": "PR & Graphics",
-      "name": "Mia Truesdell",
-      "img": "./resources/member_img/mia_truesdel.jpg"
-    },
-    {
-      "role": "Treasury",
-      "name": "Will Arnow",
-      "img": "./resources/member_img/will-arnow.png"
-    },
-    {
-      "role": "Website & Graphics",
       "name": "Lauren Bobo",
       "img": "./resources/member_img/lauren-bobo.png"
+    },
+    {
+      "role": "Secretary",
+      "name": "Evan Addeo",
+      "img": "./resources/member_img/evan_addeo.jpg"
+    },
+    {
+      "role": "UI & Graphics",
+      "name": "Parker Anderson",
+      "img": "./resources/member_img/default_photo.jpeg"
     },
     {
       "role": "Website",
