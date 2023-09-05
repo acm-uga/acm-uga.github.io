@@ -645,6 +645,7 @@ footer a:hover {
 }
 
 .member-photo {
+  aspect-ratio: 1/1;
   width: 12em;
   border-radius: 50%;
 }
