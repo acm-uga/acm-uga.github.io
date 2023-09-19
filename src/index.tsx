@@ -4,6 +4,9 @@ import ReactDOM from "react-dom/client";
 import React from "react";
 import EventCarousel from "./components/EventCarousel";
 import MemberCard from "./components/MemberCard";
+import { Calendar } from "@fullcalendar/core";
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 
 // Load events into react EventCarousel
@@ -13,6 +16,23 @@ events.render(
        <EventCarousel events={eventInfo}/>
     </React.StrictMode>
 )
+
+document.addEventListener('DOMContentLoaded', function() {
+        // Calendar
+        const calendarEl = document.getElementById("calendar"); 
+        let calendar = new Calendar(calendarEl as HTMLElement, {
+            plugins: [googleCalendarPlugin, dayGridPlugin],
+            initialView: 'dayGridMonth',
+            displayEventTime: false,
+            googleCalendarApiKey: "AIzaSyBOzDpEY7_2EH4sKB6GxT5Ws33dsKc_BVs",
+            events: {
+                googleCalendarId: "3cg57t8hfac7ig1j4fgpmrmd18@group.calendar.google.com"
+            }
+        });
+
+        calendar.render();
+});
+
 
 // Load officers into react MemberCard
 const acmOfficers: ReactDOM.Root = ReactDOM.createRoot(document.querySelector('#acm-officers') as HTMLElement);
