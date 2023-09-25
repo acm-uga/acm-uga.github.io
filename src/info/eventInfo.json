@@ -1,37 +1,37 @@
 [
     {
         "title": "Open Source Project",
-        "short": "Join us for our first ever open source project! Add to your resumè and create something great!",
-        "long": "This is event 1's super long description!",
-        "img": "./resources/event_imgs/open-source-project.png",
-        "date": "Every Wednesday at 5:30PM"
+        "short": "Want to add to your resumè and create something great? Join us for OSP!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/open_source_placeholder.png",
+        "date": "Every Friday at 5:00PM"
     },
     {
-        "title": "Flutter Foreward Extended",
-        "short": "ACM and GDG Athens present a workshop on Flutter, Google's cross-platform development framework! Join us and learn how you can code your first Flutter app!",
-        "long": "This is event 1's super long description!",
-        "img": "./resources/event_imgs/FLutter workshop.png",
-        "date": "02/16/23"
+        "title": "CSIP",
+        "short": "Want to prepare for the world of Computer Science careers? Join us for CSIP!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/csip_placeholder.png",
+        "date": "Every Tuesday at 6:00PM"
     },
     {
-        "title": "ACM Research Panel",
-        "short": "Come to the research panel to discuss research oportunities at UGA. Ask questions and explore your specific research interests.",
-        "long": "This is event 1's super long description!",
-        "img": "./resources/event_imgs/Reasearch GBM 3 (2).png",
-        "date": "02/09/23"
+        "title": "ICPC",
+        "short": "Want a fun and rewarding way to show and improve your programming skills? Come compete with us at ICPC!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/icpc_placeholder.png",
+        "date": "Every Monday at 6:00PM"
     },
     {
-        "title": "Company Speaker: StateFarm",
-        "short": "ACM is proud to host a guest speaker from StateFarm! Join us for exciting insight from the technology side of insurance buisness.",
-        "long": "This is event 1's super long description!",
-        "img": "./resources/event_imgs/gmb-2-statefarm.png",
-        "date": "01/26/23"
+        "title": "LinkedIn and Resumè Workshop",
+        "short": "Come get your LinkedIn and resumè polished up for the upcoming career fair!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm_2_graphic.png",
+        "date": "09/7/23"
     },
     {
-        "title": "Fullstack Development",
-        "short": "Join ACM, GDG Athens, and UGAHacks for a crash course on full stack developement in preparation for the upcoming hackathon!",
-        "long": "This is event 2's super long description!",
-        "img": "./resources/event_imgs/Full_Stack_Graphic.png",
-        "date": "01/19/23"
+        "title": "Software Development and Git",
+        "short": "Join ACM for a crash course on software developement and git!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm_3_graphic.png",
+        "date": "09/14/23"
     }
 ]
