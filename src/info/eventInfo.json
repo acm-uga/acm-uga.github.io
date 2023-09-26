@@ -1,7 +1,7 @@
 [
     {
-        "title": "Open Source Project",
-        "short": "Want to add to your resumè and create something great? Join us for OSP!",
+        "title": "Open-Source Project",
+        "short": "Want to add to your resumé and create something great? Join us for OSP!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/open_source_placeholder.png",
         "date": "Every Friday at 5:00PM"
@@ -21,8 +21,8 @@
         "date": "Every Monday at 6:00PM"
     },
     {
-        "title": "LinkedIn and Resumè Workshop",
-        "short": "Come get your LinkedIn and resumè polished up for the upcoming career fair!",
+        "title": "LinkedIn and Resumé Workshop",
+        "short": "Come get your LinkedIn and resumé polished up for the upcoming career fair!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm_2_graphic.png",
         "date": "09/7/23"
@@ -33,5 +33,19 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm_3_graphic.png",
         "date": "09/14/23"
+    },
+    {
+        "title": "Day in the life of a Google Engineer",
+        "short": "Join ACM and ACM-W Girls.code() for an overview of what being a software engineer at Google is like!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm_4_graphic.png",
+        "date": "09/13/23"
+    },
+    {
+        "title": "Open-Source Hacktoberfest!",
+        "short": "Join ACM in learning about how to contribute to open-source projects during Hacktoberfest!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm_5_graphic.png",
+        "date": "09/28/23"
     }
 ]
