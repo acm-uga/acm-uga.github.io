@@ -54,5 +54,12 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm_6_graphic.png",
         "date": "10/5/23"
+    },
+    {
+        "title": "Fall Social",
+        "short": "Join ACM for a little fun and games at our Fall Social!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm_7_graphic.png",
+        "date": "10/5/23"
     }
 ]
