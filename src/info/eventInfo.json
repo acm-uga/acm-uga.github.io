@@ -60,6 +60,13 @@
         "short": "Join ACM for a little fun and games at our Fall Social!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm_7_graphic.png",
-        "date": "10/5/23"
+        "date": "10/12/23"
+    },
+    {
+        "title": "Intro to GCP",
+        "short": "Join ACM and GDG Athens and learn how to pick the right server for your project with Google Cloud!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm_8_graphic.png",
+        "date": "10/19/23"
     }
 ]
