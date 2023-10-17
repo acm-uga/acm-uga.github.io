@@ -26,6 +26,11 @@ html {
   --section-heading-color: #FFFFFF;
   --event-text-color: black;
   --event-background-color: #FFFFFF;
+  --fc-event-bg-color: #BA0C2F;
+  --fc-event-border-color: #BA0C2F;
+  --fc-button-bg-color: #BA0C2F;
+  --fc-button-border-color: #BA0C2F;
+  --fc-neutral-bg-color: #9EA2A2;
 }
 
 /**
