@@ -75,5 +75,12 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm_9_graphic.png",
         "date": "11/2/23"
+    },
+    {
+        "title": "ICPC Mock Competition",
+        "short": "Join ICPC for a mock competitive programming competition!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/icpc_mock.png",
+        "date": "11/18/23"
     }
 ]
