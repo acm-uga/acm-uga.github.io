@@ -68,5 +68,12 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm_8_graphic.png",
         "date": "10/19/23"
+    },
+    {
+        "title": "UI/UX Design",
+        "short": "Join ACM to learn how to make a clean, user-friendly interface!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm_9_graphic.png",
+        "date": "11/2/23"
     }
 ]
