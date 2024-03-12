@@ -52,9 +52,35 @@ body {
 main {
   display: block;
 }
+
+
+#left {
+  padding-top: 40px;
+}
+
+li>a {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 100px;
+}
+
+#right>h1 {
+  font-size: 75px;
+}
+
+#right>ul>li {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
   
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:link, a:visited {
@@ -172,7 +198,7 @@ button:hover {
   margin-bottom: 30px;
 }
 
-.welcome-logo {
+.welcome-logo, #left>img {
   width: 370px;
   margin: 15px;
 }
@@ -184,6 +210,7 @@ button:hover {
   font-size: 75px;
   margin-bottom: 30px;
 }
+
 
 .red-text {
   color: var(--header-color);
