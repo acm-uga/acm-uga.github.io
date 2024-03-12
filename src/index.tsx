@@ -58,6 +58,27 @@ if (body && expandedMenu) {
     });
 }
 
+const resourcesBtn = document.getElementById('resources-button')
+const home = document.getElementById('home')
+const resources = document.getElementById('resources')
+if (home && resourcesBtn && resources) {
+    resourcesBtn.addEventListener('click', () => {
+        home.style.display = "none"
+        resources.style.display = "block"
+    })
+}
+
+const nonResourceBtn = document.getElementsByClassName('non-resource-button')
+
+if (nonResourceBtn && resources && home) {
+    Array.from(nonResourceBtn).forEach(btn => {
+        btn.addEventListener('click', () => {
+            home.style.display = "block"
+            resources.style.display = "none"
+        })
+    });
+}
+
 const hamburger = document.querySelector('#hamburger');
 
 if (hamburger && expandedMenu) {

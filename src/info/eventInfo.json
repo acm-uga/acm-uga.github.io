@@ -28,59 +28,11 @@
         "date": "09/7/23"
     },
     {
-        "title": "Software Development and Git",
-        "short": "Join ACM for a crash course on software developement and git!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm_3_graphic.png",
-        "date": "09/14/23"
-    },
-    {
         "title": "Day in the life of a Google Engineer",
         "short": "Join ACM and ACM-W Girls.code() for an overview of what being a software engineer at Google is like!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm_4_graphic.png",
         "date": "09/13/23"
-    },
-    {
-        "title": "Open-Source Hacktoberfest!",
-        "short": "Join ACM in learning about how to contribute to open-source projects during Hacktoberfest!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm_5_graphic.png",
-        "date": "09/28/23"
-    },
-    {
-        "title": "Prepare for UGA HACK Makeathon II",
-        "short": "Join ACM and UGA Hacks in learning about how to prepare for the upcoming Makeathon!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm_6_graphic.png",
-        "date": "10/5/23"
-    },
-    {
-        "title": "Fall Social",
-        "short": "Join ACM for a little fun and games at our Fall Social!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm_7_graphic.png",
-        "date": "10/12/23"
-    },
-    {
-        "title": "Intro to GCP",
-        "short": "Join ACM and GDG Athens and learn how to pick the right server for your project with Google Cloud!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm_8_graphic.png",
-        "date": "10/19/23"
-    },
-    {
-        "title": "UI/UX Design",
-        "short": "Join ACM to learn how to make a clean, user-friendly interface!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm_9_graphic.png",
-        "date": "11/2/23"
-    },
-    {
-        "title": "ICPC Mock Competition",
-        "short": "Join ICPC for a mock competitive programming competition!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/icpc_mock.png",
-        "date": "11/18/23"
     }
+  
 ]

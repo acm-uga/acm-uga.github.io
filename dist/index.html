@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- HEY YOU! Trying to update the events or members? Navigate to <project-root>/src/info and update the information there. THATS ALL!!! :D -->
-        
+
 </head>
 
 <body>
@@ -23,14 +23,12 @@
             <!-- Navbar -->
             <img id="acm-logo" src="./resources/acmlogowhitefinal.png" alt="acm-logo">
             <div id="navlinks">
-                <div id="home-button"><a href="#home-link">Home</a></div>
-                <div id="events-button"><a href="#events-link">Events</a></div>
-                <div id="calendar-button"><a href="#calendar-link">Calendar</a></div>
-                <div id="resources-button"><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSe5aJMORV-W8T3MRhhsy1Pd_er2Xsqu_wlIWD8qblcpE91saA/viewform"
-                        target="_blank">Resources</a></div>
-                <div id="about-button"><a href="#about-link">About</a></div>
-                <div id="profile-button"><a href="https://acm.uga.edu/profile" target="parent">Profile</a></div>
+                <div id="home-button"  class="non-resource-button"><a href="#home-link">Home</a></div>
+                <div id="events-button" class="non-resource-button"><a href="#events-link">Events</a></div>
+                <div id="calendar-button" class="non-resource-button"><a href="#calendar-link">Calendar</a></div>
+                <div id="resources-button"><a href="#resources">Resources</a></div>
+                <div id="about-button" class="non-resource-button"><a href="#about-link">About</a></div>
+                <div id="profile-button" class="non-resource-button"><a href="https://acm.uga.edu/profile" target="parent">Profile</a></div>
             </div>
             <div id="hamburger">
                 <img id="hamburger-menu" src="./resources/Hamburger_icon.svg.png" alt="hamburger-menu">
@@ -47,129 +45,130 @@
             <div id="profile-button"><a href="https://acm.uga.edu/profile" target="parent">Profile</a></div>
         </div>
     </div>
+    <div id="home">
+        <div id="main">
+            <br>
 
-    <div id="main">
-        <br>
+            <div id="content">
 
-        <div id="content">
-
-            <!-- Landing Page -->
-            <div id="home-link"></div>
-            <div class="landing-page">
-                <!-- Big logo -->
-                <div class="landing-page-left">
-                    <img src="./resources/social_img/csip.png" alt="acm-logo" class="welcome-logo">
+                <!-- Landing Page -->
+                <div id="home-link"></div>
+                <div class="landing-page">
+                    <!-- Big logo -->
+                    <div class="landing-page-left">
+                        <img src="./resources/social_img/csip.png" alt="acm-logo" class="welcome-logo">
+                    </div>
+                    <!-- Welcome text -->
+                    <div class="landing-page-right">
+                        <h1 id="welcome-text"><span class="welcome-acm-ACM red-text">ACM</span>.welcomes(<span
+                                class="welcome-acm-you red-text">you</span>);</h1>
+                        <div id="intro-par">
+                            <p class="intro-p">
+                                The ACM Chapter at UGA is a student-run organization dedicated to fostering the growth
+                                of
+                                the technology community at UGA.
+                            </p>
+                            <p class="intro-p">
+                                Our mission is to help advance computing as a profession, major, and community through
+                                local
+                                events and meetings. All students are welcome to attend our events and meetings,
+                                regardless
+                                of their area of study or experience-level.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Welcome text -->
-                <div class="landing-page-right">
-                    <h1 id="welcome-text"><span class="welcome-acm-ACM red-text">ACM</span>.welcomes(<span
-                            class="welcome-acm-you red-text">you</span>);</h1>
-                    <div id="intro-par">
-                        <p class="intro-p">
-                            The ACM Chapter at UGA is a student-run organization dedicated to fostering the growth of
-                            the technology community at UGA.
-                        </p>
-                        <p class="intro-p">
-                            Our mission is to help advance computing as a profession, major, and community through local
-                            events and meetings. All students are welcome to attend our events and meetings, regardless
-                            of their area of study or experience-level.
-                        </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <div id="dues">
+                    <h2 class="buttons-heading">Become an Official Member: </h1>
+                        <button class="pay-dues-button">
+                            <a href="https://ugapac.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3AUGAARTS%3ATATE2324%3AMEM.ACM%3A&linkID=ta-ugaarts&shopperContext=&pc=&caller=&appCode=&groupCode=PAY&cgc=&dataAccId=157&locale=en_US&siteId=ev_ta-ugaarts"
+                                target="_blank">
+                                Pay Dues
+                            </a>
+                        </button>
+                </div>
+                <div class="pipe-divide"></div>
+                <div id="social-container">
+                    <h2 class="buttons-heading">Stay Up To Date: </h2>
+                    <div class="social-icons-container">
+                        <a href="https://www.instagram.com/acmuga" target="_blank"><img class="help social-icon"
+                                src="./resources/social_img/insta.png" title="Our instagram"></a>
+                        <a href="https://discord.gg/AcPYBCDWeA" target="_blank"><img class="help social-icon"
+                                src="./resources/social_img/discord.png" title="Our discord"></a>
+                        <a href="https://github.com/acm-uga" target="_blank"><img class="help social-icon"
+                                src="./resources/social_img/github.png" title="Our github"></a>
+                        <a href="https://linktr.ee/acmuga" target="_blank"><img class="help social-icon"
+                                src="./resources/social_img/csip.png" title="Computer Science Interview Prep"></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Buttons -->
-        <div class="buttons">
-            <div id="dues">
-                <h2 class="buttons-heading">Become an Official Member: </h1>
-                    <button class="pay-dues-button">
-                        <a href="https://ugapac.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3AUGAARTS%3ATATE2324%3AMEM.ACM%3A&linkID=ta-ugaarts&shopperContext=&pc=&caller=&appCode=&groupCode=PAY&cgc=&dataAccId=157&locale=en_US&siteId=ev_ta-ugaarts"
-                            target="_blank">
-                            Pay Dues
-                        </a>
-                    </button>
+            <!-- Event Carousel -->
+            <div id="events-link"></div>
+            <div id="event-carousel-root">
             </div>
-            <div class="pipe-divide"></div>
-            <div id="social-container">
-                <h2 class="buttons-heading">Stay Up To Date: </h2>
-                <div class="social-icons-container">
-                    <a href="https://www.instagram.com/acmuga" target="_blank"><img class="help social-icon"
-                            src="./resources/social_img/insta.png" title="Our instagram"></a>
-                    <a href="https://discord.gg/AcPYBCDWeA" target="_blank"><img class="help social-icon"
-                            src="./resources/social_img/discord.png" title="Our discord"></a>
-                    <a href="https://github.com/acm-uga" target="_blank"><img class="help social-icon"
-                            src="./resources/social_img/github.png" title="Our github"></a>
-                    <a href="https://linktr.ee/acmuga" target="_blank"><img class="help social-icon"
-                            src="./resources/social_img/csip.png" title="Computer Science Interview Prep"></a>
+
+            <!-- Calendar -->
+            <div id="calendar-link"></div>
+            <div class="calendar-section">
+                <div class="heading-container">
+                    <h1 id="section-heading" id="calendar">Calendar</h1>
                 </div>
-            </div>
-        </div>
-
-        <!-- Event Carousel -->
-        <div id="events-link"></div>
-        <div id="event-carousel-root">
-        </div>
-
-        <!-- Calendar -->
-        <div id="calendar-link"></div>
-        <div class="calendar-section">
-            <div class="heading-container">
-                <h1 id="section-heading" id="calendar">Calendar</h1>
-            </div>
-            <!-- <iframe
+                <!-- <iframe
                 src="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America/New_York&showTabs=0&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NnNTd0OGhmYWM3aWcxajRmZ3Btcm1kMThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60"
                 frameborder="0" id="calendar"></iframe> -->
-            <div id="calendar"></div>
-        </div>
-        <div id="about-link"></div>
-        <div class="about-us-section">
-            <div class="heading-container">
-                <h1 id="section-heading" id="about-us">About Us</h1>
+                <div id="calendar"></div>
             </div>
-            <div class="about-text">
-                <h2>What is ACM?</h2>
-                <p>
-                    The Association for Computing Machinery is the world's largest society dedicated to computing.
-                    ACM
-                    at
-                    UGA is a student
-                    chapter of the Association for Computing Machinery that is committed to promoting computing
-                    causes
-                    at UGA.
-                </p>
-                <p>
-                    Our meetings have included workshops, public speakers, interview preparation, and other topics.
-                    In addition,
-                    our meetings are open to all students regardless of area of study and experience!
-                </p>
+            <div id="about-link"></div>
+            <div class="about-us-section">
+                <div class="heading-container">
+                    <h1 id="section-heading" id="about-us">About Us</h1>
+                </div>
+                <div class="about-text">
+                    <h2>What is ACM?</h2>
+                    <p>
+                        The Association for Computing Machinery is the world's largest society dedicated to computing.
+                        ACM
+                        at
+                        UGA is a student
+                        chapter of the Association for Computing Machinery that is committed to promoting computing
+                        causes
+                        at UGA.
+                    </p>
+                    <p>
+                        Our meetings have included workshops, public speakers, interview preparation, and other topics.
+                        In addition,
+                        our meetings are open to all students regardless of area of study and experience!
+                    </p>
+                </div>
+                <div class="about-text">
+                    <h2>How can I attend ACM meetings?</h2>
+                    <p>
+                        The ACM hosts weekly in person meetings every Thursday at 6pm in room
+                        328 at Boyd
+                        Graduate Research Center. No registration or
+                        reservation is
+                        necessary to attend!
+                    </p>
+                </div>
             </div>
-            <div class="about-text">
-                <h2>How can I attend ACM meetings?</h2>
-                <p>
-                    The ACM hosts weekly in person meetings every Thursday at 6pm in room
-                    328 at Boyd
-                    Graduate Research Center. No registration or
-                    reservation is
-                    necessary to attend!
-                </p>
-            </div>
-        </div>
 
-        <div class="divider divider-1">
-            <div class="spike"></div>
-            <div class="spike"></div>
-            <div class="spike"></div>
-            <div class="spike"></div>
-            <div class="spike"></div>
-            <div class="spike"></div>
-            <div class="spike"></div>
+            <div class="divider divider-1">
+                <div class="spike"></div>
+                <div class="spike"></div>
+                <div class="spike"></div>
+                <div class="spike"></div>
+                <div class="spike"></div>
+                <div class="spike"></div>
+                <div class="spike"></div>
+            </div>
+        <div id="acm-officers">
         </div>
-    </div>
-    </div>
-    </div>
-    <div id="acm-officers">
-    </div>
         <div class="divider-2 divider">
             <div class="spike"></div>
             <div class="spike"></div>
@@ -179,6 +178,21 @@
             <div class="spike"></div>
             <div class="spike"></div>
         </div>
+    </div>
+    <div id="resources" style="display:none;">
+        <div class="container">
+            <div id="left"><img src="./resources/acmatugablacktext 1.png" alt="acm logo"></div>
+            <div id="right">
+                <h1>import Useful<span class="red-text">Resources</span>;</h1>
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/14gVvj8Cotp1jVo9SmAy3VWIz6oAkpp3-Vu4dZ6-qLEk/edit">Schedule Builder</a></li>
+                    <li><a href="https://docs.google.com/document/d/1HbZi-ARCzYXUb1CCgAnuDvd3nAxXKfTv/edit">Resume Template</a></li>
+                    <li><a href="https://www.libs.uga.edu/science/makerspace">Makerspace info/site</a></li>
+                    <li><a href="https://www.cs.uga.edu/">School of Computing Site</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <footer>
         <div id="footer-columns">
             <div class="footer-column left-footer-column">
