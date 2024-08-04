@@ -1,64 +1,53 @@
 [
     {
       "role": "President of ACM",
-      "name": "Helium Yang",
-      "img": "./resources/member_img/helium-yang.png"
-    },
-    {
-      "role": "Vice President",
-      "name": "Banibe Ebegbodi",
-      "img": "./resources/member_img/bani-ebegbodi.png"
-    },
-    {
-      "role": "Community Engagement",
-      "name": "Cason Pittman",
-      "img": "./resources/member_img/cason_pittman.jpg"
-    },
-    {
-      "role": "Competition Chair",
-      "name": "Codey Borrelli",
-      "img": "./resources/member_img/codey_borrelli.jpg"
-    },
-
-    {
-      "role": "CSIP",
-      "name": "Shawn Pradeep",
-      "img": "./resources/member_img/shawn_pradeep.jpg"
-    },
-    {
-      "role": "CSIP",
       "name": "Ethan Ogle",
       "img": "./resources/member_img/ethan-ogle.jpg"
     },
     {
-      "role": "Technical",
+      "role": "President of ACM",
       "name": "Nikita Jha",
-      "img": "./resources/member_img/niki_jha.png"
+      "img": ""
     },
     {
-      "role": "Membership",
-      "name": "Yushus Komarlu",
-      "img": "./resources/member_img/yushus-komarlu.jpg"
+      "role": "Vice President",
+      "name": "Gokul Premkumar",
+      "img": "./resources/member_img/"
     },
     {
-      "role": "PR & Graphics",
-      "name": "Lauren Bobo",
-      "img": "./resources/member_img/lauren-bobo.png"
+      "role": "CSIP",
+      "name": "Vansh Arora",
+      "img": ""
     },
     {
-      "role": "Secretary",
-      "name": "Evan Addeo",
+      "role": "CSIP",
+      "name": "Shawn Pradeep",
+      "img": "./resources/member_img/"
+    },
+    {
+      "role": "Technical",
+      "name": "Adriana Godamunne",
+      "img": "./resources/member_img/"
+    },
+    {
+      "role": "Marketing",
+      "name": "Saachi Varshney",
+      "img": "./resources/member_img/"
+    },
+    {
+      "role": "Corporate Outreach",
+      "name": "Oscar Gross",
+      "img": "./resources/member_img/"
+    },
+    {
+      "role": "ICPC",
+      "name": "Hiep Pham",
       "img": "./resources/member_img/evan_addeo.jpg"
     },
     {
-      "role": "UI & Graphics",
-      "name": "Parker Anderson",
-      "img": "./resources/member_img/parker-anderson.jpg"
+      "role": "ICPC",
+      "name": "Tyler Simile",
+      "img": "./resources/member_img/"
     },
-    {
-      "role": "Website",
-      "name": "Vansh Arora",
-      "img": "./resources/member_img/vansh-arora.png"
-    }
   ]
   
