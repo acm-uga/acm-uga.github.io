@@ -7,7 +7,7 @@
     {
       "role": "President of ACM",
       "name": "Nikita Jha",
-      "img": ""
+      "img": "./resources/member_img/niki_jha.png"
     },
     {
       "role": "Vice President",
@@ -17,12 +17,12 @@
     {
       "role": "CSIP",
       "name": "Vansh Arora",
-      "img": ""
+      "img": "./resources/member_img/vansh-arora.png"
     },
     {
       "role": "CSIP",
       "name": "Shawn Pradeep",
-      "img": "./resources/member_img/"
+      "img": ".resources/member_img/shawn_pradeep.jpg"
     },
     {
       "role": "Technical",
