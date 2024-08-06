@@ -12,7 +12,7 @@
     {
       "role": "Vice President",
       "name": "Gokul Premkumar",
-      "img": "./resources/member_img/"
+      "img": ".resources/member_img/gokul-premkumar.png"
     },
     {
       "role": "CSIP",
@@ -42,7 +42,7 @@
     {
       "role": "ICPC",
       "name": "Hiep Pham",
-      "img": "./resources/member_img/evan_addeo.jpg"
+      "img": "./resources/member_img/"
     },
     {
       "role": "ICPC",
