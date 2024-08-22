@@ -37,17 +37,17 @@
     {
       "role": "Corporate Outreach",
       "name": "Oscar Gross",
-      "img": "./resources/member_img/"
+      "img": "./resources/member_img/oscar-gross.jpg"
     },
     {
       "role": "ICPC",
       "name": "Hiep Pham",
-      "img": "./resources/member_img/"
+      "img": "./resources/acmlogowhitefinal.png"
     },
     {
       "role": "ICPC",
       "name": "Tyler Simile",
-      "img": "./resources/member_img/"
-    },
+      "img": "./resources/acmlogowhitefinal.png"
+    }
   ]
   
