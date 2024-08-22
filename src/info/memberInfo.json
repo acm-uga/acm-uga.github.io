@@ -12,7 +12,7 @@
     {
       "role": "Vice President",
       "name": "Gokul Premkumar",
-      "img": ".resources/member_img/gokul-premkumar.png"
+      "img": "./resources/member_img/gokul-premkumar.png"
     },
     {
       "role": "CSIP",
@@ -22,7 +22,7 @@
     {
       "role": "CSIP",
       "name": "Shawn Pradeep",
-      "img": ".resources/member_img/shawn_pradeep.jpg"
+      "img": "./resources/member_img/shawn_pradeep.jpg"
     },
     {
       "role": "Technical",
