@@ -14,14 +14,7 @@
         "date": "Every Monday at 6:00PM"
     },
     {
-        "title": "CSIP",
-        "short": "Want to prepare for the world of Computer Science careers? Join us for CSIP!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/csip-2024.png",
-        "date": "Every Tuesday at 6:00PM"
-    },
-    {
-        "title": "",
+        "title": "GBM #1",
         "short": "",
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm1.png",
