@@ -1,14 +1,14 @@
 type ACMEvent = {
     /** Title of the ACM Event. */
-    // title: string,
+    title: string,
     /** Short description of ACM Event. */
-    // short: string,
+    short: string,
     /** Long description of ACM Event. */
-    // long: string,
+    long: string,
     /** Image source for ACM Event Graphic. */
     img: string,
     /** Date of the ACM Event. */
-    // date: string
+    date: string
 };
 
 export default ACMEvent;
