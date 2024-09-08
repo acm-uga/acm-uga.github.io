@@ -13,6 +13,13 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #3",
+        "short": "Learn how to create programs using Git!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm3.png",
+        "date": "9/5/24"
+    },
+    {
         "title": "GBM #2",
         "short": "Join ACM to meet employees from risk3sixty!",
         "long": "Super long description!",
