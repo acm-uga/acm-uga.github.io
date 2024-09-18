@@ -18,7 +18,7 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm4.png",
         "date": "8/29/24"
-    }
+    },
     {
         "title": "GBM #3",
         "short": "Learn how to create programs using Git!",
