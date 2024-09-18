@@ -13,6 +13,13 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #4",
+        "short": "Join ACM to improve your resume for the career fair!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm4.png",
+        "date": "8/29/24"
+    }
+    {
         "title": "GBM #3",
         "short": "Learn how to create programs using Git!",
         "long": "Super long description!",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm2.png",
         "date": "9/5/24"
-    },
-    {
-        "title": "GBM #1",
-        "short": "Join ACM to meet the community of CS clubs at UGA!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm1.png",
-        "date": "8/29/24"
     }
 ]
