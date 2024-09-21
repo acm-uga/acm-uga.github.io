@@ -13,11 +13,18 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #5",
+        "short": "Join ACM to meet employees from Fast Enterprises!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm5.png",
+        "date": "9/23/24"
+    },
+    {
         "title": "GBM #4",
         "short": "Join ACM to improve your resume for the career fair!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm4.png",
-        "date": "8/29/24"
+        "date": "9/19/24"
     },
     {
         "title": "GBM #3",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm3.png",
         "date": "9/12/24"
-    },
-    {
-        "title": "GBM #2",
-        "short": "Join ACM to meet employees from risk3sixty!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm2.png",
-        "date": "9/5/24"
     }
 ]
