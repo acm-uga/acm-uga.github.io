@@ -47,7 +47,7 @@
     } // checkMembershipForm
     
     function generateAttendance(email, fName, lName) {
-      infoCards.innerHTML = "<div id='attendance' class = 'infoCard'><b>Attandance:</b><br><br><table id='attendanceTable'></table><br>This updates automatically! If you checked-in to a meeting or filled out a reflection and it does not show up here, please contact <a href='mailto:ugaacm@uga.edu'>ugaacm@uga.edu</a>.<br>If you would like to submit hours for ACM Open Source contributions, <a href='https://docs.google.com/forms/d/e/1FAIpQLSeXK0UvywJg2zSchh15h0UbqFU4NlAX0NsxBu2sJhpV3T4iyw/viewform?usp=pp_url&entry.1046101656=" + fName + "&entry.2100067491=" + lName + "&entry.2018225173=" + email + "'>click here</a>.</div></div>" +
+      infoCards.innerHTML = "<div id='attendance' class = 'infoCard'><b>Attandance:</b><br><br><table id='attendanceTable'></table><br>This updates automatically! If you checked-in to a meeting or filled out a reflection and it does not show up here, please contact <a href='mailto:ugaacm@uga.edu'>ugaacm@uga.edu</a>.</div></div>" +
 "<div id='elInfo' class = 'infoCard'><b>About UGAHacks Experiential Learning</b> [<a href='javascript:showELInfo();'>show</a>]</div>"
       httpGetAsync("https://script.google.com/macros/s/AKfycbyYNnp9nrUGVJJW-jN1wEsmflkd2jtsIR-qjEK-a7-8AjmMYQOSceTLCBWkNL5ihQqnrw/exec?myid=" + email.split("@")[0], function(data){
   	dataParsed = JSON.parse(data);
