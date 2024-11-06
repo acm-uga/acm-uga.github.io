@@ -13,6 +13,13 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #11",
+        "short": "Join ACM to speak with Aflac employees!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm11.png",
+        "date": "11/7/24"
+    },
+    {
         "title": "GBM #8",
         "short": "Join ACM to learn data science with Python!",
         "long": "Super long description!",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm7.png",
         "date": "10/17/24"
-    },
-    {
-        "title": "GBM #5",
-        "short": "Join ACM to learn about web development!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm5-web.png",
-        "date": "10/3/24"
     }
 ]
