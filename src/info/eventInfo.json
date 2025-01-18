@@ -13,6 +13,13 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #14",
+        "short": "Join ACM to learn about machine learning!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm14.png",
+        "date": "1/16/25"
+    },
+    {
         "title": "GBM #13",
         "short": "Join ACM to learn about accessibility!",
         "long": "Super long description!",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm12.png",
         "date": "11/14/24"
-    },
-    {
-        "title": "GBM #11",
-        "short": "Join ACM to speak with Aflac employees!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm11.png",
-        "date": "11/7/24"
     }
 ]
