@@ -13,6 +13,13 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #15",
+        "short": "Prepare for the career fair and UGAHacks with ACM!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm15.png",
+        "date": "1/23/25"
+    },
+    {
         "title": "GBM #14",
         "short": "Join ACM to learn about machine learning!",
         "long": "Super long description!",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm13.png",
         "date": "11/21/24"
-    },
-    {
-        "title": "GBM #12",
-        "short": "Learn about innovation with NCR!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm12.png",
-        "date": "11/14/24"
-    }
+    }    
 ]
