@@ -13,7 +13,14 @@
         "date": "Every Monday at 6:00pm"
     },
     {
-        "title": "GBM #15",
+        "title": "GBM #17",
+        "short": "Join ACM to learn about APIs!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm17.png",
+        "date": "2/13/25"
+    },
+    {
+        "title": "GBM #16",
         "short": "Join ACM to meet the community!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm16.png",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm15.png",
         "date": "1/23/25"
-    },
-    {
-        "title": "GBM #14",
-        "short": "Join ACM to learn about machine learning!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm14.png",
-        "date": "1/16/25"
-    }
+    }    
 ]
