@@ -13,6 +13,13 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+    "title": "GBM #18",
+    "short": "Learn about Firebase with ACM!",
+    "long": "Super long description!",
+    "img": "./resources/event_imgs/gbm18.png",
+    "date": "2/27/25"
+    },
+    {
         "title": "GBM #17",
         "short": "Join ACM to learn about APIs!",
         "long": "Super long description!",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm16.png",
         "date": "1/30/25"
-    },
-    {
-        "title": "GBM #15",
-        "short": "Prepare for the career fair and UGAHacks with ACM!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm15.png",
-        "date": "1/23/25"
     }    
 ]
