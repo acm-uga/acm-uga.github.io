@@ -13,6 +13,13 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #20",
+        "short": "Are you interested in building natively compiled applications for mobile, web, and desktop from a single codebase? Then, join us today with GDG Athens at 6:30pm in Boyd 322 for a workshop on Flutter, open to ALL interested students!!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm20.png",
+        "date": "3/20/2025"
+    },      
+    {
         "title": "GBM #19",
         "short": "Join ACM to learn about Spring Boot!",
         "long": "Super long description!",
@@ -25,12 +32,5 @@
     "long": "Super long description!",
     "img": "./resources/event_imgs/gbm18.png",
     "date": "2/27/25"
-    },
-    {
-        "title": "GBM #17",
-        "short": "Join ACM to learn about APIs!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm17.png",
-        "date": "2/13/25"
-    }      
+    }    
 ]
