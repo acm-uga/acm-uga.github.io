@@ -14,10 +14,17 @@
     },
     {
         "title": "GBM #20",
-        "short": "Are you interested in building natively compiled applications for mobile, web, and desktop from a single codebase? Then, join us today with GDG Athens at 6:30pm in Boyd 322 for a workshop on Flutter, open to ALL interested students!!",
+        "short": "Join ACM to speak with Y Combinator!",
         "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm20.png",
-        "date": "3/20/2025"
+        "img": "./resources/event_imgs/gbm20a.png",
+        "date": "4/3/25"
+    },
+    {
+        "title": "GBM #19",
+        "short": "Join ACM to talk with research professors at UGA!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm19a.png",
+        "date": "3/27/2025"
     },      
     {
         "title": "GBM #19",
@@ -25,12 +32,5 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm19.png",
         "date": "3/13/25"
-    },
-    {
-    "title": "GBM #18",
-    "short": "Learn about Firebase with ACM!",
-    "long": "Super long description!",
-    "img": "./resources/event_imgs/gbm18.png",
-    "date": "2/27/25"
-    }    
+    }
 ]
