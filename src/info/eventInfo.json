@@ -13,24 +13,24 @@
         "date": "Every Monday at 6:00pm"
     },
     {
+        "title": "GBM #22",
+        "short": "Join ACM to pitch your project ideas!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm22a.png",
+        "date": "4/17/25"
+    },
+    {
+        "title": "GBM #21",
+        "short": "Join ACM to learn about building web apps!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/gbm21a.png",
+        "date": "4/10/2025"
+    },
+    {
         "title": "GBM #20",
         "short": "Join ACM to speak with Y Combinator!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/gbm20a.png",
         "date": "4/3/25"
-    },
-    {
-        "title": "GBM #19",
-        "short": "Join ACM to talk with research professors at UGA!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm19a.png",
-        "date": "3/27/2025"
-    },      
-    {
-        "title": "GBM #19",
-        "short": "Join ACM to learn about Spring Boot!",
-        "long": "Super long description!",
-        "img": "./resources/event_imgs/gbm19.png",
-        "date": "3/13/25"
-    }
+    }       
 ]
