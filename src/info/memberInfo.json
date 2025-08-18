@@ -1,43 +1,38 @@
 [
     {
       "role": "President of ACM",
-      "name": "Ethan Ogle",
-      "img": "./resources/member_img/ethan-ogle.jpg"
-    },
-    {
-      "role": "President of ACM",
-      "name": "Nikita Jha",
-      "img": "./resources/member_img/niki_jha.png"
-    },
-    {
-      "role": "Vice President",
-      "name": "Gokul Premkumar",
-      "img": "./resources/member_img/gokul-premkumar.png"
-    },
-    {
-      "role": "CSIP",
-      "name": "Vansh Arora",
-      "img": "./resources/member_img/vansh-arora.png"
-    },
-    {
-      "role": "CSIP",
-      "name": "Shawn Pradeep",
-      "img": "./resources/member_img/shawn_pradeep.png"
-    },
-    {
-      "role": "Technical",
       "name": "Adriana Godamunne",
       "img": "./resources/member_img/adriana-godamunne.jpg"
     },
     {
+      "role": "Vice President",
+      "name": "Roumika Patil",
+      "img": "./resources/member_img/roumika-patil.png"
+    },
+    {
+      "role": "CSIP",
+      "name": "Jennifer Ngo",
+      "img": "./resources/member_img/default_photo.jpeg"
+    },
+    {
+      "role": "CSIP",
+      "name": "Thai Nguyen",
+      "img": "./resources/member_img/thai-nguyen.png"
+    },
+    {
+      "role": "Technical",
+      "name": "Cole Vaughn",
+      "img": "./resources/member_img/cole-vaughn.jpg"
+    },
+    {
       "role": "Marketing",
-      "name": "Saachi Varshney",
-      "img": "./resources/member_img/saachi-varshney.png"
+      "name": "Sidhant Dash",
+      "img": "./resources/member_img/sidhant-dash.png"
     },
     {
       "role": "Corporate Outreach",
-      "name": "Oscar Gross",
-      "img": "./resources/member_img/oscar-gross.jpg"
+      "name": "Emily Freeman",
+      "img": "./resources/member_img/default_photo.jpeg"
     },
     {
       "role": "ICPC",
@@ -46,8 +41,8 @@
     },
     {
       "role": "ICPC",
-      "name": "Tyler Simile",
-      "img": "./resources/member_img/tyler-simile.jpeg"
+      "name": "Benjamin Parker",
+      "img": "./resources/member_img/default_photo.jpeg"
     }
   ]
   
