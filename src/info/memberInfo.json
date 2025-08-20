@@ -2,47 +2,56 @@
     {
       "role": "President of ACM",
       "name": "Adriana Godamunne",
-      "img": "./resources/member_img/adriana-godamunne.jpg"
+      "img": "./resources/member_img/adriana-godamunne.jpg",
+      "linkedin": "https://www.linkedin.com/in/agodamun/"
     },
     {
       "role": "Vice President",
       "name": "Roumika Patil",
-      "img": "./resources/member_img/roumika-patil.png"
+      "img": "./resources/member_img/roumika-patil.png",
+      "linkedin": "https://www.linkedin.com/in/roumika-patil-4672a5213/"
     },
     {
       "role": "CSIP",
       "name": "Jennifer Ngo",
-      "img": "./resources/member_img/default_photo.jpeg"
+      "img": "./resources/member_img/default_photo.jpeg",
+      "linkedin": "https://www.linkedin.com/in/jennifer-ngo-uga/"
     },
     {
       "role": "CSIP",
       "name": "Thai Nguyen",
-      "img": "./resources/member_img/thai-nguyen.png"
+      "img": "./resources/member_img/thai-nguyen.png",
+      "linkedin": "https://www.linkedin.com/in/thai-tam-minh-nguyen/"
     },
     {
       "role": "Technical",
       "name": "Cole Vaughn",
-      "img": "./resources/member_img/cole-vaughn.jpg"
+      "img": "./resources/member_img/cole-vaughn.jpg",
+      "linkedin": "https://www.linkedin.com/in/colevaughn/"
     },
     {
       "role": "Marketing",
       "name": "Sidhant Dash",
-      "img": "./resources/member_img/sidhant-dash.png"
+      "img": "./resources/member_img/sidhant-dash.png",
+      "linkedin": "https://www.linkedin.com/in/sidhantdash/"
     },
     {
       "role": "Corporate Outreach",
       "name": "Emily Freeman",
-      "img": "./resources/member_img/emily-freeman.jpg"
+      "img": "./resources/member_img/emily-freeman.jpg",
+      "linkedin": "https://www.linkedin.com/in/emily-freeman-176882240/"
     },
     {
       "role": "ICPC",
       "name": "Hiep Pham",
-      "img": "./resources/member_img/hiep-pham.jpg"
+      "img": "./resources/member_img/hiep-pham.jpg",
+      "linkedin": "https://www.linkedin.com/in/hiep-pham-764818292/"
     },
     {
       "role": "ICPC",
       "name": "Benjamin Parker",
-      "img": "./resources/member_img/default_photo.jpeg"
+      "img": "./resources/member_img/default_photo.jpeg",
+      "linkedin": "https://www.linkedin.com/in/benjamin-parker-0a3099277/"
     }
   ]
   
