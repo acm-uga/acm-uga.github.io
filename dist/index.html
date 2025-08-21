@@ -60,8 +60,28 @@
                     </div>
                     <!-- Welcome text -->
                     <div class="landing-page-right">
-                        <h1 id="welcome-text"><span class="welcome-acm-ACM red-text">ACM</span>.welcomes(<span
-                                class="welcome-acm-you red-text">you</span>);</h1>
+                        <h1 id="welcome-text">
+                        <span class="auto-type-wrapper">
+                        <span class="auto-type"></span>
+                        </span>
+                        </h1>
+
+                        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                        <script>
+                        new Typed(".auto-type", {
+                            strings: [
+                            '<span class="welcome-acm-ACM red-text">ACM</span>.welcomes(<span class="welcome-acm-you red-text">you</span>);'
+                            ],
+                            typeSpeed: 70,
+                            backSpeed: 60,
+                            loop: true,
+                            startDelay: 1000,
+                            backDelay: 2000,
+                            showCursor: true,
+                            cursorChar: "|",
+                        });
+                        </script>
+
                         <div id="intro-par">
                             <p class="intro-p">
                                 The ACM Chapter at UGA is a student-run organization dedicated to fostering the growth
