@@ -22,15 +22,16 @@ html {
   --navbar-color: #BA0C2F;
   --header-color: #BA0C2F;
   --secondary-color: #BA0C2F;
-  --event-carousel-background-color: #9EA2A2;
-  --section-heading-color: #FFFFFF;
-  --event-text-color: black;
-  --event-background-color: #FFFFFF;
+  --event-carousel-background-color: #000000;
+  --section-heading-color: rgb(216, 216, 216);
+  --event-text-color: rgb(216, 216, 216);
+  --event-background-color: rgb(216, 216, 216);
   --fc-event-bg-color: #BA0C2F;
   --fc-event-border-color: #BA0C2F;
   --fc-button-bg-color: #BA0C2F;
   --fc-button-border-color: #BA0C2F;
   --fc-neutral-bg-color: #9EA2A2;
+  color: rgb(216, 216, 216);
 }
 
 /**
@@ -38,7 +39,9 @@ html {
  */
 body {
   margin: 0;
-  background-color: #fffafa;
+  /* background-color: #fffafa; */
+  background-color: #480311;
+  color: rgb(216, 216, 216);
   /** Stop user select */
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -51,6 +54,7 @@ body {
   
 main {
   display: block;
+  color: rgb(216, 216, 216);
 }
 
 
@@ -116,15 +120,15 @@ button:hover {
   margin-left: -10px;
   margin-bottom: 15px;
   height: 140px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
-
 
 .sticky-element {
   z-index: 3;
   position: sticky;
   top:0;
 }
-
 
 /** Hamburger Menu **/
 #hamburger {
@@ -187,6 +191,8 @@ button:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   max-width: 100vw;
+  /* margin-bottom: 20px; */
+  min-height: calc(100vh - 198px);
 }
 
 .landing-page-right {
@@ -198,8 +204,6 @@ button:hover {
   align-items: center;
   justify-content: left;
   max-width: 100vw;
-  padding: 10px;
-  margin-bottom: 30px;
 }
 
 .welcome-logo, #left>img {
@@ -216,6 +220,8 @@ button:hover {
 .intro-p { 
   font-family: 'Merriweather Sans';
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 600px;
   font-size: 24px;
 }
@@ -226,7 +232,7 @@ button:hover {
 #welcome-text {
   font-size: 67px;
   line-height: 1.2;
-  margin: 50px auto 30px auto;
+  margin: 90px auto 80px auto;
   text-align: center;
   width: fit-content;
 }
@@ -258,13 +264,16 @@ button:hover {
   justify-content: space-around;
   align-items: start;
   margin-left: 40px;
-
+  margin-right: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 45px;
 }
 
 #dues {
   display: flex;
   align-items: center;
   gap: 80px;
+  width: calc(50%-40px);
 }
 
 .buttons-heading {
@@ -311,6 +320,7 @@ button:hover {
 }
 
 #social-container {
+  margin-bottom: 15px;
   display: flex;
   gap: 80px;
 }
@@ -319,7 +329,8 @@ button:hover {
 .social-icons-container {
   /* Flex container row for social icons
   */
-  gap: 20px;
+  gap: 35px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 }
@@ -344,6 +355,7 @@ button:hover {
   padding-top: 50px;
   border-top: 4px solid #cbcbcb;
   z-index: -3;
+  min-height: 100vh;
 }
 
 #event-carousel-heading {
@@ -355,7 +367,7 @@ button:hover {
 #event-carousel {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 90px;
   padding-bottom: 80px;
   position: relative;
   min-height: 500px;
@@ -522,6 +534,8 @@ button:hover .arrow {
   flex-direction: column;
   align-items: center;
   padding-bottom: 100px;
+  color: rgb(216, 216, 216);
+  min-height: 100vh;
 }
 
 .heading-container {
@@ -535,19 +549,26 @@ button:hover .arrow {
   color: var(--section-heading-color);
   font-weight: 500;
   margin: 0;
+  padding-top: 0vh;
 }
 
 #calendar {
   margin-top: 100px;
   width: 80%;
-  height: 600px
+  height: 600px;
+  color: rgb(216, 216, 216);
+}
+
+.fc .fc-event-title {
+  color: rgb(216, 216, 216);
 }
 
 /** About us */
 .about-us-section {
   background: var(--secondary-color);
   color: white;
-  padding-bottom: 50px;
+  min-height: 100vh;
+  padding-top: 15vh;
 }
 
 .about-text {
@@ -654,6 +675,7 @@ footer {
   width: 27%;
   margin-left: 3%;
   margin-right: 3%;
+  color: rgb(216, 216, 216);
 }
 
 .footer-column > h1,
@@ -662,6 +684,7 @@ footer {
   padding-bottom: 0.75em;
   border-bottom: 0.1em solid #E4002B;
   width: fit-content;
+  color: rgb(216, 216, 216);
 }
 
 .footer-column p {
@@ -672,6 +695,11 @@ footer {
   display: flex;
   gap: 5px;
   justify-content: center;
+  color: rgb(216, 216, 216);
+}
+
+.middle-footer-column {
+  color: rgb(216, 216, 216);
 }
 
 #copyright {
@@ -686,6 +714,11 @@ footer {
 address {
   display: inline;
 }
+
+#email {
+  color: rgb(216, 216, 216);
+}
+
 footer a:not(:hover) {
   transition: 0.25s;
   color: white;
@@ -706,6 +739,14 @@ footer a:hover {
   aspect-ratio: 1/1;
   width: 12em;
   border-radius: 50%;
+  /* margin-bottom: clamp(0px, 10vw, 80px); */
+}
+@media (max-width: 1100px) {
+  .member-photo {
+    margin-bottom: 45px;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
 }
 
 #acm-officers {
@@ -716,7 +757,6 @@ footer a:hover {
   flex-wrap: wrap;
   gap: 100px;
 }
-
 
 
 /** Divider 2 */

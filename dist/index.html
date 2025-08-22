@@ -4,6 +4,7 @@
     <title>ACM-UGA</title>
     <link rel="stylesheet" href="./resources/styles/styles.css">
     <link rel="stylesheet" href="./resources/styles/mobile_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js" defer></script>
     <link rel="shortcut icon" type="image/png" href="./resources/favicon.ico" />
@@ -26,7 +27,6 @@
                 <div id="home-button"  class="non-resource-button"><a href="#home-link">Home</a></div>
                 <div id="events-button" class="non-resource-button"><a href="#events-link">Events</a></div>
                 <div id="calendar-button" class="non-resource-button"><a href="#calendar-link">Calendar</a></div>
-                <div id="resources-button"><a href="#resources-link">Resources</a></div>
                 <div id="about-button" class="non-resource-button"><a href="#about-link">About</a></div>
                 <div id="profile-button" class="non-resource-button"><a href="profile" target="parent">Profile</a></div>
             </div>
@@ -38,9 +38,6 @@
             <div id="home-button"><a href="#home-link">Home</a></div>
             <div id="events-button"><a href="#events-link">Events</a></div>
             <div id="calendar-button"><a href="#calendar-link">Calendar</a></div>
-            <div id="resources-button"><a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSe5aJMORV-W8T3MRhhsy1Pd_er2Xsqu_wlIWD8qblcpE91saA/viewform"
-                    target="_blank">Resources</a></div>
             <div id="about-button"><a href="#about-link">About</a></div>
             <div id="profile-button"><a href="https://acm.uga.edu/profile" target="parent">Profile</a></div>
         </div>
@@ -56,7 +53,7 @@
                 <div class="landing-page">
                     <!-- Big logo -->
                     <div class="landing-page-left">
-                        <img src="./resources/social_img/acm-animated-logo.gif" alt="acm-logo" class="welcome-logo">
+                        <img src="./resources/social_img/acm-mascot-upsized.gif" alt="acm-logo" class="welcome-logo">
                     </div>
                     <!-- Welcome text -->
                     <div class="landing-page-right">
@@ -70,15 +67,18 @@
                         <script>
                         new Typed(".auto-type", {
                             strings: [
-                            '<span class="welcome-acm-ACM red-text">ACM</span>.welcomes(<span class="welcome-acm-you red-text">you</span>);'
+                            '<span class="welcome-acm-ACM red-text">ACM</span>.welcomes(<span class="welcome-acm-you red-text">you</span>)&semi;',
                             ],
-                            typeSpeed: 70,
-                            backSpeed: 60,
+                            typeSpeed: 60,
+                            backSpeed: 35,
                             loop: true,
-                            startDelay: 1000,
+                            startDelay: 600,
                             backDelay: 2000,
                             showCursor: true,
                             cursorChar: "|",
+                            smartBackspace: false,
+                            contentType: "html",
+                            fadeOut: false,
                         });
                         </script>
 
@@ -102,7 +102,7 @@
 
             <!-- Buttons -->
             <div class="buttons">
-                <div id="dues">
+                <!-- <div id="dues">
                     <h2 class="buttons-heading">Become an Official Member: </h1>
                         <button class="pay-dues-button">
                             <a href="https://ugapac.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS:UGAARTS:TATE2425:MEM.ACM:&linkID=ta-ugaarts&dataAccId=157&locale=en_US&siteId=ev_ta-ugaarts"
@@ -110,19 +110,15 @@
                                 Pay Dues
                             </a>
                         </button>
-                </div>
-                <div class="pipe-divide"></div>
+                </div> -->
+                <!-- <div class="pipe-divide"></div> -->
                 <div id="social-container">
-                    <h2 class="buttons-heading">Stay Up To Date: </h2>
+                    <!-- <h2 class="buttons-heading"></h2> -->
                     <div class="social-icons-container">
-                        <a href="https://www.instagram.com/acmuga" target="_blank"><img class="help social-icon"
-                                src="./resources/social_img/insta.png" title="Our instagram"></a>
-                        <a href="https://discord.gg/AcPYBCDWeA" target="_blank"><img class="help social-icon"
-                                src="./resources/social_img/discord.png" title="Our discord"></a>
-                        <a href="https://github.com/acm-uga" target="_blank"><img class="help social-icon"
-                                src="./resources/social_img/github.png" title="Our github"></a>
-                        <a href="https://linktr.ee/acmuga" target="_blank"><img class="help social-icon"
-                                src="./resources/social_img/csip.png" title="Computer Science Interview Prep"></a>
+                        <a href="https://www.instagram.com/acmuga" target="_blank"><i class="fa-brands fa-instagram fa-3x" style="color: rgb(216, 216, 216)"></i></a>
+                        <a href="https://discord.gg/bsJrmkSRkv" target="_blank"><i class="fa-brands fa-discord fa-3x" style="color: rgb(216, 216, 216);"></i></a>
+                        <a href="https://github.com/acm-uga" target="_blank"><i class="fa-brands fa-github fa-3x" style="color: rgb(216, 216, 216);"></i></a>
+                        <a href="https://www.linkedin.com/company/acm-at-uga/" target="_blank"><i class="fa-brands fa-linkedin fa-3x" style="color: rgb(216, 216, 216);"></i></a>
                     </div>
                 </div>
             </div>
@@ -219,14 +215,14 @@
         <div id="footer-columns">
             <div class="footer-column left-footer-column">                
                 <h2>Sponsors</h2>                
-                <img src="./resources/banners/oracle_logo.png" alt="Oracle Logo">                                
+                <img src="./resources/banners/oracle_logo.png" alt="Oracle Logo" width="150px">                                
             </div>
             <div class="footer-column middle-footer-column">                
                 <h2>Partners</h2>
-                <p><a href="https://www.instagram.com/girlsdotcode/" target="_parent">ACM-W girls.code()</a></p>
-                <p><a href="https://ugascs.org/" target="_parent">Society for Cyber Security</a></p>
-                <p><a href="https://ugahacks.com/" target="_parent">UGAHacks</a></p>
-                <p><a href="https://gdg.community.dev/gdg-athens-1/" target="_parent">GDG Athens</a></p>                
+                <p><a href="https://www.instagram.com/girlsdotcode/" target="_parent" style="color: rgb(216, 216, 216);">ACM-W girls.code()</a></p>
+                <p><a href="https://ugascs.org/" target="_parent" style="color: rgb(216, 216, 216);">Society for Cyber Security</a></p>
+                <p><a href="https://ugahacks.com/" target="_parent" style="color: rgb(216, 216, 216);">UGAHacks</a></p>
+                <p><a href="https://gdg.community.dev/gdg-athens-1/" target="_parent" style="color: rgb(216, 216, 216);">GDG Athens</a></p>                
             </div>            
         </div>
         

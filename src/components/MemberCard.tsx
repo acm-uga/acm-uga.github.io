@@ -12,7 +12,7 @@ const MemberCard = function({member}: MemberCardProps) {
             style={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center"
+                alignItems: "center",
             }}
         >
             <div className="officer-role">{member.role}</div>
@@ -20,7 +20,7 @@ const MemberCard = function({member}: MemberCardProps) {
             <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
             <img 
                 className="linkedin-icon" 
-                src="https://img.icons8.com/?size=100&id=447&format=png&color=000000" 
+                src="https://img.icons8.com/?size=100&id=447&format=png&color=D8D8D8" 
                 alt="LinkedIn Profile"
                 width={28} height={28}
                 style={{ marginBottom: "8px" }}

@@ -2,8 +2,8 @@
     {
         "title": "CSIP",
         "short": "Want to prepare for the world of Computer Science careers? Join us for CSIP!",            "long": "Super long description!",
-        "img": "./resources/event_imgs/csip-2025.png",
-        "date": "Every Tuesday at 6:00PM"
+        "img": "./resources/event_imgs/csip-2025-updated.png",
+        "date": "Every Wednesday at 6:00PM"
     },
     {    
         "title": "ICPC",
@@ -11,5 +11,12 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/icpc-2025.png",     
         "date": "Every Monday at 6:00pm"
+    },
+    {    
+        "title": "Raymond James Visit",
+        "short": "Join us to meet with industry leader Raymond James, who have agreed to come all the way from Florida to give a talk!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/RaymondJames.png",     
+        "date": "September 4th at 6pm"
     }
 ]

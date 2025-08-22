@@ -8,6 +8,8 @@ import { Calendar } from "@fullcalendar/core";
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import dayGridPlugin from '@fullcalendar/daygrid';
 
+
+
 // Load events into react EventCarousel
 const events: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("event-carousel-root") as HTMLElement);
 events.render(
