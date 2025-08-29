@@ -25,13 +25,13 @@
         "short": "Stay tuned for upcoming events!!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/acm-animated-logo.gif",     
-        "date": "-"
+        "date": "Stay tuned for upcoming events!!"
     },
     {    
         "title": "TBD",
         "short": "Stay tuned for upcoming events!!",
         "long": "Super long description!",
         "img": "./resources/event_imgs/acm-animated-logo.gif",     
-        "date": "-"
+        "date": "Stay tuned for upcoming events!!"
     }
 ]
