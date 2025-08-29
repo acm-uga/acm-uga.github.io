@@ -1,8 +1,9 @@
 [
     {
         "title": "CSIP",
-        "short": "Want to prepare for the world of Computer Science careers? Join us for CSIP!",            "long": "Super long description!",
-        "img": "./resources/event_imgs/csip-2025-updated.png",
+        "short": "Want to prepare for the world of Computer Science careers? Join us for CSIP!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/csip-2025-updated2.png",
         "date": "Every Wednesday at 6:00PM"
     },
     {    
@@ -18,5 +19,19 @@
         "long": "Super long description!",
         "img": "./resources/event_imgs/RaymondJames.png",     
         "date": "September 4th at 6pm"
+    },
+    {    
+        "title": "TBD",
+        "short": "Stay tuned for upcoming events!!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/acm-animated-logo.gif",     
+        "date": "-"
+    },
+    {    
+        "title": "TBD",
+        "short": "Stay tuned for upcoming events!!",
+        "long": "Super long description!",
+        "img": "./resources/event_imgs/acm-animated-logo.gif",     
+        "date": "-"
     }
 ]
