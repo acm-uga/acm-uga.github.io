@@ -274,6 +274,9 @@ button:hover {
   align-items: center;
   gap: 80px;
   width: calc(50%-40px);
+  /* margin-bottom: 25px; */
+  /* margin-right: 10px;
+  margin-left: 10px; */
 }
 
 .buttons-heading {
