@@ -13,15 +13,15 @@
     },
     {
       "role": "CSIP",
-      "name": "Jennifer Ngo",
-      "img": "./resources/member_img/jenny-ngo.jpg",
-      "linkedin": "https://www.linkedin.com/in/jennifer-ngo-uga/"
-    },
-    {
-      "role": "CSIP",
       "name": "Thai Nguyen",
       "img": "./resources/member_img/thai-nguyen.png",
       "linkedin": "https://www.linkedin.com/in/thai-tam-minh-nguyen/"
+    },
+    {
+      "role": "CSIP",
+      "name": "Emmanuel Pierre",
+      "img": "./resources/member_img/emmanuel-pierre.jpeg",
+      "linkedin": "https://www.linkedin.com/in/emmanuel-pierre/"
     },
     {
       "role": "Technical",
