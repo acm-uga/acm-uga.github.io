@@ -8,7 +8,7 @@
     {
       "role": "Vice President",
       "name": "Sloan Finger",
-      "img": "./resources/member_img/sloan-finger.jpeg",
+      "img": "./resources/member_img/sloan-finger.png",
       "linkedin": "https://www.linkedin.com/in/sloanfinger?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
     },
     
@@ -33,7 +33,7 @@
     {
       "role": "ICPC",
       "name": "Hiep Pham",
-      "img": "./resources/member_img/hiep-pham.jpg",
+      "img": "./resources/member_img/hiep-pham.png",
       "linkedin": "https://www.linkedin.com/in/hiep-pham-764818292/"
     },
     {
