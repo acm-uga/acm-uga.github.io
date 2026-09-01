@@ -2,44 +2,44 @@
     {
       "role": "President of ACM",
       "name": "Roumika Patil",
-      "img": "./resources/member_img/roumika-patil.png",
+      "img": "/resources/member_img/roumika-patil.png",
       "linkedin": "https://www.linkedin.com/in/roumika-patil-4672a5213/"
     },
     {
       "role": "Vice President",
       "name": "Sloan Finger",
-      "img": "./resources/member_img/sloan-finger.png",
+      "img": "/resources/member_img/sloan-finger.png",
       "linkedin": "https://www.linkedin.com/in/sloanfinger?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
     },
     
     {
       "role": "CSIP",
       "name": "Yamen Survey",
-      "img": "./resources/member_img/yamen_survery.jpg",
+      "img": "/resources/member_img/yamen_survery.jpg",
       "linkedin": "https://www.linkedin.com/in/yamen-survery-102162308?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
     },
     {
       "role": "Marketing",
       "name": "Sidhant Dash",
-      "img": "./resources/member_img/sidhant-dash.png",
+      "img": "/resources/member_img/sidhant-dash.png",
       "linkedin": "https://www.linkedin.com/in/sidhantdash/"
     },
     {
       "role": "Corporate Outreach",
       "name": "Treasure Andrews",
-      "img": "./resources/member_img/treasure_andrews.jpeg",
+      "img": "/resources/member_img/treasure_andrews.jpeg",
       "linkedin": "https://www.linkedin.com/in/itreasureandrews?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
     },
     {
       "role": "ICPC",
       "name": "Hiep Pham",
-      "img": "./resources/member_img/hiep-pham.png",
+      "img": "/resources/member_img/hiep-pham.png",
       "linkedin": "https://www.linkedin.com/in/hiep-pham-764818292/"
     },
     {
       "role": "Technical",
       "name": "Benjamin Parker",
-      "img": "./resources/member_img/default_photo.jpeg",
+      "img": "/resources/member_img/default_photo.jpeg",
       "linkedin": "https://www.linkedin.com/in/benjamin-parker-0a3099277/"
     }
   ]
