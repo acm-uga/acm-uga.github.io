@@ -9,6 +9,8 @@ type EventSlideProps = {
 
 /** Renders an ACMEvent. */
 const EventSlide = function({event, pos, onClick}: EventSlideProps) {
+    console.log("Rendering event:", event);
+
     return (<div onClick={onClick} className={`event-item ${pos}`}>
         <img src={event.img}></img>        
         <p className="event-date">{event.date}</p>
