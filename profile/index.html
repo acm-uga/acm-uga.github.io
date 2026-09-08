@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Member Portal | ACM @ UGA</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <!-- Importing Google Identity Services library -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+  <style>
+  .center {
+    text-align: center;
+  }
+  .signInButton {
+    display: flex;
+    justify-content: center;
+  }
+  .infoCard {
+    padding: 1em;
+    border: 2px solid black;
+    margin: 1.5em;
+    border-radius: 5px;
+  }
+  #mainInfo {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .circleCrop {
+    border-radius: 50%;
+  }
+  table, th, td {
+    padding: .5em;
+    min-width: 4.5em;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    border: 2px solid;
+  }
+  td {
+    border: 1px solid;
+  }
+  #elPara, ul, li {
+    text-align: left;
+  }
+  #userInfoCard {
+    max-width: 20em;
+  }
+  #attendance, #elInfo {
+    max-width: 50em;
+  }
+  </style>
+  <body>
+  
+    <div class="center">
+      <!-- Login button -->
+      <div class="signInButton">
+        <div id="g_id_onload"
+          data-client_id="110833122474-79f07ek3svt97kbssounogrj7pel7s8g.apps.googleusercontent.com"
+          data-context="signin"
+          data-ux_mode="popup"
+          data-callback="login"
+          data-auto_prompt="false">
+        </div>
+        <div class="g_id_signin"
+          data-type="standard"
+          data-shape="pill"
+          data-theme="outline"
+          data-text="signin"
+          data-size="large"
+          data-logo_alignment="left">
+        </div>
+      </div>
+      <br>
+      <div id="alert"></div>
+      <div id="mainInfo">
+        <div id="leftPanel">
+          <div id="userInfoCard" class="infoCard">
+            Login to get started!
+          </div>
+        </div>
+        <div id="infoCards">
+        </div>
+      </div>
+      Spot a bug? <a href="mailto:ugaacm@uga.edu">Let us know!</a>
+    </div>
+    
+  </body>
+  
+  <script src="userReport.js"></script>
+</html>
