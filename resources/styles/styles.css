@@ -420,7 +420,7 @@ button:hover {
 }
 
 .event-item>img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 70%;
   border-radius: 0.4em 0.4em 0 0;
