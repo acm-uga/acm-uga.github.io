@@ -3,15 +3,15 @@
         "title": "CSIP",
         "short": "Want to prepare for the world of Computer Science careers? Join us for CSIP!",
         "long": "Super long description!",
-        "img": "./resources/event_imgs/csip-2025-updated2.png",
-        "date": "Every Wednesday at 6:00PM"
+        "img": "./resources/event_imgs/ACMCSIP2627.png",
+        "date": "Every Wednesday at 6:00PM in Boyd 328"
     },
     {    
         "title": "ICPC",
         "short": "Want a fun and rewarding way to show and improve your programming skills? Come compete with us at ICPC!",
         "long": "Super long description!",
-        "img": "./resources/event_imgs/icpc-2025-upd.png",     
-        "date": "Every Monday at 6:00pm"
+        "img": "./resources/event_imgs/ACMICPC2627.png",     
+        "date": "Every Monday at 5:00pm in Boyd 328"
     },
     {    
         "title": "Meet The Community",
@@ -21,11 +21,11 @@
         "date": "Sept 10th, 2026 at 6:30pm"
     },
     {    
-        "title": "TBD",
-        "short": "Stay tuned for upcoming events!!",
+        "title": "ACM x CGI",
+        "short": "Come learn more about CGI and their opportunities for students!",
         "long": "Super long description!",
-        "img": "./resources/event_imgs/acm-animated-logo.gif",     
-        "date": "Stay tuned for upcoming events!!"
+        "img": "./resources/event_imgs/ACMCGI.png",     
+        "date": "Sept 17th 6:30pm in Dawson Hall 116"
     },
     {    
         "title": "TBD",
