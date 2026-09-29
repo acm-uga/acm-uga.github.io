@@ -14,18 +14,18 @@
         "date": "Every Monday at 5:00pm in Boyd 328"
     },
     {    
-        "title": "Meet The Community",
-        "short": "Interested in building your resume and exploring extracurricular opportunities? Then, this is a great opportunity!",
+        "title": "ACM x AWS",
+        "short": "Interested in learning about cloud computing or talking to senior solution architects? Join us for ACM x AWS!",
         "long": "Super long description!",
-        "img": "./resources/event_imgs/MeetTheCommunityFall2026.png",     
-        "date": "Sept 10th, 2026 at 6:30pm"
+        "img": "./resources/event_imgs/ACMxAWS2026.png",     
+        "date": "Oct 1st, 2026 at 6:30pm in Dawson Hall 116"
     },
     {    
-        "title": "ACM x CGI",
-        "short": "Come learn more about CGI and their opportunities for students!",
+        "title": "TBD",
+        "short": "Stay tuned for upcoming events!!",
         "long": "Super long description!",
-        "img": "./resources/event_imgs/ACMCGI.png",     
-        "date": "Sept 17th 6:30pm in Dawson Hall 116"
+        "img": "./resources/event_imgs/acm-animated-logo.gif",     
+        "date": "Stay tuned for upcoming events!!"
     },
     {    
         "title": "TBD",
